@@ -1,0 +1,153 @@
+.wrapper {
+	margin:0 auto;
+	width:980px;
+}
+
+.clear:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.header {
+	height:81px;
+	border-bottom:1px solid #e0e0e0;
+	.logo {
+		float:left;
+		margin-top:25px;
+	}
+	.logo-img {
+		width:101px;
+	}
+	.header-login {
+		float:right;
+		margin-top:25px;
+		padding-top:26px;
+		width:30px;
+		background:url(../images/icon_lock.png) no-repeat 50% 0;
+		font-size:10px;
+		font-weight:bold;
+		text-align:center;
+	}
+}
+
+.gnb {
+	margin-left:300px;
+	padding-top:44px;
+	.gnb-item {
+		float:left;
+		margin-left:47px;
+		&:first-child {
+			margin-left:0;
+		}
+	}
+	.gnb-main-link {
+		display:block;
+		height:34px;
+		font-size:16px;
+		font-weight:bold;
+		border-bottom:4px solid transparent;
+		&:hover,
+		&.on {
+			color:$color-accent;
+			border-bottom-color:$color-accent;
+		}
+	}
+	.gnb-sub-wrap {
+		display:none;
+		position:absolute;
+		top:82px;
+		left:0;
+		width:100%;
+		height:63px;
+		border-bottom:5px solid $color-brand;
+		background-color:#fff;
+		z-index:10;
+	}
+	.gnb-main-link:hover + .gnb-sub-wrap,
+	.gnb-sub-wrap:hover {
+		display:block;
+	}
+	.gnb-sub {
+		margin:0 auto;
+		width:680px;
+		padding:25px 0 0 300px;
+		&-item {
+			float:left;
+			margin-left:110px;
+			font-size:14px;
+			font-weight:bold;
+		}
+		&-item:first-child {
+			margin-left:0;
+		}
+		&-link {
+			display:block;
+			padding-bottom:3px;
+		}
+		&-link:hover,
+		&-link.on {
+			color:$color-accent;
+			border-bottom:1px solid $color-accent;
+		}
+	}
+}
+
+.content {
+	padding-top:50px;
+	&-section {
+		margin-top:50px;
+	}
+}
+.content-header {
+	margin-bottom:50px;
+	.content-title {
+		float:left;
+		font-size:46px;
+	}
+	.breadcrumb {
+		float:right;
+		font-size:11px;
+	}
+}
+
+.content-option {
+	margin-bottom:12px;
+	text-align:right;
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	&-left {
+		float:left;
+	}
+	&-right {
+		float:right;
+	}
+}
+
+.submit-btns {
+	margin-top:20px;
+	text-align:right;
+}
+
+.action-btns {
+	margin-top:40px;
+	padding:46px 0;
+	border-top:1px solid $color-border-grey;
+	background-color:#f9f9f9;
+	text-align:center;
+}
+
+
+.footer {
+	height:48px;
+	line-height:48px;
+	background-color:#2e2e2e;
+	&-copy {
+		color:#999;
+		font-size:10px;
+		font-weight:bold;
+	}
+}

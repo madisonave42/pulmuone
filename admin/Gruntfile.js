@@ -23,14 +23,30 @@ module.exports = function(grunt) {
     	dist: {
     		src: ['js_src/*.js'],
     		dest: 'js_concat/function.js'
-    	}
+    	},
+    	
+    	distLib: {
+    		src: [
+    		      'js_src/lib/jquery-1.11.0.min.js',
+    		      'js_src/lib/jquery-ui-1.11.2.min.js',
+    		      '!js_src/lib/html5shiv.min.js',
+    		      '!js_src/lib/IE9.js'
+    		      ],
+    		      
+    		dest: 'js_concat/lib/jquery.library.js'
+    	}    	
     },
-
+    
     uglify: {
- 		build: {
+    	build: {
         src: 'js_concat/function.js',
         dest: 'js/function.min.js'
-     	}
+     	},
+    
+	    buildLib: {
+	      src: 'js_concat/lib/jquery.library.js',
+	      dest: 'js/lib/jquery.library.min.js'
+	   	}
     },
     
     sass:{
@@ -66,6 +82,17 @@ module.exports = function(grunt) {
     },
     
     copy: {
+    	jsLib: {
+    		files:[{
+    			expand: true,
+    			cwd: 'js_src/lib/',
+    			src: ['html5shiv.min.js', 'IE9.js', 'jquery-1.11.0.min.map'],
+    			dest: 'js/lib/'
+    		}]
+
+    	},
+    	
+    	// output
     	html: {
     		expand:true,
     		src:'html/*.html',
@@ -73,18 +100,18 @@ module.exports = function(grunt) {
     	},
     	js: {
     		expand: true,
-    		src:'js/*.js',
+    		src:'js/**',
     		dest:'_output/'
     	},
     	css: {
-			expand: true,
-			src:'css/new_file.css',
-			dest: '_output/',
-			options:{
-				process: function(content, srcpath){
-					return content.replace('/*# sourceMappingURL=new_file.css.map */', '');
+				expand: true,
+				src:'css/*.css',
+				dest: '_output/',
+				options:{
+					process: function(content, srcpath){
+						return content.replace('/*# sourceMappingURL=new_file.css.map */', '');
+					},
 				},
-			},
     	},
     	images: {
     		expand: true,
@@ -94,21 +121,26 @@ module.exports = function(grunt) {
     },
     
     watch: {
-    	options: {
-    		spawn: false,
-    		livereload : true
-    	},
     	js: {
     		files: ['js_src/*.js'],
-    		tasks: ['concat', 'uglify', 'reload']
+    		tasks: ['concat:dist', 'uglify:build', 'reload'],
+    		options: {
+      		livereload : true
+      	}
     	},
     	html: {
     		files: ['html_src/**'],
-    		tasks: ['includes', 'reload']
+    		tasks: ['includes', 'reload'],
+    		options: {
+      		livereload : true
+      	}
     	},
     	css: {
     		files: ['css_scss/**'],
-    		tasks: ['sass', 'reload']
+    		tasks: ['sass', 'reload'],
+    		options: {
+      		livereload : true
+      	}
     	}
     },
     
@@ -119,12 +151,13 @@ module.exports = function(grunt) {
   });
   
   grunt.registerTask('default',function(){
-  	grunt.log.warn('Grunt Start...');
+  	grunt.log.writeln('Grunt Start...');
   	grunt.task.run([
   		'includes',
   		'concat',
   		'uglify',
   		'sass',
+  		'copy:jsLib',
   		'connect',
   		'watch'
   	]);

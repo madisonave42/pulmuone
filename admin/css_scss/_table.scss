@@ -1,0 +1,48 @@
+.table {
+	border-collapse:collapse;
+	width:100%;
+	font-size:$font-size-base;
+	border-top:2px solid $color-border-dark;
+	border-bottom:1px solid $color-border-grey;
+	.th {
+		padding:20px 0;
+		background-color:#f9f9f9;
+	}
+	.td {
+		padding:10px 0;
+		text-align:center;
+		border-top:1px solid $color-border-grey;
+	}
+	.td.title {
+		padding-left:10px;
+		text-align:left;
+	}
+	&-gapbox {
+		margin-top:7px;
+	}
+}
+
+.table-horizontal {
+	.th {
+		padding-left:15px;
+		width:18%;
+		text-align:left;
+		border-top:1px solid $color-border-grey;
+	}
+	.td {
+		padding-left:15px;
+		text-align:left;
+	}
+}
+
+.table-columns {
+	.th {
+		width:10%;
+	}
+}
+
+.req {
+	margin-left:4px;
+	color:$color-accent;
+	font-weight:bold;
+}

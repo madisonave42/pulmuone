@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>풀무원 관리자</title>
+
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<!--[if lte IE 8]>
+	<script src="../js/lib/html5shiv.min.js"></script>
+	<script src="stylesheet" href="../js/lib/IE9.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="../css/style.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/ie8.css" />
+	<![endif]-->
+
+	<script src="../js/lib/jquery.library.min.js"></script>
+	<script src="../js/function.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="wrapper">
+		<h1 class="logo">
+			<a href="#" class="logo-img"><img src="../images/logo.png" alt="Pulumone" /></a>
+		</h1>
+
+		<a href="" class="header-login">로그인</a>
+
+		<ul class="gnb clear">
+			<li class="gnb-item">
+				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
+				<a href="#" class="gnb-main-link on">채용관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link on">공고관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">모집관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">지원자 통계</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">게시판관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">공지사항</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">회원관리</a>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">운영관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">부문/법인/직무관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">운영자관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">로그분석</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</header>
+
+
+<div class="content wrapper">
+
+	<div class="content-header clear">
+		<h2 class="content-title">공고관리</h2>
+		<p class="breadcrumb">채용관리 > 공고관리</p>
+	</div>
+
+	<table class="table table-horizontal">
+		<tbody>
+			<tr>
+				<th class="th">공고제목<span class="req">*</span></th>
+				<td class="td">
+					<div class="form-wrap">
+						<input type="text" class="input-text" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th class="th">지원기간<span class="req">*</span></th>
+				<td class="td">
+					<div class="form-wrap">
+						<input type="text" class="input-text">
+					</div>
+					<button type="button" class="show-calendar">달력보기</button>
+					-
+					<div class="form-wrap">
+						<input type="text" class="input-text">
+					</div>
+					<button type="button" class="show-calendar">달력보기</button>
+				</td>
+			</tr>
+			<tr>
+				<th class="th">게시여부<span class="req">*</span></th>
+				<td class="td">
+					<span class="radio-wrap">
+						<input type="radio" id="type-y" name="type" class="radio"><label for="type-y" class="label">Y</label>
+					</span>
+					<span class="radio-wrap">
+						<input type="radio" id="type-n" name="type" class="radio"><label for="type-n" class="label">N</label>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<th class="th">기타</th>
+				<td class="td">
+					<div class="form-wrap">
+						<textarea cols="30" rows="10" class="textarea"></textarea>
+					</div>
+					<p class="table-gapbox">하위 내용은 앞에 (-)을 붙여주세요.</p>
+				</td>
+			</tr>
+			<tr>
+				<th class="th">모집항목</th>
+				<td class="td">
+					<div>
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-01" class="checkbox"><label for="chk-01" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+					<div class="table-gapbox">
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-02" class="checkbox"><label for="chk-02" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+					<div class="table-gapbox">
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-03" class="checkbox"><label for="chk-03" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+					<div class="table-gapbox">
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-04" class="checkbox"><label for="chk-04" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+					<div class="table-gapbox">
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-05" class="checkbox"><label for="chk-05" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+					<div class="table-gapbox">
+						<span class="check-wrap">
+							<input type="checkbox" id="chk-06" class="checkbox"><label for="chk-06" class="label">201501 종균개발 연구원 </label>
+						</span>
+					</div>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="action-btns">
+	<a href="#" class="btn btn-wide btn-green">등록</a>
+	<a href="#" class="btn btn-wide">목록</a>
+</div>
+
+<!-- [D] 팝업 -->
+<section class="popup">
+	<h1 class="popup-title">면접관리</h1>
+
+	<div class="popup-content">
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="th">지원번호</th>
+					<th class="th">이름</th>
+					<th class="th">면접조</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">1000</td>
+					<td class="td">홍길동</td>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>상태</option>
+								<option>상태</option>
+								<option>상태</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="popup-action-btns">
+		<a href="" class="btn">확인</a>
+	</div>
+
+	<a href="" class="popup-close">팝업닫기</a>
+</section>
+
+
+
+<footer class="footer">
+	<div class="wrapper">
+		<p class="footer-copy">Copyright © 2015 PULMUONE Co., Ltd. All rights reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>
+
