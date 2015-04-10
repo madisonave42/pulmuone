@@ -178,6 +178,44 @@ input, textarea {
   width: 163px;
 }
 
+.btn {
+  display: inline-block;
+  width: 85px;
+  height: 37px;
+  line-height: 37px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  background-color: #333;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn.btn-grey {
+  background-color: #666;
+}
+.btn.btn-wide {
+  width: 145px;
+  font-size: 14px;
+}
+.btn.btn-green {
+  color: #222;
+  background-color: #a6ce39;
+}
+.btn.btn-small {
+  width: 55px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  background-color: #666;
+}
+.btn:hover {
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
 .label {
   color: #666;
   vertical-align: middle;
@@ -521,6 +559,12 @@ input, textarea {
   height: 15px;
   background: url(../images/icon_close.png) no-repeat;
   text-indent: -9999px;
+}
+
+.em {
+  font-style: normal;
+  font-weight: bold;
+  color: #b07e44;
 }
 
 .login {
