@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
-	
+
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
 
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
-    
+
     includes: {
     	html: {
     		cwd:'html_src',
@@ -18,13 +18,13 @@ module.exports = function(grunt) {
     		}
     	}
     },
-    
+
     concat: {
     	dist: {
     		src: ['js_src/*.js'],
     		dest: 'js_concat/function.js'
     	},
-    	
+
     	distLib: {
     		src: [
     		      'js_src/lib/jquery-1.11.0.min.js',
@@ -32,23 +32,23 @@ module.exports = function(grunt) {
     		      '!js_src/lib/html5shiv.min.js',
     		      '!js_src/lib/IE9.js'
     		      ],
-    		      
+
     		dest: 'js_concat/lib/jquery.library.js'
-    	}    	
+    	}
     },
-    
+
     uglify: {
     	build: {
         src: 'js_concat/function.js',
         dest: 'js/function.min.js'
      	},
-    
+
 	    buildLib: {
 	      src: 'js_concat/lib/jquery.library.js',
 	      dest: 'js/lib/jquery.library.min.js'
 	   	}
     },
-    
+
     sass:{
     	dist: {
     		options: {
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
     		}]
     	}
     },
-    
+
     connect: {
       server: {
         options: {
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     copy: {
     	jsLib: {
     		files:[{
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
     		}]
 
     	},
-    	
+
     	// output
     	html: {
     		expand:true,
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 				dest: '_output/',
 				options:{
 					process: function(content, srcpath){
-						return content.replace('/*# sourceMappingURL=new_file.css.map */', '');
+						return content.replace('/*# sourceMappingURL=style.css.map */', '');
 					},
 				},
     	},
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
     		dest:'_output/'
     	}
     },
-    
+
     watch: {
     	js: {
     		files: ['js_src/*.js'],
@@ -143,13 +143,13 @@ module.exports = function(grunt) {
       	}
     	}
     },
-    
+
     reload: {
     	port: 8080
     }
-    
+
   });
-  
+
   grunt.registerTask('default',function(){
   	grunt.log.writeln('Grunt Start...');
   	grunt.task.run([
@@ -162,7 +162,7 @@ module.exports = function(grunt) {
   		'watch'
   	]);
   });
-  
+
   grunt.registerTask('export', function(){
 	  grunt.task.run([
 		  'includes',

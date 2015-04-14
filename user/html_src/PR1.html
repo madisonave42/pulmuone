@@ -1,0 +1,144 @@
+include "header.html"
+
+<section class="main">
+	<div class="main-header apply-header">
+		<div class="wrapper">
+			<h2 class="main-header-title">회원가입</h2>
+			<p class="main-header-copy">풀무원 채용 홈페이지에 오신 것을 환영합니다!</p>
+			<div class="breadcrumb">
+				<a href="" class="breadcrumb-link">Home</a>
+				>
+				<a href="" class="breadcrumb-link">마이페이지</a>
+				>
+				회원가입
+			</div>
+		</div>
+
+		<div class="main-header-decor">
+			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+				  	<path d="M0 0 C50 100 50 100 100 0 L100 100 0 100" stroke-width="0"></path>
+			</svg>
+		</div>
+	</div>
+
+
+	<div class="main-content wrapper">
+		<div class="row">
+			<h3 class="row-header">회원정보 입력</h3>
+			<p class="row-msg"><span class="strong">*</span> 표시는 필수입력 항목입니다.</p>
+			<table class="table-hr">
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:795px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="name">이름</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-small">
+								<input type="text" id="name" class="input-text" placeholder="성" title="성" />
+							</span>
+							<span class="form-wrap width-normal">
+								<input type="text" class="input-text" placeholder="이름" title="이름" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="id">아이디</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-half">
+								<input type="text" id="id" class="input-text" />
+							</span>
+							<a href="#" class="btn btn-form">중복확인</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="pw">비밀번호</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-half">
+								<input type="password" id="pw" class="input-text" />
+							</span>
+							<span>영문,숫자 조합 6~20자리로 입력해주세요.</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="re-pw">비밀번호 확인</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-half">
+								<input type="password" id="re-pw" class="input-text" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="email">이메일</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-normal">
+								<input type="text" id="email" class="input-text" />
+							</span>
+							@
+							<span class="form-wrap width-normal">
+								<input type="text" title="도메인" class="input-text" />
+							</span>
+							<span class="form-wrap width-normal">
+								<select title="도메인 선택" class="select">
+									<option>gmail.com</option>
+									<option>daum.net</option>
+								</select>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="phone">휴대폰번호</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-small">
+								<select title="도메인 선택" id="phone" class="select">
+									<option>010</option>
+									<option>011</option>
+								</select>
+							</span>
+							-
+							<span class="form-wrap width-small">
+								<input type="text" title="휴대폰 가운데 자리" maxlength="4" class="input-text" />
+							</span>
+							-
+							<span class="form-wrap width-small">
+								<input type="text" title="휴대폰 마지막 자리" maxlength="4" class="input-text" />
+							</span>
+							<a href="#" class="btn btn-form">인증번호 발송</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="auth-num">인증번호</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<span class="form-wrap width-half">
+								<input type="text" id="auth-num" class="input-text" />
+							</span>
+							<a href="#" class="btn btn-form">확인</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="main-actions">
+		<a href="#" class="btn btn-wide btn-green">회원가입</a>
+	</div>
+</section>
+
+include "footer.html"

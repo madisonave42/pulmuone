@@ -1,0 +1,22 @@
+/* form */
+.input-text,
+.select {
+  line-height: 21px;
+}
+
+.radio-input,
+.check-input {
+  position: static;
+}
+
+.radio-input + .radio-label,
+.check-input + .check-label {
+  padding-left: 10px;
+  line-height: 1;
+}
+.radio-input + .radio-label:after,
+.check-input + .check-label:after {
+  display: none;
+}
+
+/*# sourceMappingURL=ie8.css.map */

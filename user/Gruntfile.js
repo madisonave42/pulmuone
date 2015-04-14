@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 				dest: '_output/',
 				options:{
 					process: function(content, srcpath){
-						return content.replace('/*# sourceMappingURL=new_file.css.map */', '');
+						return content.replace('/*# sourceMappingURL=style.css.map */', '');
 					},
 				},
     	},

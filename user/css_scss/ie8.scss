@@ -1,20 +1,15 @@
-/* component */
-.input-search {
-	width:275px;
-}
-
 /* form */
 .input-text,
 .select {
 	line-height:21px;
 }
 
-.radio,
-.checkbox {
+.radio-input,
+.check-input {
 	position:static;
 }
-.radio + .label,
-.checkbox + .label {
+.radio-input + .radio-label,
+.check-input + .check-label {
 	padding-left:10px;
 	line-height:1;
 	&:after {

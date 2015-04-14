@@ -112,17 +112,15 @@
 </header>
 
 
-<section class="main">
+<section id="main" class="main">
 	<div class="main-header apply-header">
 		<div class="wrapper">
-			<h2 class="main-header-title">회원정보 변경</h2>
-			<p class="main-header-copy">회원님의 정보가 변경된 경우, 변경된 내용을 반영해 주세요.</p>
+			<h2 class="main-header-title">마이페이지</h2>
+			<p class="main-header-copy">지원현황 및 개인정보를 확인하고 수정하실 수 있습니다.</p>
 			<div class="breadcrumb">
 				<a href="" class="breadcrumb-link">Home</a>
 				>
-				<a href="" class="breadcrumb-link">마이페이지</a>
-				>
-				회원정보 관리
+				마이페이지
 			</div>
 		</div>
 
@@ -132,27 +130,136 @@
 			</svg>
 		</div>
 	</div>
+
 	<div class="main-content wrapper">
 
-
-
-		<!-- [D] 현재페이지에 클래스 current추가 -->
-		<div class="pagination">
-			<a href="#" class="page-item page-first">처음페이지</a>
-			<a href="#" class="page-item page-prev">이전페이지</a>
-			<a href="#" class="page-item current">1</a>
-			<a href="#" class="page-item">2</a>
-			<a href="#" class="page-item">3</a>
-			<a href="#" class="page-item">4</a>
-			<a href="#" class="page-item">5</a>
-			<a href="#" class="page-item page-next">다음페이지</a>
-			<a href="#" class="page-item page-last">마지막페이지</a>
+		<div class="row">
+			<h3 class="row-header">나의 지원현황</h3>
+			<table class="table">
+				<colgroup>
+					<col style="width:auto;">
+					<col style="width:170px;">
+					<col style="width:170px;">
+					<col style="width:120px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">공고</th>
+						<th scope="col" class="table-th">작성일</th>
+						<th scope="col" class="table-th">상태</th>
+						<th scope="col" class="table-th">지원서/결과</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td table-title">
+							<p class="table-text">식문화연구원 | (주)푸드머스 에이치엔에스연구소</p>
+							<p class="table-text"><a href="#"><strong>(주)풀무원 온라인 소통 및 홍보 경력사원 채용</strong></a></p>
+							<p class="table-text">2015.03.09 ~ 2015.03.27</p>
+						</td>
+						<td class="table-td">
+							2015.03.27
+						</td>
+						<td class="table-td">
+							임시저장
+						</td>
+						<td class="table-td">
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-gray">지원서 보기</a>
+							</div>
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-green">지원서 수정</a>
+							</div>
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-gray">지원서 삭제</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-td table-title">
+							<p class="table-text">식문화연구원 | (주)푸드머스 에이치엔에스연구소</p>
+							<p class="table-text"><a href="#"><strong>(주)풀무원 온라인 소통 및 홍보 경력사원 채용</strong></a></p>
+							<p class="table-text">2015.03.09 ~ 2015.03.27</p>
+						</td>
+						<td class="table-td">
+							2015.03.27
+						</td>
+						<td class="table-td">
+							임시저장
+						</td>
+						<td class="table-td">
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-gray">지원서 보기</a>
+							</div>
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-green">결과확인</a>
+							</div>
+							<div class="table-text">
+								<a href="#" class="btn btn-small btn-gray">면접안내</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
+
+		<div class="row">
+			<h3 class="row-header">나의 인재등록 현황</h3>
+			<table class="table-hr">
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">작성일</th>
+						<td class="table-hr-td">2015.03.10</td>
+						<th scope="row" class="table-hr-th">상태</th>
+						<td class="table-hr-td">제출</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<a href="#" class="btn btn-green">지원서 보기</a>
+				<a href="#" class="btn">지원서 수정</a>
+				<a href="#" class="btn">지원서 삭제</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">나의 정보관리</h3>
+			<table class="table-hr">
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">이름</th>
+						<td class="table-hr-td">홍길동</td>
+						<th scope="row" class="table-hr-th">아이디</th>
+						<td class="table-hr-td">gdhong15</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">이메일</th>
+						<td class="table-hr-td">gdhong15@pulmuone.co.kr</td>
+						<th scope="row" class="table-hr-th">휴대폰번호</th>
+						<td class="table-hr-td">010-1234-1234</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<a href="#" class="btn">회원정보 변경</a>
+				<a href="#" class="btn">회원탈퇴</a>
+			</div>
+		</div>
+
 	</div>
 
-	<div class="main-actions">
-		<a href="#" class="btn btn-wide btn-green">등록</a>
-	</div>
 </section>
 
 

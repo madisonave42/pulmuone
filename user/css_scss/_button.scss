@@ -1,9 +1,9 @@
 .btn {
 	display:inline-block;
-	width:85px;
+	width:95px;
 	height:37px;
 	line-height:37px;
-	color:#fff;
+	color:$color-white;
 	text-align:center;
 	font-size:$font-size-base;
 	font-weight:bold;
@@ -13,23 +13,34 @@
 	vertical-align:middle;
 	cursor:pointer;
 	transition:all .2s;
-	&.btn-grey {
-		background-color:$color-gray;
-	}
-	&.btn-wide {
+	&-wide {
 		width:145px;
-		font-size:14px;
+		font-size:15px;
 	}
-	&.btn-green {
+	&-green {
 		color:$color-base;
 		background-color:$color-brand;
 	}
-	&.btn-small {
-		width:55px;
+	&-gray {
+		background-color:$color-dark-gray;
+	}
+	&-small {
+		width:85px;
 		height:27px;
 		line-height:27px;
 		font-size:12px;
-		background-color:$color-gray;
+	}
+	&-form {
+		width:115px;
+		height:37px;
+		line-height:37px;
+		background-color:$color-dark-gray;
+	}
+	&-delete {
+		width:26px;
+		height:26px;
+		text-indent:-9999px;
+		background:$color-dark-gray url(../images/icon_close02.png) no-repeat 50% 50%;
 	}
 	&:hover {
 		box-shadow:0 1px 2px 1px rgba(0,0,0,.5);

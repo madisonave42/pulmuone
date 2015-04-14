@@ -1,5 +1,15 @@
 // Class
+function initGnb(gnb) {
+	var gnbActions = {},
+		mainLinks = gnb.find('')
 
+	function showSub() {
+
+
+	};
+
+
+}
 
 // main
 // Check UA
@@ -20,3 +30,33 @@ if( navigator.userAgent.indexOf('Safari') > 0 ){
 } else if( navigator.userAgent.indexOf('MSIE 8.0') > 0 ){
 	$('html').addClass('ie8');
 }
+
+$(function(){
+
+	// GNB
+
+	$('.js-gnb').on({
+
+		mouseenter : function(){
+
+			$('.header-gnb-list').data( 'current', $('.js-gnb').index( $('.js-gnb.on') ) );
+
+			$('.header-gnb-item').removeClass('side');
+			$('.header-gnb-link').removeClass('on').removeClass('on-left').removeClass('on-right');
+			$(this).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
+			$(this).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
+
+		},
+
+		mouseleave : function(){
+
+			$('.header-gnb-item').removeClass('side');
+			$('.header-gnb-link').removeClass('on').removeClass('on-left').removeClass('on-right');
+			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
+			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
+
+		}
+
+	});
+
+});

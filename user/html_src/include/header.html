@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<title>풀무원 관리자</title>
+	<title>풀무원 채용</title>
 
 	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
@@ -23,71 +23,90 @@
 	<script src="../js/function.min.js"></script>
 </head>
 <body>
+<div class="skip-nav">
+	<a href="#main" class="skip-nav-link">본문 바로가기</a>
+</div>
+
 
 <header class="header">
 	<div class="wrapper">
 		<h1 class="logo">
-			<a href="#" class="logo-img"><img src="../images/logo.png" alt="Pulumone" /></a>
+			<a href="#" class="js-gnb-out"><img src="../images/logo.png" alt="Pulumone" class="logo-img" /></a>
 		</h1>
-
-		<a href="" class="header-login">로그인</a>
 
 		<ul class="gnb clear">
 			<li class="gnb-item">
 				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
-				<a href="#" class="gnb-main-link on">채용관리</a>
+				<a href="#" class="gnb-main-link on"><span class="gnb-main-text">인재모시기</span></a>
 
 				<div class="gnb-sub-wrap">
+					<p class="gnb-sub-copy">풀무원과 함께 할<br />바르고 창의적인<br />인재를 모십니다.</p>
 					<ul class="gnb-sub clear">
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link on">공고관리</a>
+							<a href="#" class="gnb-sub-link">채용공고</a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">모집관리</a>
+							<a href="#" class="gnb-sub-link">인재DB</a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">지원자 통계</a>
+							<a href="#" class="gnb-sub-link">채용절차</a>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="gnb-item">
-				<a href="#" class="gnb-main-link">게시판관리</a>
+				<a href="#" class="gnb-main-link"><span class="gnb-main-text">인재키우기</span></a>
 
 				<div class="gnb-sub-wrap">
+					<p class="gnb-sub-copy">풀무원은 직무중심의<br/>공정한 인사제도를<br />운영하고 있습니다.</p>
 					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">인재상</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">인사제도</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">인재육성</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link"><span class="gnb-main-text">인재도우미</span></a>
+
+				<div class="gnb-sub-wrap">
+					<p class="gnb-sub-copy">지원자들을 위한<br />생생하고 다양한 정보를<br />제공해 드립니다.</p>
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">직무소개</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">법인소개</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">합격노하우</a>
+						</li>
 						<li class="gnb-sub-item">
 							<a href="#" class="gnb-sub-link">공지사항</a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">FAQ</a>
+							<a href="#" class="gnb-sub-link">자주묻는 질문</a>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="gnb-item">
-				<a href="#" class="gnb-main-link">회원관리</a>
-			</li>
-
-			<li class="gnb-item">
-				<a href="#" class="gnb-main-link">운영관리</a>
-
-				<div class="gnb-sub-wrap">
-					<ul class="gnb-sub clear">
-						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">부문/법인/직무관리</a>
-						</li>
-						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">운영자관리</a>
-						</li>
-						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">로그분석</a>
-						</li>
-					</ul>
-				</div>
+				<a href="#" class="gnb-main-link"><span class="gnb-main-text">한눈에 보는 풀무원</span></a>
 			</li>
 		</ul>
+
+		<div class="header-util">
+			<a href="#" class="header-util-login js-gnb-out">로그인</a>
+			<a href="#" class="header-util-mypage">마이페이지</a>
+		</div>
 	</div>
 </header>
