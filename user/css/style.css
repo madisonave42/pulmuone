@@ -512,7 +512,7 @@ input, textarea {
 }
 .main .apply-header {
   background: url(../images/bg_main_header01.jpg) no-repeat 50% 0 fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 .main-content {
   padding-top: 80px;
