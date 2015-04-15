@@ -1,5 +1,7 @@
 .form-wrap {
-	display:inline-block;
+	display:block;
+	float:left;
+	margin-right:10px;
 	padding:7px;
 	width:100%;
 	border:1px solid $color-med-gray;
@@ -26,10 +28,10 @@
 
 .width {
 	&-small {
-		width:75px;
+		width:77px;
 	}
 	&-normal {
-		width:120px;
+		width:116px;
 	}
 	&-half {
 		width:50%;
@@ -39,6 +41,8 @@
 .radio {
 	&-wrap {
 		position:relative;
+		float:left;
+		margin-right:10px;
 	}
 	&-input {
 		position:absolute;
@@ -81,6 +85,8 @@
 
 .check {
 	&-wrap {
+		float:left;
+		margin-right:10px;
 		position:relative;
 	}
 	&-input {
@@ -121,4 +127,27 @@
 	}
 }
 
+.form {
+	&-div {
+		float:left;
+		width:10px;
+		height:37px;
+		line-height:37px;
+		text-align:center;
+		&-at {
+			width:20px;
+		}
+	}
+	&-inline-msg {
+		float:left;
+		height:37px;
+		line-height:37px;
+	}
+	&-block-msg {
+		margin-top:10px;
+	}
+}
 
+.no-gap {
+	margin-right:0;
+}

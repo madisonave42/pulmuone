@@ -1,0 +1,466 @@
+include "header_top.html"
+	<title>회원정보 입력 | 지원서 작성 | 풀무원채용</title>
+include "header_bottom.html"
+
+<section class="main">
+	<div class="main-header apply-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">지원서 작성</h2>
+			<p class="main-header-copy">풀무원과 함께 할 바르고 정직한 인재를 모십니다.</p>
+			<div class="breadcrumb">
+				<a href="" class="breadcrumb-link">Home</a>
+				>
+				<a href="" class="breadcrumb-link">인재모시기</a>
+				>
+				지원서 작성
+			</div>
+		</div>
+
+		<div class="main-header-decor">
+			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+				  	<path d="M0 0 C50 100 50 100 100 0 L100 100 0 100" stroke-width="0"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div class="main-content wrapper">
+
+		<ul class="step clear">
+			<li class="step-item">
+				<!-- [D] 현재 상태에 클래스 on 추가 -->
+				<div class="step-item-state on">
+					<div class="step-item-text">step <span class="step-item-num">1</span></div>
+					기본정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">2</span></div>
+					학력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">3</span></div>
+					경력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">4</span></div>
+					외국어/자격증
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">5</span></div>
+					자기소개서
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="row">
+			<h3 class="row-header">개인정보 처리방침에 대한 동의</h3>
+			<p class="row-msg"><span class="strong">*</span> 표시는 필수입력 항목입니다.</p>
+			<div class="row-actions">
+				<div class="check-wrap no-gap">
+					<input type="checkbox" id="agree" class="check-input">
+					<label for="agree" class="check-label no-gap"><strong>동의함</strong></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">지원정보</h3>
+			<table class="table-hr" summary="지원하는 공고의 기본 정보 및 지원구분 선택 표">
+				<caption class="table-caption">지원정보 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:795px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							채용공고
+						</th>
+						<td class="table-hr-td">
+							(주)풀무원 온라인 소통 및 홍보 신입/경력사원 채용
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							모집분야
+						</th>
+						<td class="table-hr-td">
+							종균개발 연구원
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							지원구분 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="type-new" class="radio-input">
+								<label for="type-new" class="radio-label">신입</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="type-exp" class="radio-input">
+								<label for="type-exp" class="radio-label">경력</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="choice">지원희망</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select id="choice" title="부문" class="select">
+									<option>부문</option>
+									<option>부문</option>
+								</select>
+							</div>
+							<div class="form-wrap width-normal">
+								<select title="법인" class="select">
+									<option>법인</option>
+									<option>법인</option>
+								</select>
+							</div>
+							<div class="form-wrap width-normal">
+								<select title="직무" class="select">
+									<option>직무</option>
+									<option>직무</option>
+								</select>
+							</div>
+							<div class="form-wrap width-normal">
+								<select title="근무지" class="select">
+									<option>근무지</option>
+									<option>근무지</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">가족사항</h3>
+			<table class="table" summary="가족 구성원 관계, 이름, 나이, 학력, 직업, 동거여부 입력">
+				<caption class="table-caption">가족사항 입력 표</caption>
+				<colgroup>
+					<col style="width:150px;">
+					<col style="width:auto;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:40px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">관계</th>
+						<th scope="col" class="table-th">이름</th>
+						<th scope="col" class="table-th">나이</th>
+						<th scope="col" class="table-th">학력</th>
+						<th scope="col" class="table-th">직업</th>
+						<th scope="col" class="table-th">동거여부</th>
+						<th scope="col" class="table-th">삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="관계 선택" class="select">
+									<option>관계</option>
+									<option>관계</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="이름 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="나이 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="학력 선택" class="select">
+									<option>학력</option>
+									<option>학력</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="직업 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="동거여부 선택" class="select">
+									<option>동거</option>
+									<option>동거</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<button type="button" class="btn btn-delete">현재 행 삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">병역정보</h3>
+			<table class="table-hr" summary="군필여부, 복무기간, 병역내용 등 병역정보 입력">
+				<caption class="table-caption">병역정보 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:795px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="mil">군필여부</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select id="mil" class="select">
+									<option>군필</option>
+									<option>미필</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="mil-term">복무기간</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-small">
+								<select id="mil-term" title="입대 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="입대 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap no-gap width-small">
+								<select title="입대 일" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-div">-</div>
+							<div class="form-wrap width-small">
+								<select title="제대 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="제대 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap no-gap width-small">
+								<select title="제대 일" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="mil-type">병역내용</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select id="mil-type" title="병역구분" class="select">
+									<option>구분</option>
+									<option>구분</option>
+								</select>
+							</div>
+							<div class="form-wrap width-normal">
+								<select title="군별" class="select">
+									<option>군별</option>
+									<option>군별</option>
+								</select>
+							</div>
+							<div class="form-wrap width-normal">
+								<select title="계급" class="select">
+									<option>계급</option>
+									<option>계급</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="no-mil">면제사유</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="no-mil" class="input-text width-half">
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">보훈대상여부</h3>
+			<table class="table-hr" summary="보훈대상여부, 대상과의 관계등 입력">
+				<caption class="table-caption">보훈대상여부 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							보훈대상여부 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="pat-y" class="radio-input">
+								<label for="pat-y" class="radio-label">대상</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="pat-n" class="radio-input">
+								<label for="pat-n" class="radio-label">비대상</label>
+							</div>
+						</td>
+
+						<th scope="row" class="table-hr-th">
+							<label for="pat-num">보훈번호</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="pat-num" class="input-text">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="pat-rel">보훈대상과 관계</label>
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select id="pat-rel" class="select">
+									<option>관계</option>
+									<option>관계</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">장애여부</h3>
+			<table class="table" summary="장애 여부, 유형, 등급, 장애인정일 등 입력">
+				<caption class="table-caption">장애여부 입력 표</caption>
+				<colgroup>
+					<col style="width:250px;">
+					<col style="width:auto;">
+					<col style="width:240px;">
+					<col style="width:265px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">대상구분 <span class="strong">*</span></th>
+						<th scope="col" class="table-th">장애유형</th>
+						<th scope="col" class="table-th">장애등급</th>
+						<th scope="col" class="table-th">장애인정일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="대상구분 선택" class="select">
+									<option>대상</option>
+									<option>대상</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="장애유형 선택" class="select">
+									<option>유형</option>
+									<option>유형</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="장애등급 선택" class="select">
+									<option>등급</option>
+									<option>등급</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap width-small">
+								<select title="인정일 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="인정일 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap no-gap width-small">
+								<select title="인정일 날짜" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main-actions">
+		<button type="button" class="btn btn-wide">임시저장</button>
+		<a href="#" class="btn btn-wide btn-green">다음</a>
+	</div>
+</section>
+
+include "footer.html"

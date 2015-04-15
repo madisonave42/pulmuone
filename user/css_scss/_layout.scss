@@ -172,8 +172,8 @@
 	}
 
 	.apply-header {
-		background:url(../images/bg_main_header01.jpg) no-repeat 50% 0 fixed;
-		background-size:100%;
+		background:url(../images/bg_main_header01.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	&-content {
@@ -246,7 +246,17 @@
 	&-family {
 		float:right;
 		&-select {
+			float:left;
+			margin-right:5px;
 			width:143px;
+			height:26px;
+			color:$color-gray;
+			border:1px solid $color-dark-gray;
+			background-color:transparent;
+		}
+		&-btn {
+			float:left;
+			width:45px;
 			height:26px;
 			color:$color-gray;
 			border:1px solid $color-dark-gray;

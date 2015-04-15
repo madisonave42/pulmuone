@@ -175,7 +175,7 @@ input, textarea {
   font-size: 12px;
 }
 .btn-form {
-  width: 115px;
+  width: 116px;
   height: 37px;
   line-height: 37px;
   background-color: #666;
@@ -191,7 +191,9 @@ input, textarea {
 }
 
 .form-wrap {
-  display: inline-block;
+  display: block;
+  float: left;
+  margin-right: 10px;
   padding: 7px;
   width: 100%;
   border: 1px solid #cbcbcb;
@@ -217,10 +219,10 @@ input, textarea {
 }
 
 .width-small {
-  width: 75px;
+  width: 77px;
 }
 .width-normal {
-  width: 120px;
+  width: 116px;
 }
 .width-half {
   width: 50%;
@@ -228,6 +230,8 @@ input, textarea {
 
 .radio-wrap {
   position: relative;
+  float: left;
+  margin-right: 10px;
 }
 .radio-input {
   position: absolute;
@@ -268,6 +272,8 @@ input, textarea {
 }
 
 .check-wrap {
+  float: left;
+  margin-right: 10px;
   position: relative;
 }
 .check-input {
@@ -307,6 +313,29 @@ input, textarea {
   background-color: #fff;
 }
 
+.form-div {
+  float: left;
+  width: 10px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+.form-div-at {
+  width: 20px;
+}
+.form-inline-msg {
+  float: left;
+  height: 37px;
+  line-height: 37px;
+}
+.form-block-msg {
+  margin-top: 10px;
+}
+
+.no-gap {
+  margin-right: 0;
+}
+
 .table {
   border-collapse: collapse;
   width: 100%;
@@ -319,7 +348,7 @@ input, textarea {
   background-color: #f9f9f9;
 }
 .table-td {
-  padding: 10px 0;
+  padding: 10px 5px;
   text-align: center;
   border-top: 1px solid #d8d8d8;
 }
@@ -348,6 +377,11 @@ input, textarea {
 .table-hr-td {
   padding: 10px 20px;
   border-top: 1px solid #d8d8d8;
+}
+
+.table-caption {
+  font-size: 0;
+  line-height: 0;
 }
 
 .wrapper {
@@ -511,8 +545,8 @@ input, textarea {
   color: #fff;
 }
 .main .apply-header {
-  background: url(../images/bg_main_header01.jpg) no-repeat 50% 0 fixed;
-  background-size: 100%;
+  background: url(../images/bg_main_header01.jpg) no-repeat 50% 0;
+  background-size: cover;
 }
 .main-content {
   padding-top: 80px;
@@ -583,7 +617,17 @@ input, textarea {
   float: right;
 }
 .footer-family-select {
+  float: left;
+  margin-right: 5px;
   width: 143px;
+  height: 26px;
+  color: #acacac;
+  border: 1px solid #666;
+  background-color: transparent;
+}
+.footer-family-btn {
+  float: left;
+  width: 45px;
   height: 26px;
   color: #acacac;
   border: 1px solid #666;
@@ -653,6 +697,53 @@ input, textarea {
 .strong {
   color: #008038;
   font-weight: bold;
+}
+
+.step {
+  margin-bottom: 100px;
+}
+
+.step-item {
+  float: left;
+  padding-left: 31px;
+  background: url(../images/bg_step_arrow.png) no-repeat 13px 50%;
+}
+.step-item:first-child {
+  padding-left: 0;
+  background: none;
+}
+.step-item-state {
+  width: 171px;
+  height: 171px;
+  background: url(../images/bg_step.png) no-repeat;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.step-item-state.on {
+  background-position: -171px 0;
+}
+.step-item-state.on .step-item-current {
+  display: block;
+}
+.step-item-text {
+  margin-bottom: 15px;
+  padding-top: 38px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: italic;
+}
+.step-item-num {
+  font-size: 35px;
+}
+.step-item-current {
+  display: none;
+  margin: 15px auto 0;
+  width: 17px;
+  height: 1px;
+  background-color: #222;
+  text-indent: -9999px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
 		background-color:$color-white-gray;
 	}
 	&-td {
-		padding:10px 0;
+		padding:10px 5px;
 		text-align:center;
 		border-top:1px solid $color-light-gray;
 	}
@@ -40,4 +40,9 @@
 		padding:10px 20px;
 		border-top:1px solid $color-light-gray;
 	}
+}
+
+.table-caption {
+	font-size:0;
+	line-height:0;
 }
