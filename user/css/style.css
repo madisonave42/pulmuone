@@ -113,7 +113,7 @@ input, textarea {
 .pagination .page-last {
   border: 1px solid #d8d8d8;
   text-indent: -9999px;
-  background: url(../images/icons_pagination.png) no-repeat;
+  background: url(../images/sprite_pagination.png) no-repeat;
 }
 .pagination .page-prev {
   background-position: -30px 0;
@@ -141,20 +141,65 @@ input, textarea {
   cursor: pointer;
 }
 
-.btn {
+.toggle-box-title {
+  display: block;
+  height: 57px;
+  line-height: 57px;
+  padding-left: 15px;
+  font-weight: bold;
+  border-top: 2px solid #2e2e2e;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f9f9f9 url(../images/sprite_arrow.png) no-repeat 947px 27px;
+}
+.toggle-box-content {
+  display: none;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.terms, .terms-scroll {
+  padding: 25px 15px;
+}
+.terms-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 160px;
+}
+
+.list-item {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 10px;
+  line-height: 1.2;
+}
+.list-item:first-child {
+  margin-top: 0;
+}
+.list-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #a6ce39;
+}
+
+.btn, .btn-wide, .btn-green, .btn-gray, .btn-small, .btn-form, .btn-delete, .btn-login-action {
   display: inline-block;
+  margin: 0 3px;
   width: 95px;
   height: 37px;
   line-height: 37px;
   color: #fff;
-  text-align: center;
-  font-size: 13px;
-  font-weight: bold;
+  background: #2e2e2e;
   border: 0;
   border-radius: 5px;
-  background-color: #2e2e2e;
-  vertical-align: middle;
+  text-align: center;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: middle;
   transition: all .2s;
 }
 .btn-wide {
@@ -178,6 +223,10 @@ input, textarea {
   width: 116px;
   height: 37px;
   line-height: 37px;
+  display: block;
+  margin: 0;
+  float: left;
+  margin-right: 10px;
   background-color: #666;
 }
 .btn-delete {
@@ -186,11 +235,20 @@ input, textarea {
   text-indent: -9999px;
   background: #666 url(../images/icon_close02.png) no-repeat 50% 50%;
 }
-.btn:hover {
+.btn-login-action {
+  width: 75px;
+  height: 19px;
+  line-height: 19px;
+  float: left;
+  margin-right: 5px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.btn:hover, .btn-wide:hover, .btn-green:hover, .btn-gray:hover, .btn-small:hover, .btn-form:hover, .btn-delete:hover, .btn-login-action:hover {
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.form-wrap {
+.form-wrap, .form-wrap-nogap {
   display: block;
   float: left;
   margin-right: 10px;
@@ -201,14 +259,39 @@ input, textarea {
   vertical-align: middle;
   box-sizing: border-box;
 }
+.form-wrap-nogap {
+  margin-right: 0;
+}
 
-.input-text,
+.input-text, .input-search, .input-search-small, .input-search-normal, .input-search-half,
 .select {
   padding: 0;
   width: 100%;
   height: 21px;
   border: 0;
   color: #666;
+}
+
+.input-search {
+  width: 90%;
+}
+.input-search-small {
+  width: 70%;
+}
+.input-search-normal {
+  width: 80%;
+}
+.input-search-half {
+  width: 90%;
+}
+.input-search-btn {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_search.png) no-repeat 50% 50%;
+  border: 0;
 }
 
 .textarea {
@@ -325,8 +408,12 @@ input, textarea {
 }
 .form-inline-msg {
   float: left;
-  height: 37px;
-  line-height: 37px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.form-inline-wrap {
+  float: left;
+  margin-top: 9px;
 }
 .form-block-msg {
   margin-top: 10px;
@@ -382,6 +469,10 @@ input, textarea {
 .table-caption {
   font-size: 0;
   line-height: 0;
+}
+
+.no-result {
+  padding: 50px 0;
 }
 
 .wrapper {
@@ -507,9 +598,10 @@ input, textarea {
 
 .main-header {
   position: relative;
-  padding-top: 63px;
+  padding-top: 56px;
   min-width: 980px;
-  height: 153px;
+  height: 160px;
+  background-color: #666;
 }
 .main-header-title {
   float: left;
@@ -528,8 +620,8 @@ input, textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  min-width: 980px;
   height: 45px;
+  min-width: 980px;
 }
 .main-header-svg {
   fill: #fff;
@@ -544,8 +636,14 @@ input, textarea {
 .main-header .breadcrumb-link {
   color: #fff;
 }
-.main .apply-header {
+.main .account-header {
   background: url(../images/bg_main_header01.jpg) no-repeat 50% 0;
+  background-size: cover;
+}
+.main .apply-header {
+  background-size: cover;
+}
+.main .mypage-header {
   background-size: cover;
 }
 .main-content {
@@ -571,9 +669,12 @@ input, textarea {
   font-size: 11px;
 }
 
-.row {
+.row, .row-no-bottom {
   position: relative;
   padding-bottom: 80px;
+}
+.row-no-bottom {
+  padding-bottom: 0;
 }
 .row-msg {
   position: absolute;
@@ -688,15 +789,138 @@ input, textarea {
   text-indent: -9999px;
 }
 
-.em {
-  font-style: normal;
+.account, .account-low {
+  display: block;
+  margin: 0 auto;
+  width: 560px;
+  height: 250px;
+  margin-top: 70px;
+  padding: 0 100px;
+  border-top: 2px solid #2e2e2e;
+  border-bottom: 1px solid #d8d8d8;
+}
+.account-low {
+  height: 154px;
+  margin-top: 0;
+}
+.account-box {
+  margin-top: 10px;
+}
+.account-box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.account-box:first-child {
+  margin-top: 0;
+}
+.account-label, .account-label-pw {
+  float: left;
+  margin-top: 13px;
+  width: 66px;
   font-weight: bold;
-  color: #b07e44;
+}
+.account-label-pw {
+  width: 106px;
+}
+.account-width01 {
+  width: 116px;
+}
+.account-width02 {
+  width: 232px;
+}
+.account-width03 {
+  width: 368px;
+}
+.account-width04 {
+  width: 494px;
+  margin-right: 0;
+}
+.account-width-pw {
+  width: 454px;
+  margin-right: 0;
+}
+.account-msg {
+  margin-top: 115px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.account-form-msg {
+  clear: both;
+  margin-left: 66px;
+  padding-top: 9px;
+}
+.account-pw-msg {
+  clear: both;
+  margin-left: 106px;
+  padding-top: 9px;
+}
+.account-actions {
+  margin-bottom: 150px;
+  padding-top: 30px;
+  text-align: center;
 }
 
-.strong {
-  color: #008038;
-  font-weight: bold;
+.account-login {
+  position: relative;
+  margin-top: 83px;
+}
+.account-login-btn {
+  width: 116px;
+  height: 82px;
+  line-height: 82px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+}
+
+.login-action {
+  width: 760px;
+  margin: 35px auto 150px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.login-action:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.login-action-title {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.login-find, .login-signup {
+  width: 50%;
+  height: 77px;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 160px;
+  background: url(../images/sprite_login.png) no-repeat 68px 9px;
+}
+
+.login-signup {
+  border-left: 1px solid #f4f4f4;
+  background-position: 66px -135px;
+}
+
+.account-find {
+  margin-top: 83px;
+}
+
+.account-find-pw {
+  margin-top: 25px;
+}
+
+.account-re-pw {
+  margin-top: 75px;
+}
+
+.account-close {
+  margin-top: 59px;
 }
 
 .step {
@@ -744,6 +968,34 @@ input, textarea {
   height: 1px;
   background-color: #222;
   text-indent: -9999px;
+}
+
+.account-close-info {
+  display: block;
+  margin: 0 auto;
+  width: 760px;
+  margin-bottom: 30px;
+}
+
+.em {
+  font-style: normal;
+  font-weight: bold;
+  color: #b07e44;
+}
+
+.strong {
+  color: #008038;
+  font-weight: bold;
+}
+
+.black {
+  color: #222;
+}
+
+.check-length {
+  clear: both;
+  padding-top: 10px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

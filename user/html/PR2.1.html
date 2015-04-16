@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>나의 지원현황 | 마이페이지 | 풀무원채용</title>
+	<title>로그인 | 풀무원채용</title>
 	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 
@@ -110,46 +110,63 @@
 
 
 <section class="main">
-	<div class="main-header apply-header">
-		<div class="wrapper">
-			<h2 class="main-header-title">회원정보 변경</h2>
-			<p class="main-header-copy">회원님의 정보가 변경된 경우, 변경된 내용을 반영해 주세요.</p>
+	<div class="main-header account-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">로그인</h2>
+			<p class="main-header-copy">풀무원 채용 홈페이지에 오신 것을 환영합니다!</p>
 			<div class="breadcrumb">
 				<a href="" class="breadcrumb-link">Home</a>
 				>
-				<a href="" class="breadcrumb-link">마이페이지</a>
-				>
-				회원정보 관리
+				로그인
 			</div>
 		</div>
 
 		<div class="main-header-decor">
 			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
-				  	<path d="M0 0 C50 130 50 130 100 0  L100 100 0 100" stroke-width="0"></path>
+				  	<path d="M0 0 C50 130 50 130 100 0 L100 100 0 100" stroke-width="0"></path>
 			</svg>
 		</div>
 	</div>
+
 	<div class="main-content wrapper">
+		<div class="account">
 
+			<div class="account-login">
+				<div class="account-box">
+					<label for="id" class="account-label">아이디</label>
+					<div class="form-wrap account-width03">
+						<input type="text" id="id" class="input-text">
+					</div>
+				</div>
+				<div class="account-box">
+					<label for="pw" class="account-label">비밀번호</label>
+					<div class="form-wrap account-width03">
+						<input type="password" id="pw" class="input-text">
+					</div>
+				</div>
 
+				<input type="submit" value="로그인" class="btn-green account-login-btn" />
+			</div>
 
-		<!-- [D] 현재페이지에 클래스 current추가 -->
-		<div class="pagination">
-			<a href="#" class="page-item page-first">처음페이지</a>
-			<a href="#" class="page-item page-prev">이전페이지</a>
-			<a href="#" class="page-item current">1</a>
-			<a href="#" class="page-item">2</a>
-			<a href="#" class="page-item">3</a>
-			<a href="#" class="page-item">4</a>
-			<a href="#" class="page-item">5</a>
-			<a href="#" class="page-item page-next">다음페이지</a>
-			<a href="#" class="page-item page-last">마지막페이지</a>
+		</div>
+
+		<div class="login-action">
+			<div class="login-find">
+				<h3 class="login-action-title">아이디와 비밀번호를 잊으셨나요?</h3>
+				<div class="login-action-btns">
+					<a href="#" class="btn-login-action">아이디 찾기</a>
+					<a href="#" class="btn-login-action">비밀번호 찾기</a>
+				</div>
+			</div>
+			<div class="login-signup">
+				<h3 class="login-action-title">아이디가 아직 없으신가요?</h3>
+				<div class="login-action-btns">
+					<a href="#" class="btn-login-action">회원가입</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="main-actions">
-		<a href="#" class="btn btn-wide btn-green">등록</a>
-	</div>
 </section>
 
 

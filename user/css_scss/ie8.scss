@@ -8,10 +8,12 @@
 .check-input {
 	position:static;
 }
+
 .radio-input + .radio-label,
 .check-input + .check-label {
 	padding-left:10px;
 	line-height:1;
+
 	&:after {
 		display:none;
 	}

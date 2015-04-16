@@ -1,21 +1,17 @@
 @import "variables";
-
+@import "mixins";
 @import "reset";
 
 @import "component";
-
 @import "button";
-
 @import "form";
-
 @import "table";
 
 @import "layout";
-
 @import "popup";
 
-@import "specific";
-
 @import "account";
-
 @import "apply";
+@import "mypage";
+
+@import "specific";

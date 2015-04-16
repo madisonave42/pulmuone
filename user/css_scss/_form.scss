@@ -3,38 +3,73 @@
 	float:left;
 	margin-right:10px;
 	padding:7px;
-	width:100%;
+	@include size(100%, a);
 	border:1px solid $color-med-gray;
 	border-radius:5px;
 	vertical-align:middle;
 	box-sizing:border-box;
+
+	&-nogap {
+		@extend .form-wrap;
+		margin-right:0;
+	}
 }
 
 .input-text,
 .select {
 	padding:0;
-	width:100%;
-	height:21px;
+	@include size(100%, 21);
 	border:0;
 	color:$color-dark-gray;
+}
+
+.input-search {
+	@extend .input-text;
+	@include size(90%, a);
+
+	&-small {
+		@extend .input-text;
+		@include size(70%, a);
+	}
+
+	&-normal {
+		@extend .input-text;
+		@include size(80%, a);
+	}
+
+	&-half {
+		@extend .input-text;
+		@include size(90%, a);
+	}
+
+	&-btn {
+		float:right;
+		@include size(16);
+		margin-top:3px;
+		text-indent:-9999px;
+		background:transparent url(../images/icon_search.png) no-repeat 50% 50%;
+		border:0;
+	}
 }
 
 .textarea {
 	padding:0;
 	border:0;
-	height:176px;
+	@include size(a, 176);
 	color:$color-dark-gray;
 }
 
 .width {
 	&-small {
-		width:77px;
+		@include size(77, a);
 	}
+
 	&-normal {
-		width:116px;
+		@include size(116, a);
 	}
+
 	&-half {
-		width:50%;
+		@include size(50%, a);
 	}
 }
 
@@ -44,10 +79,12 @@
 		float:left;
 		margin-right:10px;
 	}
+
 	&-input {
 		position:absolute;
 		top:4px;
 		left:3px;
+
 		&:checked + .radio-label:before {
 			content:"";
 			position:absolute;
@@ -55,12 +92,12 @@
 			z-index:1;
 			top:6px;
 			left:6px;
-			width:8px;
-			height:8px;
+			@include size(8);
 			border-radius:100%;
 			background-color:$color-dark;
 		}
 	}
+
 	&-label {
 		display:inline-block;
 		margin-right:25px;
@@ -68,14 +105,14 @@
 		line-height:20px;
 		color:$color-dark-gray;
 		vertical-align:middle;
+
 		&:after {
 			content:"";
 			position:absolute;
 			top:0;
 			left:0;
 			display:block;
-			width:18px;
-			height:18px;
+			@include size(18);
 			border:1px solid $color-med-gray;
 			border-radius:100%;
 			background-color:#fff;
@@ -89,10 +126,12 @@
 		margin-right:10px;
 		position:relative;
 	}
+
 	&-input {
 		position:absolute;
 		top:4px;
 		left:3px;
+
 		&:checked + .check-label:before {
 			content:"";
 			position:absolute;
@@ -100,8 +139,7 @@
 			z-index:1;
 			top:6px;
 			left:5px;
-			width:10px;
-			height:8px;
+			@include size(10, 8);
 			background:url(../images/icon_checked.png) no-repeat 50% 50%;
 		}
 	}
@@ -112,14 +150,14 @@
 		line-height:20px;
 		color:$color-dark-gray;
 		vertical-align:middle;
+
 		&:after {
 			content:"";
 			position:absolute;
 			top:0;
 			left:0;
 			display:block;
-			width:18px;
-			height:18px;
+			@include size(18);
 			border:1px solid $color-med-gray;
 			border-radius:5px;
 			background-color:#fff;
@@ -130,19 +168,25 @@
 .form {
 	&-div {
 		float:left;
-		width:10px;
-		height:37px;
-		line-height:37px;
+		@include size-mid(10, 37);
 		text-align:center;
+
 		&-at {
-			width:20px;
+			@include size(20, a);
 		}
 	}
+
 	&-inline-msg {
 		float:left;
-		height:37px;
-		line-height:37px;
+		margin-top:10px;
+		margin-right:10px;
 	}
+
+	&-inline-wrap {
+		float:left;
+		margin-top:9px;
+	}
+
 	&-block-msg {
 		margin-top:10px;
 	}

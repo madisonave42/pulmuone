@@ -1,6 +1,6 @@
 .table {
 	border-collapse:collapse;
-	width:100%;
+	@include size(100%, a);
 	font-size:$font-size-base;
 	border-top:2px solid $color-base;
 	border-bottom:1px solid $color-light-gray;
@@ -9,15 +9,18 @@
 		padding:20px 0;
 		background-color:$color-white-gray;
 	}
+
 	&-td {
 		padding:10px 5px;
 		text-align:center;
 		border-top:1px solid $color-light-gray;
 	}
+
 	&-title {
 		padding-left:10px;
 		text-align:left;
 	}
+
 	&-text {
 		margin:5px 0;
 		line-height:1.5;
@@ -26,16 +29,18 @@
 
 .table-hr {
 	border-collapse:collapse;
-	width:100%;
+	@include size(100%, a);
 	font-size:$font-size-base;
 	border-top:2px solid $color-base;
 	border-bottom:1px solid $color-light-gray;
+
 	&-th {
 		padding:20px 15px;
 		text-align:left;
 		background-color:$color-white-gray;
 		border-top:1px solid $color-light-gray;
 	}
+
 	&-td {
 		padding:10px 20px;
 		border-top:1px solid $color-light-gray;
@@ -45,4 +50,8 @@
 .table-caption {
 	font-size:0;
 	line-height:0;
+}
+
+.no-result {
+	padding:50px 0;
 }

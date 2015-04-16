@@ -1,0 +1,141 @@
+.account {
+	@include center();
+	@include size(560, 250);
+	margin-top:70px;
+	padding:0 100px;
+	border-top:2px solid $color-dark;
+	border-bottom:1px solid $color-light-gray;
+
+	&-low {
+		@extend .account;
+		@include size(a, 154);
+		margin-top:0;
+	}
+
+	&-box {
+		@include clear();
+		margin-top:10px;
+		&:first-child {
+			margin-top:0;
+		}
+	}
+
+	&-label {
+		float:left;
+		margin-top:13px;
+		@include size(66, a);
+		font-weight:bold;
+
+		&-pw {
+			@extend .account-label;
+			@include size(106, a);
+		}
+	}
+
+	&-width01 {
+		@include size(116, a);
+	}
+
+	&-width02 {
+		@include size(232, a);
+	}
+
+	&-width03 {
+		@include size(368, a);
+	}
+
+	&-width04 {
+		@include size(494, a);
+		margin-right:0;
+	}
+
+	&-width-pw {
+		@include size(454, a);
+		margin-right:0;
+	}
+
+	&-msg {
+		margin-top:115px;
+		text-align:center;
+		font-size:18px;
+		font-weight:bold;
+	}
+
+	&-form-msg {
+		clear:both;
+		margin-left:66px;
+		padding-top:9px;
+	}
+
+	&-pw-msg {
+		clear:both;
+		margin-left:106px;
+		padding-top:9px;
+	}
+
+	&-actions {
+		margin-bottom:150px;
+		padding-top:30px;
+		text-align:center;
+	}
+}
+
+// login
+.account-login {
+	position:relative;
+	margin-top:83px;
+
+	&-btn {
+		@include size-mid(116, 82);
+		position:absolute;
+		top:0;
+		right:0;
+		font-size:16px;
+	}
+}
+
+.login-action {
+	@include size(760, a);
+	@include clear();
+	margin:35px auto 150px;
+	padding-bottom:38px;
+	border-bottom:1px solid $color-light-gray;
+
+	&-title {
+		font-size:12px;
+		margin-bottom:14px;
+	}
+}
+
+.login-find {
+	@include size(50%, 77);
+	float:left;
+	box-sizing:border-box;
+	padding-top:16px;
+	padding-left:160px;
+	background:url(../images/sprite_login.png) no-repeat 68px 9px;
+}
+
+.login-signup {
+	@extend .login-find;
+	border-left:1px solid lighten($color-light-gray, 11%);
+	background-position:66px -135px;
+}
+
+// find
+.account-find {
+	margin-top:83px;
+}
+
+.account-find-pw {
+	margin-top:25px;
+}
+
+.account-re-pw {
+	margin-top:75px;
+}
+
+.account-close {
+	margin-top:59px;
+}
+

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>나의 지원현황 | 마이페이지 | 풀무원채용</title>
+	<title>비밀번호 찾기 | 풀무원채용</title>
 	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 
@@ -110,46 +110,51 @@
 
 
 <section class="main">
-	<div class="main-header apply-header">
-		<div class="wrapper">
-			<h2 class="main-header-title">회원정보 변경</h2>
-			<p class="main-header-copy">회원님의 정보가 변경된 경우, 변경된 내용을 반영해 주세요.</p>
+	<div class="main-header account-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">비밀번호 찾기</h2>
+			<p class="main-header-copy">비밀번호를 잊으셨나요? 가입 시 정보를 입력 후 비밀번호를 재설정 해 주세요.</p>
 			<div class="breadcrumb">
 				<a href="" class="breadcrumb-link">Home</a>
 				>
-				<a href="" class="breadcrumb-link">마이페이지</a>
-				>
-				회원정보 관리
+				비밀번호 찾기
 			</div>
 		</div>
 
 		<div class="main-header-decor">
 			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
-				  	<path d="M0 0 C50 130 50 130 100 0  L100 100 0 100" stroke-width="0"></path>
+				  	<path d="M0 0 C50 130 50 130 100 0 L100 100 0 100" stroke-width="0"></path>
 			</svg>
 		</div>
 	</div>
+
 	<div class="main-content wrapper">
+		<div class="account">
 
+			<div class="account-re-pw">
+				<div class="account-box">
+					<label for="pw" class="account-label-pw">새 비밀번호</label>
+					<div class="form-wrap-nogap account-width-pw">
+						<input type="text" id="pw" class="input-text">
+					</div>
+					<p class="account-pw-msg">영문, 숫자 조합 6~20자리로 입력해주세요.</p>
+				</div>
+				<div class="account-box">
+					<label for="re-pw" class="account-label-pw">새 비밀번호 확인</label>
+					<div class="form-wrap-nogap account-width-pw">
+						<input type="text" id="re-pw" class="input-text">
+					</div>
+				</div>
 
+			</div>
 
-		<!-- [D] 현재페이지에 클래스 current추가 -->
-		<div class="pagination">
-			<a href="#" class="page-item page-first">처음페이지</a>
-			<a href="#" class="page-item page-prev">이전페이지</a>
-			<a href="#" class="page-item current">1</a>
-			<a href="#" class="page-item">2</a>
-			<a href="#" class="page-item">3</a>
-			<a href="#" class="page-item">4</a>
-			<a href="#" class="page-item">5</a>
-			<a href="#" class="page-item page-next">다음페이지</a>
-			<a href="#" class="page-item page-last">마지막페이지</a>
+		</div>
+
+		<div class="account-actions">
+			<a href="#" class="btn-wide btn-green">비밀번호 재설정</a>
 		</div>
 	</div>
 
-	<div class="main-actions">
-		<a href="#" class="btn btn-wide btn-green">등록</a>
-	</div>
 </section>
 
 

@@ -4,37 +4,40 @@
 	left:50%;
 	padding-bottom:20px;
 	margin-left:-221px;
-	width:440px;
+	@include size(440, a);
 	border:2px solid $color-dark;
 	background-color:#fff;
 	box-shadow:0 2px 10px rgba(0,0,0,.7);
 	z-index:100;
+
 	&.popup-wide {
 		margin-left:-306px;
-		width:610px;
+		@include size(610, a);
 	}
+
 	&-title {
 		padding-left:20px;
-		height:54px;
-		line-height:54px;
+		@include size-mid(a, 54);
 		font-size:18px;
 		color:#fff;
 		background-color:$color-dark;
 	}
+
 	&-content {
 		margin:20px;
-		height:600px;
+		@include size(a, 600);
 		overflow:auto;
 	}
+
 	&-actions {
 		text-align:center;
 	}
+
 	&-close {
 		position:absolute;
 		top:18px;
 		right:18px;
-		width:15px;
-		height:15px;
+		@include size(15);
 		background:url(../images/icon_close.png) no-repeat;
 		text-indent:-9999px;
 	}

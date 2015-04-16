@@ -5,24 +5,28 @@
 	float:left;
 	padding-left:31px;
 	background:url(../images/bg_step_arrow.png) no-repeat 13px 50%;
+
 	&:first-child {
 		padding-left:0;
 		background:none;
 	}
+
 	&-state {
-		width:171px;
-		height:171px;
+		@include size(171);
 		background:url(../images/bg_step.png) no-repeat;
 		font-size:16px;
 		font-weight:bold;
 		text-align:center;
+
 		&.on {
 			background-position:-171px 0;
 		}
+
 		&.on .step-item-current {
 			display:block;
 		}
 	}
+
 	&-text {
 		margin-bottom:15px;
 		padding-top:38px;
@@ -31,14 +35,15 @@
 		font-weight:normal;
 		font-style:italic;
 	}
+
 	&-num {
 		font-size:35px;
 	}
+
 	&-current {
 		display:none;
 		margin:15px auto 0;
-		width:17px;
-		height:1px;
+		@include size(17, 1);
 		background-color:$color-base;
 		text-indent:-9999px;
 	}

@@ -3,7 +3,7 @@ include "header_top.html"
 include "header_bottom.html"
 
 <section id="main" class="main">
-	<div class="main-header apply-header">
+	<div class="main-header mypage-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">마이페이지</h2>
 			<p class="main-header-copy">지원현황 및 개인정보를 확인하고 수정하실 수 있습니다.</p>
@@ -16,7 +16,7 @@ include "header_bottom.html"
 
 		<div class="main-header-decor">
 			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
-				  	<path d="M0 0 C50 100 50 100 100 0  L100 100 0 100" stroke-width="0"></path>
+				  	<path d="M0 0 C50 130 50 130 100 0  L100 100 0 100" stroke-width="0"></path>
 			</svg>
 		</div>
 	</div>
@@ -56,13 +56,13 @@ include "header_bottom.html"
 						</td>
 						<td class="table-td">
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-gray">지원서 보기</a>
+								<a href="#" class="btn-small btn-gray">지원서 보기</a>
 							</div>
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-green">지원서 수정</a>
+								<a href="#" class="btn-small btn-green">지원서 수정</a>
 							</div>
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-gray">지원서 삭제</a>
+								<a href="#" class="btn-small btn-gray">지원서 삭제</a>
 							</div>
 						</td>
 					</tr>
@@ -80,14 +80,20 @@ include "header_bottom.html"
 						</td>
 						<td class="table-td">
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-gray">지원서 보기</a>
+								<a href="#" class="btn-small btn-gray">지원서 보기</a>
 							</div>
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-green">결과확인</a>
+								<a href="#" class="btn-small btn-green">결과확인</a>
 							</div>
 							<div class="table-text">
-								<a href="#" class="btn btn-small btn-gray">면접안내</a>
+								<a href="#" class="btn-small btn-gray">면접안내</a>
 							</div>
+						</td>
+					</tr>
+					<!-- [D] 지원내역이 없을 경우 -->
+					<tr>
+						<td colspan="4" class="table-td no-result">
+							<p>지원한 내역이 없습니다.</p>
 						</td>
 					</tr>
 				</tbody>
@@ -114,7 +120,7 @@ include "header_bottom.html"
 				</tbody>
 			</table>
 			<div class="row-actions">
-				<a href="#" class="btn btn-green">지원서 보기</a>
+				<a href="#" class="btn-green">지원서 보기</a>
 				<a href="#" class="btn">지원서 수정</a>
 				<a href="#" class="btn">지원서 삭제</a>
 			</div>
