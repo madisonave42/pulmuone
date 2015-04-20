@@ -11,8 +11,13 @@
 	z-index:100;
 
 	&.popup-wide {
-		margin-left:-306px;
-		@include size(610, a);
+		@include size(700, a);
+		margin-left:-352px;
+	}
+
+	&.popup-preview {
+		@include size(1037, auto);
+		margin-left:-520px;
 	}
 
 	&-title {
@@ -25,6 +30,21 @@
 
 	&-content {
 		margin:20px;
+
+		&-msg {
+			line-height:1.6;
+			text-align:center;
+			color:$color-base;
+			font-weight:bold;
+		}
+
+		&.popup-content-preview {
+			margin-right:10px;
+			padding-right:10px;
+			height:650px;
+			overflow-x:hidden;
+			overflow-y:scroll;
+		}
 	}
 
 	&-actions {
@@ -32,11 +52,159 @@
 	}
 
 	&-close {
+		@include size(15);
 		position:absolute;
 		top:18px;
 		right:18px;
-		@include size(15);
 		background:url(../images/icon_close.png) no-repeat;
 		text-indent:-9999px;
+		border:0;
+		cursor:pointer;
+	}
+}
+
+.cong-msg {
+	position:relative;
+	margin-bottom:50px;
+	padding-top:118px;
+	font-size:36px;
+	font-weight:bold;
+	text-align:center;
+	background:url(../images/icon_cong_msg.png) no-repeat 50% 19px;
+
+	&:after {
+		@include size(26, 1);
+		content:"";
+		position:absolute;
+		bottom:-27px;
+		left:50%;
+		display:block;
+		margin-left:-13px;
+		background-color:#000;
+	}
+}
+
+.result-msg {
+	margin-bottom:24px;
+	line-height:1.7;
+	color:$color-dark-gray;
+	text-align:center;
+
+	&-name {
+		display:block;
+		margin-bottom:10px;
+		color:$color-base;
+		font-size:16px;
+		font-weight:bold;
+	}
+}
+
+.result-overview {
+	margin:0 35px;
+	padding:30px 0 30px 35px;
+	text-indent:-35px;
+	border-top:1px solid $color-base;
+	border-bottom:1px solid $color-base;
+
+	&-item {
+		margin-top:15px;
+
+		&:first-child {
+			margin-top:0;
+		}
+
+		.black {
+			margin-right:13px;
+		}
+	}
+
+	&-div {
+		margin:30px 0 30px -35px;
+		padding:0;
+		height:0;
+		border:0;
+		border-top:1px solid $color-med-gray;
+	}
+}
+
+.interview {
+	overflow:hidden;
+
+	&-left {
+		float:left;
+		margin-left:25px;
+		width:260px;
+	}
+
+	&-right {
+		float:right;
+		width:375px;
+	}
+
+	&-msg {
+		position:relative;
+		margin-bottom:50px;
+		padding-top:118px;
+		font-size:36px;
+		font-weight:bold;
+		text-align:center;
+		background:url(../images/icon_interview_msg.png) no-repeat 50% 19px;
+
+		&:after {
+			@include size(26, 1);
+			content:"";
+			position:absolute;
+			bottom:-27px;
+			left:50%;
+			display:block;
+			margin-left:-13px;
+			background-color:#000;
+		}
+	}
+}
+
+.change-phone {
+	@include center();
+	@include size(560, auto);
+}
+
+.inquiry-form {
+	margin-top:30px;
+}
+
+.edu-search-title {
+	margin:20px 0 10px;
+	color:$color-base;
+	font-size:14px;
+	font-weight:bold;
+
+	&:first-child {
+		margin-top:0;
+	}
+}
+
+.edu-search {
+	&-result {
+		border:1px solid #CBCBCB;
+		border-radius:5px;
+		box-sizing:border-box;
+		overflow:hidden;
+	}
+
+	&-list {
+		padding:11px;
+		height:130px;
+		overflow-x:hidden;
+		overflow-y:auto;
+
+		&-item {
+			display:block;
+			margin-bottom:13px;
+			color:$color-dark-gray;
+
+			&:hover {
+				text-decoration:underline;
+			}
+		}
 	}
 }

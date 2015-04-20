@@ -20,30 +20,69 @@ if( navigator.userAgent.indexOf('Safari') > 0 ){
 
 $(function(){
 
-	// GNB
+/* gnb */
+	(function () {
+		var gnb = $('.gnb'),
+			menus = $('.js-gnb'),
+			menuOut = $('.js-gnb-out'),
+			current = 0;
 
-	$('.js-gnb').on({
-
-		mouseenter : function(){
-
-			$('.header-gnb-list').data( 'current', $('.js-gnb').index( $('.js-gnb.on') ) );
-
-			$('.header-gnb-item').removeClass('side');
-			$('.header-gnb-link').removeClass('on').removeClass('on-left').removeClass('on-right');
-			$(this).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
-			$(this).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
-
-		},
-
-		mouseleave : function(){
-
-			$('.header-gnb-item').removeClass('side');
-			$('.header-gnb-link').removeClass('on').removeClass('on-left').removeClass('on-right');
-			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).addClass('on').parents('.header-gnb-item').prev().addClass('side').find('.js-gnb').addClass('on-left');
-			$('.header-gnb-link').eq( $('.header-gnb-list').data( 'current') ).parents('.header-gnb-item').next().addClass('side').find('.js-gnb').addClass('on-right');
-
+		function enterAction() {
+			var num = menus.index(menus.filter('.on'));
+			if (num > -1) {
+				current = num;
+			}
+			menus.removeClass('on');
 		}
 
+		function leaveAction() {
+			menus.removeClass('on');
+			menus.removeClass('over');
+			menus.eq(current).addClass('on');
+		}
+
+		gnb.on({
+			mouseenter: enterAction,
+			mouseleave: leaveAction
+		});
+
+		menus.on({
+			'mouseenter': function() {
+				menus.removeClass('over');
+				$(this).addClass('over');
+			},
+			'focus': function() {
+				enterAction();
+				menus.removeClass('over');
+				$(this).addClass('over');
+			}
+		});
+
+		menuOut.on('focus', function() {
+			leaveAction();
+		});
+
+	})();
+
+// toggle box
+(function(){
+	var tgTitles = $('.js-tg-title'),
+		tgConts = $('.js-tg-cont');
+
+	tgTitles.on('click', function(e){
+		var currentCont = $(this).parents('.toggle-box').find('.js-tg-cont');
+		if ($(this).hasClass('on')) {
+			tgTitles.removeClass('on');
+			currentCont.removeClass('on');
+		} else {
+			tgTitles.removeClass('on');
+			tgConts.removeClass('on');
+			$(this).addClass('on');
+			currentCont.addClass('on');
+		}
+		e.preventDefault();
 	});
+})();
+
 
 });

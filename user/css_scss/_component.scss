@@ -98,11 +98,19 @@
 		border:0;
 		background:transparent url(../images/sprite_arrow.png) no-repeat 100% 27px;
 		cursor:pointer;
+
+		&.on {
+			background-position:100% -70px;
+		}
 	}
 
 	&-content {
-		// display:none;
+		display:none;
 		border-bottom:1px solid $color-light-gray;
+
+		&.on {
+			display:block;
+		}
 	}
 }
 

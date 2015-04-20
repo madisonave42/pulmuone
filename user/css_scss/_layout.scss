@@ -54,7 +54,7 @@
 
 .gnb {
 	float:left;
-	margin-left:125px;
+	margin-left:120px;
 	padding-top:43px;
 
 	&-item {
@@ -63,7 +63,7 @@
 
 	&-main-link {
 		display:block;
-		padding:0 25px;
+		padding:0 23px;
 		font-size:16px;
 		font-weight:bold;
 
@@ -84,7 +84,8 @@
 	&-main-link {
 		&:focus .gnb-main-text,
 		&:hover .gnb-main-text,
-		&.on .gnb-main-text {
+		&.on .gnb-main-text,
+		&.over .gnb-main-text {
 			color:$color-accent;
 			border-bottom-color:$color-accent;
 		}
@@ -104,6 +105,7 @@
 
 	&-main-link:focus + .gnb-sub-wrap,
 	&-main-link:hover + .gnb-sub-wrap,
+	&-main-link.over + .gnb-sub-wrap,
 	&-sub-wrap:hover {
 		display:block;
 	}
@@ -121,11 +123,11 @@
 		margin:0 auto;
 		padding-left:225px;
 		padding-top:38px;
-		@include size(700, a);
+		@include size(755, a);
 
 		&-item {
 			float:left;
-			margin-left:70px;
+			margin-left:74px;
 			font-size:14px;
 			font-weight:bold;
 		}
@@ -136,13 +138,107 @@
 
 		&-link {
 			display:block;
+			width:90px;
 			padding-top:65px;
 			padding-bottom:3px;
+			text-align:center;
+			background:url(../images/sprite_gnb.png) no-repeat;
+
+			&-text {
+				display:inline-block;
+				padding-bottom:3px;
+			}
+
+			&.sub-link01-01 {
+				background-position:23px 0px;
+			}
+
+			&.sub-link01-02 {
+				background-position:-142px 0px;
+			}
+
+			&.sub-link01-03 {
+				background-position:-303px 0px;
+			}
+
+			&.sub-link02-01 {
+				background-position:-462px 0px;
+			}
+
+			&.sub-link02-02 {
+				background-position:-631px 0px;
+			}
+
+			&.sub-link02-03 {
+				background-position:-791px 0px;
+			}
+
+			&.sub-link03-01 {
+				background-position:-908px 0px;
+			}
+
+			&.sub-link03-02 {
+				background-position:-1076px 0px;
+			}
+
+			&.sub-link03-03 {
+				background-position:-1243px 0px;
+			}
+
+			&.sub-link03-04 {
+				background-position:-1407px 0px;
+			}
+
 		}
 
 		&-link:focus,
 		&-link:hover,
 		&-link.on {
+			&.sub-link01-01 {
+				background-position:23px -120px;
+			}
+
+			&.sub-link01-02 {
+				background-position:-142px -120px;
+			}
+
+			&.sub-link01-03 {
+				background-position:-303px -120px;
+			}
+
+			&.sub-link02-01 {
+				background-position:-462px -120px;
+			}
+
+			&.sub-link02-02 {
+				background-position:-631px -120px;
+			}
+
+			&.sub-link02-03 {
+				background-position:-791px -120px;
+			}
+
+			&.sub-link03-01 {
+				background-position:-908px -120px;
+			}
+
+			&.sub-link03-02 {
+				background-position:-1076px -120px;
+			}
+
+			&.sub-link03-03 {
+				background-position:-1243px -120px;
+			}
+
+			&.sub-link03-04 {
+				background-position:-1407px -120px;
+			}
+
+		}
+
+		&-link:focus .gnb-sub-link-text,
+		&-link:hover .gnb-sub-link-text,
+		&-link.on .gnb-sub-link-text {
 			color:$color-accent;
 			border-bottom:1px solid $color-accent;
 		}

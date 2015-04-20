@@ -64,6 +64,10 @@
 
 	&-btn {
 		background-position:100% 20px;
+
+		&.on {
+			background-position:100% -74px;
+		}
 	}
 
 	&-cont {
