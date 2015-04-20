@@ -1,0 +1,389 @@
+include "header_top.html"
+	<title>지원서 작성 | 인재모시기 | 풀무원채용</title>
+include "header_bottom.html"
+
+<section class="main">
+	<div class="main-header apply-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">지원서 작성</h2>
+			<p class="main-header-copy">풀무원과 함께 할 바르고 창의적인 인재를 모십니다.</p>
+			<div class="breadcrumb">
+				<a href="" class="breadcrumb-link">Home</a>
+				>
+				<a href="" class="breadcrumb-link">인재모시기</a>
+				>
+				지원서 작성
+			</div>
+		</div>
+
+		<div class="main-header-decor">
+			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+				  	<path d="M0 0 C50 130 50 130 100 0 L100 100 0 100" stroke-width="0"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div class="main-content wrapper">
+
+		<h3 class="blind">현재 지원 단계 안내</h3>
+		<ul class="step clear">
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">1</span></div>
+					기본정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">2</span></div>
+					학력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">3</span></div>
+					경력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state on">
+					<div class="step-item-text">step <span class="step-item-num">4</span></div>
+					외국어/자격증
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">5</span></div>
+					자기소개서
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="row">
+			<h3 class="row-header">외국어</h3>
+			<table class="table" summary="구사 가능한 외국어, 시험명, 등급, 점수, 취득일 등 입력">
+				<caption class="table-caption">외국어 입력 표</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col style="width:auto;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:265px;">
+					<col style="width:40px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">언어</th>
+						<th scope="col" class="table-th">시험명</th>
+						<th scope="col" class="table-th">등급</th>
+						<th scope="col" class="table-th">점수</th>
+						<th scope="col" class="table-th">취득일</th>
+						<th scope="col" class="table-th">삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="언어 선택" class="select">
+									<option>언어</option>
+									<option>언어</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="시험 선택" class="select">
+									<option>시험</option>
+									<option>시험</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="등급 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="점수 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap width-small">
+								<select title="취득 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="취득 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap-nogap width-small">
+								<select title="취득 날짜" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<button type="button" class="btn-delete">현재 행 삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">자격증</h3>
+			<table class="table" summary="보유한 자격증, 등급, 등록번호, 취득일 입력">
+				<caption class="table-caption">자격증 입력 표</caption>
+				<colgroup>
+					<col style="width:150px;">
+					<col style="width:auto;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:265px;">
+					<col style="width:40px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">자격증</th>
+						<th scope="col" class="table-th">등급</th>
+						<th scope="col" class="table-th">등록번호</th>
+						<th scope="col" class="table-th">발급기관</th>
+						<th scope="col" class="table-th">취득일</th>
+						<th scope="col" class="table-th">삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="자격증" />
+								<button type="button" class="input-search-btn">자격증 찾기</button>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="등급 입력" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="등록번호" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="발급기관" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap width-small">
+								<select title="취득 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="취득 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap-nogap width-small">
+								<select title="취득 날짜" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<button type="button" class="btn-delete">현재 행 삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">컴퓨터 활용능력</h3>
+			<table class="table" summary="보유한 자격증, 등급, 등록번호, 취득일 입력">
+				<caption class="table-caption">자격증 입력 표</caption>
+				<colgroup>
+					<col style="width:auto;">
+					<col style="width:470px;">
+					<col style="width:40px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">컴퓨터분야</th>
+						<th scope="col" class="table-th">숙련정도</th>
+						<th scope="col" class="table-th">삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="분야" class="select">
+									<option>분야</option>
+									<option>분야</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<select title="숙련정도" class="select">
+									<option>숙련정도</option>
+									<option>숙련정도</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<button type="button" class="btn-delete">현재 행 삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">수상경력</h3>
+			<table class="table" summary="수상한 상의 이름, 순위, 수상일, 수여기관 등 입력">
+				<caption class="table-caption">수상경력 입력 표</caption>
+				<colgroup>
+					<col style="width:auto;">
+					<col style="width:150px;">
+					<col style="width:150px;">
+					<col style="width:265px;">
+					<col style="width:40px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="table-th">수상명</th>
+						<th scope="col" class="table-th">순위</th>
+						<th scope="col" class="table-th">수상기관</th>
+						<th scope="col" class="table-th">수상일</th>
+						<th scope="col" class="table-th">삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="수상명" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="순위" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap">
+								<input type="text" title="수상기관" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<div class="form-wrap width-small">
+								<select title="수상 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="수상 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="form-wrap-nogap width-small">
+								<select title="수상 날짜" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+						<td class="table-td">
+							<button type="button" class="btn-delete">현재 행 삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">취미 및 특기</h3>
+			<table class="table-hr" summary="취미, 특기, 건강관리법 입력">
+				<caption class="table-caption">취미 및 특기 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="hobby">취미</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="hobby" class="input-text" />
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							<label for="good">특기</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="good" class="input-text" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="health">건강관리법</label>
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="health" class="input-text" />
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="main-actions">
+		<button type="button" class="btn-wide">이전</button>
+		<button type="button" class="btn-wide">임시저장</button>
+		<a href="#" class="btn-wide btn-green">다음</a>
+	</div>
+</section>
+
+include "footer.html"

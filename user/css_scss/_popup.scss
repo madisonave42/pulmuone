@@ -25,8 +25,6 @@
 
 	&-content {
 		margin:20px;
-		@include size(a, 600);
-		overflow:auto;
 	}
 
 	&-actions {

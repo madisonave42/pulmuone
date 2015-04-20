@@ -1,0 +1,83 @@
+include "header_top.html"
+	<title>문의하기 | 인재도우미 | 풀무원채용</title>
+include "header_bottom.html"
+
+<section class="main">
+	<div class="main-header faq-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">문의하기</h2>
+			<p class="main-header-copy">풀무원 채용에 대해 궁금한 점을 확인해보세요.</p>
+			<div class="breadcrumb">
+				<a href="" class="breadcrumb-link">Home</a>
+				>
+				<a href="" class="breadcrumb-link">인재도우미</a>
+				>
+				문의하기
+			</div>
+		</div>
+
+		<div class="main-header-decor">
+			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+				  	<path d="M0 0 C50 130 50 130 100 0 L100 100 0 100" stroke-width="0"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div class="main-content wrapper">
+
+		<div class="row">
+			<h3 class="row-header">문의에 대한 답변은 회원가입 시 입력한 이메일로 발송됩니다.</h3>
+			<p class="row-msg"><span class="strong">*</span> 표시는 필수입력 항목입니다.</p>
+			<table class="table-hr" summary="문의 법인, 제목, 내용 입력 표">
+				<caption class="table-caption">문의내용 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:795px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="brand">법인</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select id="brand" class="select">
+									<option>법인</option>
+									<option>법인</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="title">제목</label> <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="title" class="input-text">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							내용 <span class="strong">*</span>
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap">
+								<textarea cols="30" rows="10" title="내용 서술" class="textarea"></textarea>
+							</div>
+							<p class="check-length">0 / 500</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="main-actions">
+		<a href="#" class="btn-wide btn-green">보내기</a>
+	</div>
+</section>
+
+include "footer.html"

@@ -1,0 +1,480 @@
+include "header_top.html"
+	<title>지원서 작성 | 인재모시기 | 풀무원채용</title>
+include "header_bottom.html"
+
+<section class="main">
+	<div class="main-header apply-header">
+		<div class="wrapper clear">
+			<h2 class="main-header-title">지원서 작성</h2>
+			<p class="main-header-copy">풀무원과 함께 할 바르고 창의적인 인재를 모십니다.</p>
+			<div class="breadcrumb">
+				<a href="" class="breadcrumb-link">Home</a>
+				>
+				<a href="" class="breadcrumb-link">인재모시기</a>
+				>
+				지원서 작성
+			</div>
+		</div>
+
+		<div class="main-header-decor">
+			<svg class="main-header-svg" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+				  	<path d="M0 0 C50 130 50 130 100 0 L100 100 0 100" stroke-width="0"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div class="main-content wrapper">
+
+		<h3 class="blind">현재 지원 단계 안내</h3>
+		<ul class="step clear">
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">1</span></div>
+					기본정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state on">
+					<div class="step-item-text">step <span class="step-item-num">2</span></div>
+					학력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">3</span></div>
+					경력정보
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">4</span></div>
+					외국어/자격증
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+			<li class="step-item">
+				<div class="step-item-state">
+					<div class="step-item-text">step <span class="step-item-num">5</span></div>
+					자기소개서
+					<div class="step-item-current">현재 단계</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="row">
+			<h3 class="row-header">학력사항</h3>
+			<p class="row-msg"><span class="strong">*</span> 표시는 필수입력 항목입니다.</p>
+			<table class="table-hr" summary="고등학교 졸업상태, 입학일, 졸업일 등 학력사항 입력">
+				<caption class="table-caption">고등학교 학력사항 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학위 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							고등학교
+						</td>
+						<th scope="row" class="table-hr-th">
+							졸업상태 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select title="졸업상태" class="select">
+									<option>졸업</option>
+									<option>졸업</option>
+								</select>
+							</div>
+							<div class="check-wrap form-inline-wrap no-gap">
+								<input type="checkbox" name="type" id="edu-last" class="check-input">
+								<label for="edu-last" class="check-label">최종학력</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							입학일 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-small">
+								<select title="입학 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="입학 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							졸업일 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-small">
+								<select title="졸업 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="졸업 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학교 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="학교" />
+								<button type="button" class="input-search-btn">학교 찾기</button>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							계열 <span class="strong">*</span>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select title="계열" class="select">
+									<option>계열</option>
+									<option>계열</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<table class="table-hr" summary="대학 학위, 졸업상태, 입학일, 졸업일 등 학력사항 입력">
+				<caption class="table-caption">대학 학력사항 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학위
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select title="학위" class="select">
+									<option>학위</option>
+									<option>학위</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							졸업상태
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-normal">
+								<select title="졸업상태" class="select">
+									<option>졸업</option>
+									<option>졸업</option>
+								</select>
+							</div>
+							<div class="check-wrap form-inline-wrap no-gap">
+								<input type="checkbox" name="type" id="edu-last02" class="check-input">
+								<label for="edu-last02" class="check-label">최종학력</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							입학일
+						<td class="table-hr-td">
+							<div class="form-wrap width-small">
+								<select title="입학 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="입학 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							졸업일
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-small">
+								<select title="졸업 년도" class="select">
+									<option>1900</option>
+									<option>1900</option>
+								</select>
+							</div>
+							<div class="form-wrap width-small">
+								<select title="졸업 월" class="select">
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학교
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="학교" />
+								<button type="button" class="input-search-btn">학교 찾기</button>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							전공
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="전공" />
+								<button type="button" class="input-search-btn">전공 찾기</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							부전공
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="부전공" />
+								<button type="button" class="input-search-btn">부전공 찾기</button>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							복수전공
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="복수전공" />
+								<button type="button" class="input-search-btn">복수전공 찾기</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학점
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap-nogap width-small">
+								<input type="text" class="input-search" title="학점" />
+							</div>
+							<div class="form-div">/</div>
+							<div class="form-wrap width-normal">
+								<select title="학점" class="select">
+									<option>학점</option>
+									<option>학점</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							편입여부
+						</th>
+						<td class="table-hr-td">
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="trans-y" class="radio-input">
+								<label for="trans-y" class="radio-label">예</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="type" id="trans-n" class="radio-input">
+								<label for="trans-n" class="radio-label">아니오</label>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+				<button type="button" class="btn">삭제</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">논문</h3>
+			<table class="table-hr" summary="작성한 논문, 지도교수, 논문소개 등 입력">
+				<caption class="table-caption">논문 정보 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:795px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							논문제목
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-text" title="논문제목" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							지도교수
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-half">
+								<input type="text" class="input-text" title="지도교수" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							논문소개
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<textarea cols="30" rows="10" title="논문소개" class="textarea"></textarea>
+							</div>
+							<p class="check-length">0 / 200</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							논문첨부
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap width-half">
+								<input type="text" class="input-text" title="논문첨부" placeholder="2MB 미만의 파일을 올려주세요." />
+							</div>
+							<button type="button" class="btn-form">찾아보기</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+				<button type="button" class="btn">삭제</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 class="row-header">연구실적</h3>
+			<table class="table-hr" summary="학교명, 전공, 연구명, 활동분야등 연구실적 정보 입력">
+				<caption class="table-caption">연구실적 정보 입력 표</caption>
+				<colgroup>
+					<col style="width:185px;">
+					<col style="width:305px;">
+					<col style="width:185px;">
+					<col style="width:305px;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							학교
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-search" title="학교명" />
+								<button type="button" class="input-search-btn">학교 찾기</button>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							전공
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" class="input-text" title="전공" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							지도교수
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap width-half">
+								<input type="text" class="input-text" title="지도교수" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							지도교수 연락처
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap-nogap width-small">
+								<select title="국번 선택" class="select">
+									<option>010</option>
+									<option>011</option>
+								</select>
+							</div>
+							<div class="form-div">-</div>
+							<div class="form-wrap-nogap width-small">
+								<input type="text" title="휴대폰 가운데 자리" maxlength="4" class="input-text" />
+							</div>
+							<div class="form-div">-</div>
+							<div class="form-wrap width-small">
+								<input type="text" title="휴대폰 마지막 자리" maxlength="4" class="input-text" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							연구명
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap width">
+								<input type="text" class="input-text" title="연구명" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							활동분야
+						</th>
+						<td colspan="3" class="table-hr-td">
+							<div class="form-wrap">
+								<textarea cols="30" rows="10" title="논문소개" class="textarea"></textarea>
+							</div>
+							<p class="check-length">0 / 200</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="row-actions">
+				<button type="button" class="btn">추가</button>
+				<button type="button" class="btn">삭제</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main-actions">
+		<button type="button" class="btn-wide">이전</button>
+		<button type="button" class="btn-wide">임시저장</button>
+		<a href="#" class="btn-wide btn-green">다음</a>
+	</div>
+</section>
+
+include "footer.html"

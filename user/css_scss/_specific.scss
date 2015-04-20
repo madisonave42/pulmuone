@@ -1,3 +1,9 @@
+.blind {
+	position:absolute;
+	width:0;
+	height:0;
+	top:-9999px;
+}
 .em {
 	font-style:normal;
 	font-weight:bold;
@@ -17,4 +23,5 @@
 	clear:both;
 	padding-top:10px;
 	text-align:right;
+	font-weight:bold;
 }

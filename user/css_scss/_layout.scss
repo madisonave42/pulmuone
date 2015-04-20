@@ -206,6 +206,11 @@
 		background-size:cover;
 	}
 
+	.notice-header {
+		//background:url(../images/bg_main_header02.jpg) no-repeat 50% 0;
+		background-size:cover;
+	}
+
 	.mypage-header {
 		//background:url(../images/bg_main_header03.jpg) no-repeat 50% 0;
 		background-size:cover;
@@ -214,6 +219,7 @@
 	&-content {
 		padding-top:80px;
 		padding-bottom:50px;
+		min-height:450px;
 	}
 
 	&-actions {
@@ -241,6 +247,23 @@
 .row {
 	position:relative;
 	padding-bottom:80px;
+
+	&-title {
+		position:relative;
+		margin-bottom:50px;
+		padding-top:20px;
+		font-size:24px;
+
+		&:after {
+			@include size(19, 3);
+			content:"";
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			background-color:$color-brand;
+		}
+	}
 
 	&-no-bottom {
 		@extend .row;
@@ -310,6 +333,7 @@
 			color:$color-gray;
 			border:1px solid $color-dark-gray;
 			background-color:transparent;
+			cursor:pointer;
 		}
 	}
 

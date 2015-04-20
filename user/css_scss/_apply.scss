@@ -1,3 +1,119 @@
+.apply-list {
+	margin-top:20px;
+	padding-top:30px;
+	border-top:1px solid $color-med-gray;
+}
+.apply-item {
+	position:relative;
+	padding:28px 27px;
+	min-height:158px;
+	transition:background .1s;
+
+	&-state {
+		float:left;
+		padding-top:10px;
+		width:140px;
+		border-top:1px solid $color-gray;
+		font-size:22px;
+		font-weight:bold;
+
+		&-no {
+			float:left;
+			padding-top:20px;
+			width:140px;
+			border-top:1px solid $color-gray;
+			color:$color-dark-gray;
+			font-size:22px;
+		}
+
+		&-date {
+			display:block;
+			margin-bottom:9px;
+			color:$color-point;
+			font-family:Georgia, serif;
+			font-size:50px;
+			font-style:italic;
+			font-weight:bold;
+		}
+	}
+
+	&-overview {
+		float:left;
+		margin-left:50px;
+	}
+
+	&-part {
+		font-size:16px;
+		color:$color-dark-gray;
+	}
+
+	&-title {
+		margin-top:3px;
+		font-size:30px;
+		font-weight:bold;
+	}
+
+	&-detail {
+		margin-top:8px;
+		font-size:15px;
+		color:$color-dark-gray;
+	}
+
+	&-date {
+		margin-top:5px;
+		color:$color-dark-gray;
+	}
+
+	&:hover {
+		background-color:$color-white-gray;
+	}
+}
+
+.apply-view-header {
+	margin-bottom:30px;
+}
+.apply-view-title {
+	margin-bottom:25px;
+	font-size:24px;
+	font-weight:bold;
+}
+.apply-view-detail {
+	position:relative;
+}
+.apply-view-item {
+	padding:25px;
+	border-top:1px solid $color-light-gray;
+	overflow:hidden;
+
+	&:first-child {
+		border-top:0;
+	}
+
+	&-header {
+		float:left;
+		width:240px;
+	}
+
+	&-title {
+		font-size:14px;
+		font-weight:bold;
+	}
+
+	&-subtitle {
+		margin:20px 0 10px;
+		font-size:14px;
+		font-weight:bold;
+
+		&:first-child {
+			margin-top:0;
+		}
+	}
+
+	&-cont {
+		float:left;
+	}
+}
+
 .step {
 	margin-bottom:100px;
 }
@@ -46,5 +162,15 @@
 		@include size(17, 1);
 		background-color:$color-base;
 		text-indent:-9999px;
+	}
+}
+
+.introduce {
+	margin-top:30px;
+	text-align:left;
+
+	&-title {
+		margin-bottom:10px;
+		color:$color-base;
 	}
 }

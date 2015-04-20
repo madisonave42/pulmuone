@@ -1,9 +1,10 @@
 .form-wrap {
+	@include size(100%, a);
 	display:block;
 	float:left;
 	margin-right:10px;
 	padding:7px;
-	@include size(100%, a);
+	background-color:#fff;
 	border:1px solid $color-med-gray;
 	border-radius:5px;
 	vertical-align:middle;
@@ -25,7 +26,7 @@
 
 .input-search {
 	@extend .input-text;
-	@include size(90%, a);
+	@include size(80%, a);
 
 	&-small {
 		@extend .input-text;
@@ -55,8 +56,15 @@
 .textarea {
 	padding:0;
 	border:0;
-	@include size(a, 176);
+	@include size(100%, 176);
 	color:$color-dark-gray;
+
+	&-view {
+		@include size(100%, 176);
+		color:$color-dark-gray;
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
 }
 
 .width {
@@ -70,6 +78,14 @@
 
 	&-half {
 		@include size(50%, a);
+	}
+
+	&-apply-search {
+		width:490px;
+	}
+
+	&-faq-search {
+		width:715px;
 	}
 }
 
@@ -194,4 +210,8 @@
 
 .no-gap {
 	margin-right:0;
+}
+
+.no-float {
+	float:none;
 }

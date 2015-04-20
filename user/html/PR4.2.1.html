@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>회원정보 입력 | 지원서 작성 | 풀무원채용</title>
+	<title>지원서 작성 | 인재모시기 | 풀무원채용</title>
 	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 
@@ -113,7 +113,7 @@
 	<div class="main-header apply-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">지원서 작성</h2>
-			<p class="main-header-copy">풀무원과 함께 할 바르고 정직한 인재를 모십니다.</p>
+			<p class="main-header-copy">풀무원과 함께 할 바르고 창의적인 인재를 모십니다.</p>
 			<div class="breadcrumb">
 				<a href="" class="breadcrumb-link">Home</a>
 				>
@@ -132,9 +132,9 @@
 
 	<div class="main-content wrapper">
 
+		<h3 class="blind">현재 지원 단계 안내</h3>
 		<ul class="step clear">
 			<li class="step-item">
-				<!-- [D] 현재 상태에 클래스 on 추가 -->
 				<div class="step-item-state on">
 					<div class="step-item-text">step <span class="step-item-num">1</span></div>
 					기본정보
@@ -174,8 +174,11 @@
 		<div class="row">
 			<h3 class="row-header">개인정보 처리방침에 대한 동의</h3>
 			<p class="row-msg"><span class="strong">*</span> 표시는 필수입력 항목입니다.</p>
-			<div class="toggle-box">
-				<h4 class="toggle-box-title"><a href="#" class="js-tg-title">개인정보 처리방침</a></h4>
+			<div class="toggle-box first">
+				<h4 class="toggle-box-title">
+					개인정보 처리방침
+					<button type="button" class="toggle-box-action js-tg-title">보기</button>
+				</h4>
 				<div class="toggle-box-content js-tg-cont">
 					<div class="terms-scroll">
 						제 1 조 (목적)
@@ -298,7 +301,8 @@
 				<caption class="table-caption">개인정보 입력 표</caption>
 				<colgroup>
 					<col style="width:185px;">
-					<col style="width:795px;">
+					<col style="width:auto;">
+					<col style="width:195px;">
 				</colgroup>
 				<tbody>
 					<tr>
@@ -312,6 +316,13 @@
 							<div class="form-wrap width-normal">
 								<input type="text" class="input-text" placeholder="이름" title="이름" />
 							</div>
+						</td>
+						<td rowspan="5" class="table-hr-td upload-photo">
+							<p class="blind">사진 등록하기</p>
+							<div class="upload-photo-frame">
+								<img src="../images/img_no_photo.png" alt="000*000 픽셀 JPG 파일 1MB 미만" />
+							</div>
+							<button type="button" class="btn-form upload-photo-btn">사진등록</button>
 						</td>
 					</tr>
 					<tr>
@@ -354,7 +365,7 @@
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							<label for="birthday">생년월일</label>
+							<label for="birthday">생년월일</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-small">
@@ -381,7 +392,7 @@
 						<th scope="row" class="table-hr-th">
 							<label for="email">이메일</label> <span class="strong">*</span>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-normal">
 								<input type="text" id="email" class="input-text" />
 							</div>
@@ -401,7 +412,7 @@
 						<th scope="rowgroup" rowspan="3" class="table-hr-th">
 							<label for="addr01">법적주소</label> <span class="strong">*</span>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
 								<input type="text" id="addr01" title="우편번호 앞자리" class="input-text" />
 							</div>
@@ -413,14 +424,14 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
 								<input type="text" title="기본주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
 								<input type="text" title="상세주소" class="input-text" />
 							</div>
@@ -430,7 +441,7 @@
 						<th scope="rowgroup" rowspan="3" class="table-hr-th">
 							<label for="addr02">실제주소</label> <span class="strong">*</span>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
 								<input type="text" id="addr02" title="우편번호 앞자리" class="input-text" />
 							</div>
@@ -446,14 +457,14 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
 								<input type="text" title="기본주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
 								<input type="text" title="상세주소" class="input-text" />
 							</div>
@@ -463,7 +474,7 @@
 						<th scope="row" class="table-hr-th">
 							<label for="phone">휴대폰번호</label> <span class="strong">*</span>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
 								<select title="국번 선택" id="phone" class="select">
 									<option>010</option>
@@ -484,7 +495,7 @@
 						<th scope="row" class="table-hr-th">
 							<label for="tel">집전화번호</label>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
 								<select title="국번 선택" id="tel" class="select">
 									<option>010</option>
@@ -505,7 +516,7 @@
 						<th scope="row" class="table-hr-th">
 							<label for="call-time">연락가능시간</label>
 						</th>
-						<td class="table-hr-td">
+						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
 								<select id="call-time" class="select">
 									<option>00</option>

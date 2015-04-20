@@ -48,6 +48,31 @@
 		background:$color-dark-gray url(../images/icon_close02.png) no-repeat 50% 50%;
 	}
 
+	&-apply-item-view {
+		@extend .btn-wide;
+		@extend .btn-green;
+		position:absolute;
+		right:16px;
+		bottom:17px;
+		margin:0;
+	}
+
+	&-apply {
+		@extend .btn;
+		position:absolute;
+		top:12px;
+		right:73px;
+		margin:0;
+	}
+
+	&-send-email {
+		@extend .btn;
+		@include size-mid(86, 27);
+		display:inline-block;
+		margin-left:10px;
+		background-color:$color-dark-gray;
+	}
+
 	&-login-action {
 		@extend .btn;
 		@include size-mid(75, 19);
