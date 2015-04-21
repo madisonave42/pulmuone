@@ -2,7 +2,7 @@ include "header_top.html"
 	<title>문의하기 | 인재도우미 | 풀무원채용</title>
 include "header_bottom.html"
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header faq-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">문의하기</h2>
@@ -63,8 +63,9 @@ include "header_bottom.html"
 							내용 <span class="strong">*</span>
 						</th>
 						<td colspan="3" class="table-hr-td">
+							<label for="inquiry-cont" class="blind">문의내용</label>
 							<div class="form-wrap">
-								<textarea cols="30" rows="10" title="내용 서술" class="textarea"></textarea>
+								<textarea cols="30" rows="10" id="inquiry-cont" class="textarea"></textarea>
 							</div>
 							<p class="check-length">0 / 500</p>
 						</td>

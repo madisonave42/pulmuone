@@ -1,0 +1,115 @@
+// static common
+.static {
+	&-title {
+		position:relative;
+		margin-bottom:77px;
+		line-height:1.6;
+		font-size:42px;
+		font-weight:bold;
+		text-align:center;
+
+		&:after {
+			@include size(50, 1);
+			content:"";
+			position:absolute;
+			bottom:-38px;
+			left:50%;
+			margin-left:-25px;
+			display:block;
+			background-color:#000;
+		}
+	}
+
+	&-info {
+		margin-bottom:72px;
+		text-align:center;
+		line-height:2.1;
+		font-size:16px;
+	}
+
+	&-img {
+		text-align:center;
+	}
+}
+
+// hrDB
+.hrdb-list {
+	margin-top:22px;
+	margin-left:275px;
+}
+
+// hr Process
+.process {
+	margin-top:60px;
+	border-top:2px solid $color-base;
+
+	&-step {
+		border-bottom:1px solid $color-light-gray;
+		overflow:hidden;
+	}
+
+	&-title {
+		float:left;
+		margin:46px 0;
+		padding-left:33px;
+		width:231px;
+		font-size:24px;
+		line-height:1;
+
+		&-num {
+			margin-right:18px;
+			line-height:1;
+			color:$color-point;
+			font-size:30px;
+			font-family:Georgia, serif;
+			font-style:italic;
+		}
+	}
+
+	&-list01,
+	&-list02,
+	&-list03,
+	&-list04,
+	&-list05 {
+		float:left;
+		width:716px;
+	}
+
+	&-list01 {
+		margin-top:54px;
+	}
+
+	&-list02 {
+		margin-top:54px;
+	}
+
+	&-list03 {
+		margin-top:27px;
+	}
+
+	&-list04 {
+		margin-top:54px;
+	}
+
+	&-list05 {
+		margin-top:38px;
+	}
+
+}
+
+// hr Policy
+.policy {
+	&-title {
+		margin-top:100px;
+		font-size:34px;
+		text-align:center;
+	}
+
+	&-text {
+		margin:15px 0 35px;
+		line-height:1.6;
+		font-size:16px;
+		text-align:center;
+	}
+}
+

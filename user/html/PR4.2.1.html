@@ -17,12 +17,15 @@
 	<link rel="stylesheet" href="../css/ie8.css" />
 	<![endif]-->
 
-	<script src="../js/lib/jquery.library.min.js"></script>
+	<script src="../js/lib/jquery-1.11.0.min.js"></script>
+	<script src="../js/lib/jquery-ui-1.11.2.min.js"></script>
 	<script src="../js/function.min.js"></script>
 </head>
 <body>
 <div class="skip-nav">
+	<a href="#gnb" class="skip-nav-link">메뉴 바로가기</a>
 	<a href="#main" class="skip-nav-link">본문 바로가기</a>
+	<a href="#footer" class="skip-nav-link">푸터 바로가기</a>
 </div>
 
 <header class="header">
@@ -31,7 +34,7 @@
 			<a href="#" class="js-gnb-out"><img src="../images/img_logo.png" alt="Pulumone" class="logo-img" /></a>
 		</h1>
 
-		<ul class="gnb clear">
+		<ul id="gnb" class="gnb clear" tabindex="0">
 			<li class="gnb-item">
 				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
 				<a href="#" class="gnb-main-link on js-gnb"><span class="gnb-main-text">인재모시기</span></a>
@@ -106,7 +109,7 @@
 </header>
 
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header apply-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">지원서 작성</h2>
@@ -174,7 +177,7 @@
 			<div class="toggle-box first">
 				<h4 class="toggle-box-title">
 					개인정보 처리방침
-					<button type="button" class="toggle-box-action js-tg-title">보기</button>
+					<button type="button" class="toggle-box-action js-tg-title">내용 펼쳐보기</button>
 				</h4>
 				<div class="toggle-box-content js-tg-cont">
 					<div class="terms-scroll">
@@ -201,7 +204,7 @@
 			</div>
 			<div class="row-actions">
 				<div class="check-wrap no-gap">
-					<input type="checkbox" id="agree" class="check-input">
+					<input type="checkbox" id="agree" class="check-input" title="개인정보 처리방침 동의함" />
 					<label for="agree" class="check-label no-gap"><strong class="black">동의함</strong></label>
 				</div>
 			</div>
@@ -253,25 +256,25 @@
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-normal">
-								<select id="choice" title="부문" class="select">
+								<select id="choice" title="지원희망 부문" class="select">
 									<option>부문</option>
 									<option>부문</option>
 								</select>
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="법인" class="select">
+								<select title="지원희망 법인" class="select">
 									<option>법인</option>
 									<option>법인</option>
 								</select>
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="직무" class="select">
+								<select title="지원희망 직무" class="select">
 									<option>직무</option>
 									<option>직무</option>
 								</select>
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="근무지" class="select">
+								<select title="지원희망 근무지" class="select">
 									<option>근무지</option>
 									<option>근무지</option>
 								</select>
@@ -395,10 +398,10 @@
 							</div>
 							<div class="form-div form-div-at">@</div>
 							<div class="form-wrap width-normal">
-								<input type="text" title="도메인" class="input-text" />
+								<input type="text" title="이메일 도메인" class="input-text" />
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="도메인 선택" class="select">
+								<select title="이메일 도메인 선택" class="select">
 									<option>gmail.com</option>
 									<option>daum.net</option>
 								</select>
@@ -411,26 +414,26 @@
 						</th>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
-								<input type="text" id="addr01" title="우편번호 앞자리" class="input-text" />
+								<input type="text" id="addr01" title="법적주소 우편번호 앞자리" class="input-text" />
 							</div>
 							<div class="form-div form-div">-</div>
 							<div class="form-wrap width-small">
-								<input type="text" title="우편번호 뒷자리" class="input-text" />
+								<input type="text" title="법적주소 우편번호 뒷자리" class="input-text" />
 							</div>
-							<button type="button" class="btn-form">우편번호</button>
+							<button type="button" class="btn-form" title="우편번호찾기 팝업열립">우편번호</button>
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
-								<input type="text" title="기본주소" class="input-text" />
+								<input type="text" title="법적주소 기본주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
-								<input type="text" title="상세주소" class="input-text" />
+								<input type="text" title="법적주소 상세주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
@@ -440,13 +443,13 @@
 						</th>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
-								<input type="text" id="addr02" title="우편번호 앞자리" class="input-text" />
+								<input type="text" id="addr02" title="실제주소 우편번호 앞자리" class="input-text" />
 							</div>
 							<div class="form-div form-div">-</div>
 							<div class="form-wrap width-small">
-								<input type="text" title="우편번호 뒷자리" class="input-text" />
+								<input type="text" title="실제주소 우편번호 뒷자리" class="input-text" />
 							</div>
-							<button type="button" class="btn-form">우편번호</button>
+							<button type="button" class="btn-form" title="우편번호찾기 팝업열림">우편번호</button>
 							<div class="check-wrap no-gap form-inline-wrap">
 								<input type="checkbox" id="same" class="check-input">
 								<label for="same" class="check-label no-gap"><strong>법적주소와 동일</strong></label>
@@ -456,14 +459,14 @@
 					<tr>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
-								<input type="text" title="기본주소" class="input-text" />
+								<input type="text" title="실제주소 기본주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap">
-								<input type="text" title="상세주소" class="input-text" />
+								<input type="text" title="실제주소 상세주소" class="input-text" />
 							</div>
 						</td>
 					</tr>
@@ -501,11 +504,11 @@
 							</div>
 							<div class="form-div">-</div>
 							<div class="form-wrap-nogap width-small">
-								<input type="text" title="휴대폰 가운데 자리" maxlength="4" class="input-text" />
+								<input type="text" title="집전화 가운데 자리" maxlength="4" class="input-text" />
 							</div>
 							<div class="form-div">-</div>
 							<div class="form-wrap width-small">
-								<input type="text" title="휴대폰 마지막 자리" maxlength="4" class="input-text" />
+								<input type="text" title="집전화 마지막 자리" maxlength="4" class="input-text" />
 							</div>
 						</td>
 					</tr>
@@ -515,14 +518,14 @@
 						</th>
 						<td colspan="2" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
-								<select id="call-time" class="select">
+								<select id="call-time" class="select" title="연락가능한 시작시간">
 									<option>00</option>
 									<option>01</option>
 								</select>
 							</div>
 							<div class="form-div">-</div>
 							<div class="form-wrap-nogap width-small">
-								<select title="연락가능시간" class="select">
+								<select title="연락가능한 마지막시간" class="select">
 									<option>00</option>
 									<option>01</option>
 								</select>
@@ -560,52 +563,58 @@
 				<tbody>
 					<tr>
 						<td class="table-td">
+							<label for="rel" class="blind">가족 관계선택</label>
 							<div class="form-wrap">
-								<select title="관계 선택" class="select">
+								<select id="rel" class="select">
 									<option>관계</option>
 									<option>관계</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="family-name" class="blind">이름</label>
 							<div class="form-wrap">
-								<input type="text" title="이름 입력" class="input-text">
+								<input type="text" id="family-name" class="input-text">
+							</div>
+						</td>
+						<td class="table-td">
+							<label for="family-age" class="blind">나이</label>
+							<div class="form-wrap">
+								<input type="text" id="family-age" class="input-text">
 							</div>
 						</td>
 						<td class="table-td">
 							<div class="form-wrap">
-								<input type="text" title="나이 입력" class="input-text">
-							</div>
-						</td>
-						<td class="table-td">
-							<div class="form-wrap">
-								<select title="학력 선택" class="select">
+								<label for="family-edu" class="blind">학력</label>
+								<select id="family-edu" class="select">
 									<option>학력</option>
 									<option>학력</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="family-job" class="blind">직업</label>
 							<div class="form-wrap">
-								<input type="text" title="직업 입력" class="input-text">
+								<input type="text" id="family-job" class="input-text">
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="family-with" class="blind">동거여부</label>
 							<div class="form-wrap">
-								<select title="동거여부 선택" class="select">
+								<select id="family-with" class="select">
 									<option>동거</option>
 									<option>동거</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
-							<button type="button" class="btn-delete">현재 행 삭제</button>
+							<button type="button" class="btn-delete">가족사항 현재 행 삭제</button>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
+				<button type="button" class="btn" title="가족사항 입력란이 추가됩니다.">추가</button>
 			</div>
 		</div>
 
@@ -687,13 +696,13 @@
 								</select>
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="군별" class="select">
+								<select title="병역내용 군별" class="select">
 									<option>군별</option>
 									<option>군별</option>
 								</select>
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="계급" class="select">
+								<select title="병역내용 계급" class="select">
 									<option>계급</option>
 									<option>계급</option>
 								</select>
@@ -789,44 +798,48 @@
 				<tbody>
 					<tr>
 						<td class="table-td">
+							<label for="dis-type" class="blind">장애 대상구분</label>
 							<div class="form-wrap">
-								<select title="대상구분 선택" class="select">
+								<select id="dis-type" class="select">
 									<option>대상</option>
 									<option>대상</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="dis-kind" class="blind">장애유형</label>
 							<div class="form-wrap">
-								<select title="장애유형 선택" class="select">
+								<select id="dis-kind" class="select">
 									<option>유형</option>
 									<option>유형</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="dis-grade" class="blind">장애등급</label>
 							<div class="form-wrap">
-								<select title="장애등급 선택" class="select">
+								<select id="dis-grade" class="select">
 									<option>등급</option>
 									<option>등급</option>
 								</select>
 							</div>
 						</td>
 						<td class="table-td">
+							<label for="dis-date" class="blind">장애인정일</label>
 							<div class="form-wrap width-small">
-								<select title="인정일 년도" class="select">
+								<select id="dis-date" class="select" title="장애인정 년도">
 									<option>1900</option>
 									<option>1900</option>
 								</select>
 							</div>
 							<div class="form-wrap width-small">
-								<select title="인정일 월" class="select">
+								<select class="select" title="장애인정 월">
 									<option>1</option>
 									<option>2</option>
 								</select>
 							</div>
 							<div class="form-wrap-nogap width-small">
-								<select title="인정일 날짜" class="select">
+								<select class="select" title="장애인정 일">
 									<option>1</option>
 									<option>2</option>
 								</select>
@@ -839,7 +852,7 @@
 				</tbody>
 			</table>
 			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
+				<button type="button" class="btn" title="장애내역 입력란이 추가됩니다.">추가</button>
 			</div>
 		</div>
 
@@ -852,7 +865,7 @@
 </section>
 
 
-<footer class="footer">
+<footer id="footer" class="footer" tabindex="0">
 	<div class="wrapper">
 		<ul class="footer-links">
 			<li class="footer-links-item"><a href="#" class="footer-link">이용약관</a></li>
@@ -860,7 +873,8 @@
 		</ul>
 
 		<div class="footer-family">
-			<select class="footer-family-select" title="풀무원 가족사이트 선택">
+			<label for="family-site" class="blind">풀무원 가족사이트 선택</label>
+			<select id="family-site" class="footer-family-select">
 				<option>풀무원 가족사이트</option>
 				<option>풀무원 가족사이트</option>
 			</select>

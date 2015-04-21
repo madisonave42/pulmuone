@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>아이디 찾기 | 풀무원채용</title>
+	<title>인재DB | 인재모시기 | 풀무원채용</title>
 	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 
@@ -17,12 +17,15 @@
 	<link rel="stylesheet" href="../css/ie8.css" />
 	<![endif]-->
 
-	<script src="../js/lib/jquery.library.min.js"></script>
+	<script src="../js/lib/jquery-1.11.0.min.js"></script>
+	<script src="../js/lib/jquery-ui-1.11.2.min.js"></script>
 	<script src="../js/function.min.js"></script>
 </head>
 <body>
 <div class="skip-nav">
+	<a href="#gnb" class="skip-nav-link">메뉴 바로가기</a>
 	<a href="#main" class="skip-nav-link">본문 바로가기</a>
+	<a href="#footer" class="skip-nav-link">푸터 바로가기</a>
 </div>
 
 <header class="header">
@@ -31,73 +34,70 @@
 			<a href="#" class="js-gnb-out"><img src="../images/img_logo.png" alt="Pulumone" class="logo-img" /></a>
 		</h1>
 
-		<ul class="gnb clear">
+		<ul id="gnb" class="gnb clear" tabindex="0">
 			<li class="gnb-item">
 				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
-				<a href="#" class="gnb-main-link on"><span class="gnb-main-text">인재모시기</span></a>
+				<a href="#" class="gnb-main-link on js-gnb"><span class="gnb-main-text">인재모시기</span></a>
 
 				<div class="gnb-sub-wrap">
 					<p class="gnb-sub-copy">풀무원과 함께 할<br />바르고 창의적인<br />인재를 모십니다.</p>
 					<ul class="gnb-sub clear">
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">채용공고</a>
+							<a href="#" class="gnb-sub-link sub-link01-01"><span class="gnb-sub-link-text">채용공고</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">인재DB</a>
+							<a href="#" class="gnb-sub-link sub-link01-02"><span class="gnb-sub-link-text">인재DB</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">채용절차</a>
+							<a href="#" class="gnb-sub-link sub-link01-03"><span class="gnb-sub-link-text">채용절차</span></a>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="gnb-item">
-				<a href="#" class="gnb-main-link"><span class="gnb-main-text">인재키우기</span></a>
+				<a href="#" class="gnb-main-link js-gnb"><span class="gnb-main-text">인재키우기</span></a>
 
 				<div class="gnb-sub-wrap">
 					<p class="gnb-sub-copy">풀무원은 직무중심의<br/>공정한 인사제도를<br />운영하고 있습니다.</p>
 					<ul class="gnb-sub clear">
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">인재상</a>
+							<a href="#" class="gnb-sub-link sub-link02-01"><span class="gnb-sub-link-text">인재상</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">인사제도</a>
+							<a href="#" class="gnb-sub-link sub-link02-02"><span class="gnb-sub-link-text">인사제도</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">인재육성</a>
+							<a href="#" class="gnb-sub-link sub-link02-03"><span class="gnb-sub-link-text">인재육성</span></a>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="gnb-item">
-				<a href="#" class="gnb-main-link"><span class="gnb-main-text">인재도우미</span></a>
+				<a href="#" class="gnb-main-link js-gnb"><span class="gnb-main-text">인재도우미</span></a>
 
 				<div class="gnb-sub-wrap">
 					<p class="gnb-sub-copy">지원자들을 위한<br />생생하고 다양한 정보를<br />제공해 드립니다.</p>
 					<ul class="gnb-sub clear">
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">직무소개</a>
+							<a href="#" class="gnb-sub-link sub-link03-01"><span class="gnb-sub-link-text">직무소개</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">법인소개</a>
+							<a href="#" class="gnb-sub-link sub-link03-02"><span class="gnb-sub-link-text">합격노하우</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">합격노하우</a>
+							<a href="#" class="gnb-sub-link sub-link03-03"><span class="gnb-sub-link-text">공지사항</span></a>
 						</li>
 						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">공지사항</a>
-						</li>
-						<li class="gnb-sub-item">
-							<a href="#" class="gnb-sub-link">자주묻는 질문</a>
+							<a href="#" class="gnb-sub-link sub-link03-04"><span class="gnb-sub-link-text">자주묻는 질문</span></a>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="gnb-item">
-				<a href="#" class="gnb-main-link"><span class="gnb-main-text">한눈에 보는 풀무원</span></a>
+				<a href="#" class="gnb-main-link js-gnb"><span class="gnb-main-text">한눈에 보는 풀무원</span></a>
 			</li>
 		</ul>
 
@@ -109,15 +109,17 @@
 </header>
 
 
-<section class="main">
-	<div class="main-header account-header">
+<section id="main" class="main" tabindex="0">
+	<div class="main-header apply-header">
 		<div class="wrapper clear">
-			<h2 class="main-header-title">아이디 찾기</h2>
-			<p class="main-header-copy">아이디를 잊으셨나요? 가입 시 정보를 입력 후 아이디를 찾아보세요.</p>
+			<h2 class="main-header-title">인재DB</h2>
+			<p class="main-header-copy">풀무원은 채용의 기회를 넓히기 위해 인재DB를 운영하고 있습니다.</p>
 			<div class="breadcrumb">
 				<a href="" class="breadcrumb-link">Home</a>
 				>
-				아이디 찾기
+				<a href="" class="breadcrumb-link">인재모시기</a>
+				>
+				인재DB
 			</div>
 		</div>
 
@@ -129,19 +131,20 @@
 	</div>
 
 	<div class="main-content wrapper">
-		<div class="account">
-			<p class="account-msg">홍길동 님의 아이디는 <span class="strong">gdhong15</span> 입니다.</p>
-		</div>
-		<div class="account-actions">
-			<a href="#" class="btn-wide btn-green">로그인</a>
-			<a href="#" class="btn-wide">비밀번호 찾기</a>
-		</div>
+
+
+
 	</div>
 
+	<div class="main-actions">
+		<a href="#" class="btn-wide">이전</a>
+		<button type="button" class="btn-wide">임시저장</button>
+		<a href="#" class="btn-wide btn-green">다음</a>
+	</div>
 </section>
 
 
-<footer class="footer">
+<footer id="footer" class="footer" tabindex="0">
 	<div class="wrapper">
 		<ul class="footer-links">
 			<li class="footer-links-item"><a href="#" class="footer-link">이용약관</a></li>
@@ -149,7 +152,8 @@
 		</ul>
 
 		<div class="footer-family">
-			<select class="footer-family-select" title="풀무원 가족사이트 선택">
+			<label for="family-site" class="blind">풀무원 가족사이트 선택</label>
+			<select id="family-site" class="footer-family-select">
 				<option>풀무원 가족사이트</option>
 				<option>풀무원 가족사이트</option>
 			</select>

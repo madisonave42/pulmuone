@@ -2,7 +2,7 @@ include "header_top.html"
 	<title>자주 묻는 질문 | 인재도우미 | 풀무원채용</title>
 include "header_bottom.html"
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header faq-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">자주 묻는 질문</h2>
@@ -27,8 +27,9 @@ include "header_bottom.html"
 
 		<div class="faq-search">
 			<h3 class="blind">FAQ 검색하기</h3>
+			<label for="key-faq" class="blind">FAQ 검색어입력</label>
 			<div class="form-wrap width-faq-search">
-				<input type="text" class="input-text" title="FAQ 검색어 입력">
+				<input type="text" id="key-faq" class="input-text">
 			</div>
 			<input type="submit" value="검색" class="btn">
 		</div>
@@ -55,7 +56,7 @@ include "header_bottom.html"
 		</ul>
 
 		<p class="faq-email">
-			원하시는 답변을 찾을 수 없다면 문의해 주세요. <a href="#" class="btn-send-email">이메일 문의</a>
+			원하시는 답변을 찾을 수 없다면 문의해 주세요. <button type="button" class="btn-send-email" title="이메일문의 입력 팝업열림">이메일 문의</button>
 		</p>
 
 		<div class="pagination">

@@ -371,7 +371,7 @@ input, textarea {
 .width-faq-search {
   width: 715px;
 }
-.width-edu-search {
+.width-pop-search {
   width: 289px;
 }
 
@@ -497,6 +497,7 @@ input, textarea {
   font-size: 13px;
   border-top: 2px solid #222;
   border-bottom: 1px solid #d8d8d8;
+  table-layout: fixed;
 }
 .table-th {
   padding: 20px 0;
@@ -527,6 +528,7 @@ input, textarea {
   font-size: 13px;
   border-top: 2px solid #222;
   border-bottom: 1px solid #d8d8d8;
+  table-layout: fixed;
 }
 .table-hr-th {
   padding: 20px 15px;
@@ -596,6 +598,7 @@ input, textarea {
 
 .header {
   height: 81px;
+  min-width: 980px;
 }
 .header .wrapper {
   position: static;
@@ -770,6 +773,9 @@ input, textarea {
   border-bottom: 1px solid #008038;
 }
 
+.main {
+  min-width: 980px;
+}
 .main-header {
   position: relative;
   padding-top: 56px;
@@ -830,6 +836,7 @@ input, textarea {
 }
 .main-actions {
   padding: 46px 0;
+  min-width: 980px;
   border-top: 1px solid #d8d8d8;
   background-color: #f9f9f9;
   text-align: center;
@@ -888,6 +895,7 @@ input, textarea {
 
 .footer {
   padding-top: 30px;
+  min-width: 980px;
   height: 66px;
   background-color: #2e2e2e;
 }
@@ -1105,34 +1113,35 @@ input, textarea {
   margin-top: 30px;
 }
 
-.edu-search-title {
+.pop-search-title {
+  display: block;
   margin: 20px 0 10px;
   color: #222;
   font-size: 14px;
   font-weight: bold;
 }
-.edu-search-title:first-child {
+.pop-search-title:first-child {
   margin-top: 0;
 }
 
-.edu-search-result {
+.pop-search-result {
   border: 1px solid #CBCBCB;
   border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
 }
-.edu-search-list {
+.pop-search-list {
   padding: 11px;
   height: 130px;
   overflow-x: hidden;
   overflow-y: auto;
 }
-.edu-search-list-item {
+.pop-search-list-item {
   display: block;
   margin-bottom: 13px;
   color: #666;
 }
-.edu-search-list-item:hover {
+.pop-search-list-item:hover {
   text-decoration: underline;
 }
 
@@ -1422,6 +1431,12 @@ input, textarea {
   text-indent: -9999px;
 }
 
+.input-introduce {
+  padding: 0 15px 30px;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #d8d8d8;
+}
+
 .introduce {
   margin-top: 30px;
   text-align: left;
@@ -1514,6 +1529,96 @@ input, textarea {
   margin: 0 auto;
   width: 760px;
   margin-bottom: 30px;
+}
+
+.static-title {
+  position: relative;
+  margin-bottom: 77px;
+  line-height: 1.6;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+.static-title:after {
+  width: 50px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  margin-left: -25px;
+  display: block;
+  background-color: #000;
+}
+.static-info {
+  margin-bottom: 72px;
+  text-align: center;
+  line-height: 2.1;
+  font-size: 16px;
+}
+.static-img {
+  text-align: center;
+}
+
+.hrdb-list {
+  margin-top: 22px;
+  margin-left: 275px;
+}
+
+.process {
+  margin-top: 60px;
+  border-top: 2px solid #222;
+}
+.process-step {
+  border-bottom: 1px solid #d8d8d8;
+  overflow: hidden;
+}
+.process-title {
+  float: left;
+  margin: 46px 0;
+  padding-left: 33px;
+  width: 231px;
+  font-size: 24px;
+  line-height: 1;
+}
+.process-title-num {
+  margin-right: 18px;
+  line-height: 1;
+  color: #b07e44;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+.process-list01, .process-list02, .process-list03, .process-list04, .process-list05 {
+  float: left;
+  width: 716px;
+}
+.process-list01 {
+  margin-top: 54px;
+}
+.process-list02 {
+  margin-top: 54px;
+}
+.process-list03 {
+  margin-top: 27px;
+}
+.process-list04 {
+  margin-top: 54px;
+}
+.process-list05 {
+  margin-top: 38px;
+}
+
+.policy-title {
+  margin-top: 100px;
+  font-size: 34px;
+  text-align: center;
+}
+.policy-text {
+  margin: 15px 0 35px;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: center;
 }
 
 .blind {

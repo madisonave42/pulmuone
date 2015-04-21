@@ -4,6 +4,7 @@
 	font-size:$font-size-base;
 	border-top:2px solid $color-base;
 	border-bottom:1px solid $color-light-gray;
+	table-layout:fixed;
 
 	&-th {
 		padding:20px 0;
@@ -39,6 +40,7 @@
 	font-size:$font-size-base;
 	border-top:2px solid $color-base;
 	border-bottom:1px solid $color-light-gray;
+	table-layout:fixed;
 
 	&-th {
 		padding:20px 15px;

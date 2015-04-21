@@ -23,8 +23,8 @@ module.exports = function(grunt) {
     	dist: {
     		src: ['js_src/*.js'],
     		dest: 'js_concat/function.js'
-    	},
-
+    	}
+      /*
     	distLib: {
     		src: [
     		      'js_src/lib/jquery-1.11.0.min.js',
@@ -35,18 +35,20 @@ module.exports = function(grunt) {
 
     		dest: 'js_concat/lib/jquery.library.js'
     	}
+      */
     },
 
     uglify: {
     	build: {
         src: 'js_concat/function.js',
         dest: 'js/function.min.js'
-     	},
-
+     	}
+      /*
 	    buildLib: {
 	      src: 'js_concat/lib/jquery.library.js',
 	      dest: 'js/lib/jquery.library.min.js'
 	   	}
+      */
     },
 
     sass:{
@@ -86,7 +88,13 @@ module.exports = function(grunt) {
     		files:[{
     			expand: true,
     			cwd: 'js_src/lib/',
-    			src: ['html5shiv.min.js', 'IE9.js', 'jquery-1.11.0.min.map'],
+    			src: [
+                'html5shiv.min.js',
+                'IE9.js',
+                'jquery-1.11.0.min.js',
+                'jquery-ui-1.11.2.min.js',
+                'jquery-1.11.0.min.map'
+                ],
     			dest: 'js/lib/'
     		}]
 

@@ -2,7 +2,7 @@ include "header_top.html"
 	<title>지원서 작성 | 인재모시기 | 풀무원채용</title>
 include "header_bottom.html"
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header apply-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">지원서 작성</h2>
@@ -84,51 +84,51 @@ include "header_bottom.html"
 							고등학교
 						</td>
 						<th scope="row" class="table-hr-th">
-							졸업상태 <span class="strong">*</span>
+							<label for="high-state">졸업상태</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-normal">
-								<select title="졸업상태" class="select">
+								<select id="high-state" class="select">
 									<option>졸업</option>
 									<option>졸업</option>
 								</select>
 							</div>
 							<div class="check-wrap form-inline-wrap no-gap">
-								<input type="checkbox" name="type" id="edu-last" class="check-input">
+								<input type="checkbox" name="type" id="edu-last" class="check-input" title="현재 작성중인 학력이 최종학력">
 								<label for="edu-last" class="check-label">최종학력</label>
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							입학일 <span class="strong">*</span>
+							<label for="high-adm">입학일</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-small">
-								<select title="입학 년도" class="select">
+								<select id="adm" title="고등학교입학 년도" class="select">
 									<option>1900</option>
 									<option>1900</option>
 								</select>
 							</div>
 							<div class="form-wrap width-small">
-								<select title="입학 월" class="select">
+								<select title="고등학교입학 월" class="select">
 									<option>1</option>
 									<option>2</option>
 								</select>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							졸업일 <span class="strong">*</span>
+							<label for="high-gra">졸업일</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-small">
-								<select title="졸업 년도" class="select">
+								<select id="high-gra" title="고등학교졸업 년도" class="select">
 									<option>1900</option>
 									<option>1900</option>
 								</select>
 							</div>
 							<div class="form-wrap width-small">
-								<select title="졸업 월" class="select">
+								<select title="고등학교졸업 월" class="select">
 									<option>1</option>
 									<option>2</option>
 								</select>
@@ -137,20 +137,20 @@ include "header_bottom.html"
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							학교 <span class="strong">*</span>
+							<label for="high-name">학교</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-search" title="학교" />
-								<button type="button" class="input-search-btn">학교 찾기</button>
+								<input type="text" id="high-name" class="input-search" title="학교명" />
+								<button type="button" class="input-search-btn" title="학교찾기 팝업 열림">학교 찾기</button>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							계열 <span class="strong">*</span>
+							<label for="high-type">계열</label> <span class="strong">*</span>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-normal">
-								<select title="계열" class="select">
+								<select id="high-type" class="select">
 									<option>계열</option>
 									<option>계열</option>
 								</select>
@@ -159,10 +159,6 @@ include "header_bottom.html"
 					</tr>
 				</tbody>
 			</table>
-
-			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
-			</div>
 		</div>
 
 		<div class="row">
@@ -177,61 +173,61 @@ include "header_bottom.html"
 				<tbody>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							학위
+							<label for="uni-state">학위</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-normal">
-								<select title="학위" class="select">
+								<select id="uni-state" title="학위" class="select">
 									<option>학위</option>
 									<option>학위</option>
 								</select>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							졸업상태
+							<label for="uni-gra">졸업상태</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-normal">
-								<select title="졸업상태" class="select">
+								<select id="uni-gra" class="select">
 									<option>졸업</option>
 									<option>졸업</option>
 								</select>
 							</div>
 							<div class="check-wrap form-inline-wrap no-gap">
-								<input type="checkbox" name="type" id="edu-last02" class="check-input">
+								<input type="checkbox" name="type" id="edu-last02" class="check-input" title="현재 작성중인 학력이 최종학력">
 								<label for="edu-last02" class="check-label">최종학력</label>
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							입학일
+							<label for="uni-adm">입학일</label>
 						<td class="table-hr-td">
 							<div class="form-wrap width-small">
-								<select title="입학 년도" class="select">
+								<select id="uni-adm" title="대학입학 년도" class="select">
 									<option>1900</option>
 									<option>1900</option>
 								</select>
 							</div>
 							<div class="form-wrap width-small">
-								<select title="입학 월" class="select">
+								<select title="대학입학 월" class="select">
 									<option>1</option>
 									<option>2</option>
 								</select>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							졸업일
+							<label for="uni-gra-day">졸업일</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-small">
-								<select title="졸업 년도" class="select">
+								<select id="uni-gra-day" title="대학졸업 년도" class="select">
 									<option>1900</option>
 									<option>1900</option>
 								</select>
 							</div>
 							<div class="form-wrap width-small">
-								<select title="졸업 월" class="select">
+								<select title="대학졸업 월" class="select">
 									<option>1</option>
 									<option>2</option>
 								</select>
@@ -240,55 +236,55 @@ include "header_bottom.html"
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							학교
+							<label for="uni-name">학교</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-search" title="학교" />
-								<button type="button" class="input-search-btn">학교 찾기</button>
+								<input type="text" id="uni-name" class="input-search" title="대학 이름" />
+								<button type="button" class="input-search-btn" title="학교찾기 팝업 열림">학교 찾기</button>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							전공
+							<label for="uni-major">전공</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-search" title="전공" />
-								<button type="button" class="input-search-btn">전공 찾기</button>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row" class="table-hr-th">
-							부전공
-						</th>
-						<td class="table-hr-td">
-							<div class="form-wrap">
-								<input type="text" class="input-search" title="부전공" />
-								<button type="button" class="input-search-btn">부전공 찾기</button>
-							</div>
-						</td>
-						<th scope="row" class="table-hr-th">
-							복수전공
-						</th>
-						<td class="table-hr-td">
-							<div class="form-wrap">
-								<input type="text" class="input-search" title="복수전공" />
-								<button type="button" class="input-search-btn">복수전공 찾기</button>
+								<input type="text" id="uni-major" class="input-search" />
+								<button type="button" class="input-search-btn" title="전공찾기 팝업열림">전공 찾기</button>
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							학점
+							<label for="uni-sub">부전공</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="uni-sub" class="input-search" />
+								<button type="button" class="input-search-btn" title="전공찾기 팝업열림">부전공 찾기</button>
+							</div>
+						</td>
+						<th scope="row" class="table-hr-th">
+							<label for="uni-dbl">복수전공</label>
+						</th>
+						<td class="table-hr-td">
+							<div class="form-wrap">
+								<input type="text" id="uni-dbl" class="input-search" />
+								<button type="button" class="input-search-btn" title="전공찾기 팝업열림">복수전공 찾기</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="table-hr-th">
+							<label for="uni-score">학점</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
-								<input type="text" class="input-search" title="학점" />
+								<input type="text" id="uni-score" class="input-search" title="내학점" />
 							</div>
 							<div class="form-div">/</div>
 							<div class="form-wrap width-normal">
-								<select title="학점" class="select">
+								<select title="총점" class="select">
 									<option>학점</option>
 									<option>학점</option>
 								</select>
@@ -312,8 +308,8 @@ include "header_bottom.html"
 			</table>
 
 			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
-				<button type="button" class="btn">삭제</button>
+				<button type="button" class="btn" title="대학학력 입력란이 추가됩니다.">추가</button>
+				<button type="button" class="btn" title="현재입력중인 대학학력 내용이 삭제됩니다.">삭제</button>
 			</div>
 		</div>
 
@@ -328,52 +324,52 @@ include "header_bottom.html"
 				<tbody>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							논문제목
+							<label for="paper-name">논문제목</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-text" title="논문제목" />
+								<input type="text" id="paper-name" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							지도교수
+							<label for="paper-pro">지도교수</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-half">
-								<input type="text" class="input-text" title="지도교수" />
+								<input type="text" id="paper-pro" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							논문소개
+							<label for="paper-intro">논문소개</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<textarea cols="30" rows="10" title="논문소개" class="textarea"></textarea>
+								<textarea cols="30" rows="10" id="paper-intro" class="textarea"></textarea>
 							</div>
 							<p class="check-length">0 / 200</p>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							논문첨부
+							<label for="paper-file">논문첨부</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap width-half">
-								<input type="text" class="input-text" title="논문첨부" placeholder="2MB 미만의 파일을 올려주세요." />
+								<input type="text" class="input-text" id="paper-file" placeholder="2MB 미만의 파일을 올려주세요." />
 							</div>
-							<button type="button" class="btn-form">찾아보기</button>
+							<button type="button" class="btn-form" title="논문 첨부파일 찾기">찾아보기</button>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 
 			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
-				<button type="button" class="btn">삭제</button>
+				<button type="button" class="btn" title="논문 입력란이 추가됩니다.">추가</button>
+				<button type="button" class="btn" title="현재입력중인 논문 입력란이 삭제됩니다.">삭제</button>
 			</div>
 		</div>
 
@@ -390,71 +386,71 @@ include "header_bottom.html"
 				<tbody>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							학교
+							<label for="study-uni">학교</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-search" title="학교명" />
-								<button type="button" class="input-search-btn">학교 찾기</button>
+								<input type="text" id="study-uni" class="input-search" title="연구활동을 한 학교명" />
+								<button type="button" class="input-search-btn" title="학교찾기 팝업 열림">학교 찾기</button>
 							</div>
 						</td>
 						<th scope="row" class="table-hr-th">
-							전공
+							<label for="study-major">전공</label>
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap">
-								<input type="text" class="input-text" title="전공" />
+								<input type="text" id="study-major" class="input-text" title="연구활동 전공" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							지도교수
+							<label for="study-pro">지도교수</label>
 						</th>
 						<td colspan="3" class="table-hr-td">
 							<div class="form-wrap width-half">
-								<input type="text" class="input-text" title="지도교수" />
+								<input type="text" id="study-pro" class="input-text" title="연구활동 지도교수" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							지도교수 연락처
+							<label for="study-pro-phone">지도교수 연락처</label>
 						</th>
 						<td colspan="3" class="table-hr-td">
 							<div class="form-wrap-nogap width-small">
-								<select title="국번 선택" class="select">
+								<select id="study-pro-phone" title="지도교수 연락처 국번 선택" class="select">
 									<option>010</option>
 									<option>011</option>
 								</select>
 							</div>
 							<div class="form-div">-</div>
 							<div class="form-wrap-nogap width-small">
-								<input type="text" title="휴대폰 가운데 자리" maxlength="4" class="input-text" />
+								<input type="text" title="지도교수연락처 가운데 자리" maxlength="4" class="input-text" />
 							</div>
 							<div class="form-div">-</div>
 							<div class="form-wrap width-small">
-								<input type="text" title="휴대폰 마지막 자리" maxlength="4" class="input-text" />
+								<input type="text" title="지도교수연락처 마지막 자리" maxlength="4" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							연구명
+							<label for="study-name">연구명</label>
 						</th>
 						<td colspan="3" class="table-hr-td">
 							<div class="form-wrap width">
-								<input type="text" class="input-text" title="연구명" />
+								<input type="text" id="study-name" class="input-text" />
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row" class="table-hr-th">
-							활동분야
+							<label for="study-field">활동분야</label>
 						</th>
 						<td colspan="3" class="table-hr-td">
 							<div class="form-wrap">
-								<textarea cols="30" rows="10" title="논문소개" class="textarea"></textarea>
+								<textarea cols="30" rows="10" id="study-field" class="textarea"></textarea>
 							</div>
 							<p class="check-length">0 / 200</p>
 						</td>
@@ -463,15 +459,15 @@ include "header_bottom.html"
 			</table>
 
 			<div class="row-actions">
-				<button type="button" class="btn">추가</button>
-				<button type="button" class="btn">삭제</button>
+				<button type="button" class="btn" title="연구실적 입력란이 추가됩니다.">추가</button>
+				<button type="button" class="btn" title="현재입력중인 연구실적 입력란이 삭제됩니다.">삭제</button>
 			</div>
 		</div>
 
 	</div>
 
 	<div class="main-actions">
-		<button type="button" class="btn-wide">이전</button>
+		<a href="#" class="btn-wide">이전</a>
 		<button type="button" class="btn-wide">임시저장</button>
 		<a href="#" class="btn-wide btn-green">다음</a>
 	</div>
@@ -482,28 +478,28 @@ include "header_bottom.html"
 	<h1 class="popup-title">자격/면허 검색</h1>
 
 	<div class="popup-content">
-		<p class="edu-search-title">자격/면허를 검색해주세요.</p>
-		<div class="form-wrap width-edu-search">
-			<input type="text" class="input-text" title="자격/면허 검색 키워드 입력">
+		<label for="key-lic" class="pop-search-title">자격/면허를 검색해주세요.</label>
+		<div class="form-wrap width-pop-search">
+			<input type="text" id="key-lic" class="input-text">
 		</div>
 		<input type="submit" value="검색" class="btn btn-green">
 
-		<p class="edu-search-title"><span class="strong">20개</span>가 검색되었습니다.</p>
-		<div class="edu-search-result">
-			<ul class="edu-search-list">
-				<li><a href="#" class="edu-search-list-item">남서울대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">동서울대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">디지털서울문화예술대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">서울과학기술대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">서울교육대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">남서울대학교</a></li>
-				<li><a href="#" class="edu-search-list-item">동서울대학교</a></li>
+		<p class="pop-search-title"><span class="strong">20개</span>가 검색되었습니다.</p>
+		<div class="pop-search-result">
+			<ul class="pop-search-list">
+				<li><a href="#" class="pop-search-list-item">남서울대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">동서울대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">디지털서울문화예술대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">서울과학기술대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">서울교육대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">남서울대학교</a></li>
+				<li><a href="#" class="pop-search-list-item">동서울대학교</a></li>
 			</ul>
 		</div>
 
-		<p class="edu-search-title">검색결과가 없으시면 직접 입력해주세요.</p>
-		<div class="form-wrap width-edu-search">
-			<input type="text" class="input-text" title="자격/면허 입력">
+		<label for="key-lic-name"  class="pop-search-title">검색결과가 없으시면 직접 입력해주세요.</label>
+		<div class="form-wrap width-pop-search">
+			<input type="text" id="key-lic-name" class="input-text" title="자격/면허 직접입력">
 		</div>
 		<input type="submit" value="확인" class="btn-gray">
 	</div>

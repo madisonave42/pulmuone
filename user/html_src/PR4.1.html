@@ -2,7 +2,7 @@ include "header_top.html"
 	<title>채용공고 | 인재모시기 | 풀무원채용</title>
 include "header_bottom.html"
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header apply-list-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">채용공고</h2>
@@ -27,47 +27,51 @@ include "header_bottom.html"
 
 		<div class="apply-search">
 			<div class="form-wrap width-normal">
-				<select title="부문" class="select">
+				<label for="part" class="blind">부분</label>
+				<select id="part" class="select">
 					<option>부문</option>
 					<option>부문</option>
 				</select>
 			</div>
 			<div class="form-wrap width-normal">
-				<select title="법인" class="select">
+				<label for="group" class="blind">법인</label>
+				<select id="group" class="select">
 					<option>법인</option>
 					<option>법인</option>
 				</select>
 			</div>
 			<div class="form-wrap width-normal">
-				<select title="지원구분" class="select">
+				<label for="type" class="blind">지원구분</label>
+				<select id="type" class="select">
 					<option>지원구분</option>
 					<option>지원구분</option>
 				</select>
 			</div>
 			<div class="form-wrap width-apply-search">
-				<input type="text" class="input-text" title="검색어 입력" />
+				<label for="keyword" class="blind">검색어 입력</label>
+				<input id="keyword" type="text" class="input-text" />
 			</div>
 			<input type="submit" value="검색" class="btn" />
 		</div>
 
 		<ul class="apply-list">
 			<li class="apply-item">
-				<p class="apply-item-state"><em class="apply-item-state-date">D-7</em>채용중</p>
+				<div class="apply-item-state"><em class="apply-item-state-date"><span class="blind">남은날짜</span>D-7</em>채용중</div>
 				<div class="apply-item-overview">
-					<p class="apply-item-part">풀무원 식문화 연구원 ㅣ (주)푸드머스 에이치엔에스 연구소</p>
-					<p class="apply-item-title">풀무원 관능검사 담당 신입사원 채용</p>
-					<p class="apply-item-detail">리테일구매 물류 ㅣ 경력/신입</p>
-					<p class="apply-item-date">2015.02.01 ~ 2015.02.12</p>
+					<div class="apply-item-part">풀무원 식문화 연구원 ㅣ (주)푸드머스 에이치엔에스 연구소</div>
+					<div class="apply-item-title">풀무원 관능검사 담당 신입사원 채용</div>
+					<div class="apply-item-detail">리테일구매 물류 ㅣ 경력/신입</div>
+					<div class="apply-item-date">2015.02.01 ~ 2015.02.12</div>
 				</div>
 				<a href="" class="btn-apply-item-view">지원하기</a>
 			</li>
 			<li class="apply-item">
-				<p class="apply-item-state-no">채용예정</p>
+				<div class="apply-item-state-no">채용예정</div>
 				<div class="apply-item-overview">
-					<p class="apply-item-part">풀무원 식문화 연구원 ㅣ (주)푸드머스 에이치엔에스 연구소</p>
-					<p class="apply-item-title">풀무원 관능검사 담당 신입사원 채용</p>
-					<p class="apply-item-detail">리테일구매 물류 ㅣ 경력/신입</p>
-					<p class="apply-item-date">2015.02.01 ~ 2015.02.12</p>
+					<div class="apply-item-part">풀무원 식문화 연구원 ㅣ (주)푸드머스 에이치엔에스 연구소</div>
+					<div class="apply-item-title">풀무원 관능검사 담당 신입사원 채용</div>
+					<div class="apply-item-detail">리테일구매 물류 ㅣ 경력/신입</div>
+					<div class="apply-item-date">2015.02.01 ~ 2015.02.12</div>
 				</div>
 			</li>
 		</ul>

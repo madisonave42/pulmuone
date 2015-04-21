@@ -2,7 +2,7 @@ include "header_top.html"
 	<title>회원가입 | 풀무원채용</title>
 include "header_bottom.html"
 
-<section class="main">
+<section id="main" class="main" tabindex="0">
 	<div class="main-header account-header">
 		<div class="wrapper clear">
 			<h2 class="main-header-title">회원가입</h2>
@@ -27,7 +27,7 @@ include "header_bottom.html"
 			<div class="toggle-box first">
 				<h4 class="toggle-box-title">
 					이용약관
-					<button type="button" class="toggle-box-action js-tg-title">보기</button>
+					<button type="button" class="toggle-box-action js-tg-title">내용 펼쳐보기</button>
 				</h4>
 				<div class="toggle-box-content js-tg-cont">
 					<div class="terms-scroll">
@@ -54,8 +54,8 @@ include "header_bottom.html"
 			</div>
 			<div class="row-actions">
 				<div class="check-wrap no-gap">
-					<input type="checkbox" id="agree" class="check-input">
-					<label for="agree" class="check-label no-gap"><strong class="black">동의함</strong></label>
+					<input type="checkbox" id="agree01" class="check-input" title="이용약관 동의함" />
+					<label for="agree01" class="check-label no-gap"><strong class="black">동의함</strong></label>
 				</div>
 			</div>
 		</div>
@@ -64,7 +64,7 @@ include "header_bottom.html"
 			<div class="toggle-box">
 				<h4 class="toggle-box-title">
 					개인정보 처리방침
-					<button type="button" class="toggle-box-action js-tg-title">보기</button>
+					<button type="button" class="toggle-box-action js-tg-title">내용 펼쳐보기</button>
 				</h4>
 				<div class="toggle-box-content js-tg-cont">
 					<div class="terms-scroll">
@@ -91,8 +91,8 @@ include "header_bottom.html"
 			</div>
 			<div class="row-actions">
 				<div class="check-wrap no-gap">
-					<input type="checkbox" id="agree" class="check-input">
-					<label for="agree" class="check-label no-gap"><strong class="black">동의함</strong></label>
+					<input type="checkbox" id="agree02" class="check-input" title="개인정보 처리방침 동의함" />
+					<label for="agree02" class="check-label no-gap"><strong class="black">동의함</strong></label>
 				</div>
 			</div>
 		</div>
@@ -128,7 +128,7 @@ include "header_bottom.html"
 							<div class="form-wrap width-half">
 								<input type="text" id="id" class="input-text" />
 							</div>
-							<button type="button" class="btn-form">중복확인</button>
+							<button type="button" class="btn-form" title="아이디 중복확인">중복확인</button>
 						</td>
 					</tr>
 					<tr>
@@ -158,14 +158,14 @@ include "header_bottom.html"
 						</th>
 						<td class="table-hr-td">
 							<div class="form-wrap-nogap width-normal">
-								<input type="text" id="email" class="input-text" />
+								<input type="text" id="email" title="이메일 아이디" class="input-text" />
 							</div>
 							<div class="form-div form-div-at">@</div>
 							<div class="form-wrap width-normal">
-								<input type="text" title="도메인" class="input-text" />
+								<input type="text" title="이메일 도메인" class="input-text" />
 							</div>
 							<div class="form-wrap width-normal">
-								<select title="도메인 선택" class="select">
+								<select title="이메일 도메인 선택" class="select">
 									<option>gmail.com</option>
 									<option>daum.net</option>
 								</select>
@@ -191,7 +191,7 @@ include "header_bottom.html"
 							<div class="form-wrap width-small">
 								<input type="text" title="휴대폰 마지막 자리" maxlength="4" class="input-text" />
 							</div>
-							<button type="button" class="btn-form">인증번호 발송</button>
+							<button type="button" class="btn-form" title="입력하신 휴대폰 번호로 인증번호가 발송됩니다.">인증번호 발송</button>
 						</td>
 					</tr>
 					<tr>

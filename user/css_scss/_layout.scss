@@ -12,6 +12,7 @@
 
 .header {
 	@include size(a, 81);
+	min-width:980px;
 
 	.wrapper {
 		position:static;
@@ -246,6 +247,8 @@
 }
 
 .main {
+	min-width:980px;
+
 	&-header {
 		position:relative;
 		padding-top:56px;
@@ -320,6 +323,7 @@
 
 	&-actions {
 		padding:46px 0;
+		min-width:980px;
 		border-top:1px solid $color-light-gray;
 		background-color:$color-white-gray;
 		text-align:center;
@@ -387,6 +391,7 @@
 
 .footer {
 	padding-top:30px;
+	min-width:980px;
 	height:66px;
 	background-color:$color-dark;
 
