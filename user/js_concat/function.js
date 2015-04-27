@@ -1,15 +1,27 @@
 // Class
-function initGnb(gnb) {
-	var gnbActions = {},
-		mainLinks = gnb.find('')
 
-	function showSub() {
+// sidebar
+var initSidebar = function(el, gap) {
 
+	el.data('top', el.offset().top - gap);
 
+	return {
+		checkScrollTop: function() {
+			if ($(window).scrollTop() > el.data('top')) {
+				el.addClass('fixed');
+			} else {
+				el.removeClass('fixed');
+			}
+		},
+
+		scrollPageTop: function() {
+			$('html').stop().animate({scrollTop: 0}, 300); // for IE, FF
+			$('body').stop().animate({scrollTop: 0}, 300); // for Chrome
+		}
 	};
 
+};
 
-}
 
 // main
 // Check UA
@@ -97,5 +109,60 @@ $(function(){
 	});
 })();
 
+// index visual slide
+(function() {
+
+})();
+
+// index job slide
+(function() {
+	$('.js-index-job').slidesjs({
+		width: 980,
+		height: 265
+	});
+})();
+
+// index corporation slide
+(function() {
+	$('.js-index-corp').slidesjs({
+		width: 980,
+		height: 76,
+		pagination: {
+      active: false
+    }
+	});
+})();
+
+// index corporation hover
+(function() {
+	$('.index-corp-item').on({
+		mouseenter: function() {
+			$(this).addClass('on');
+		},
+		mouseleave: function() {
+			$(this).removeClass('on');
+		}
+	});
+})();
+
+// sidebar
+(function() {
+	var sidebar = $('.sidebar'),
+		btnTop = $('.sidebar-top');
+
+	if ($('.index-content').length > 0) {
+		sidebar.addClass('index-sidebar');
+	}
+
+	var sidebarAction = initSidebar(sidebar, 50); // 브라우저 최상단과의 차이
+
+	$(window).on('scroll', sidebarAction.checkScrollTop);
+
+	btnTop.on('click',function (e) {
+		sidebarAction.scrollPageTop();
+		e.preventDefault();
+	});
+
+})();
 
 });

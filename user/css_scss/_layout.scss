@@ -12,7 +12,7 @@
 
 .header {
 	@include size(a, 81);
-	min-width:980px;
+	min-width:1140px;
 
 	.wrapper {
 		position:static;
@@ -247,12 +247,12 @@
 }
 
 .main {
-	min-width:980px;
+	min-width:1140px;
 
 	&-header {
 		position:relative;
 		padding-top:56px;
-		min-width:980px;
+		min-width:1140px;
 		@include size(a, 160);
 		background-color:$color-dark-gray;
 
@@ -275,7 +275,7 @@
 			bottom:0;
 			left:0;
 			@include size(100%, 45);
-			min-width:980px;
+			min-width:1140px;
 		}
 
 		&-svg {
@@ -323,7 +323,7 @@
 
 	&-actions {
 		padding:46px 0;
-		min-width:980px;
+		min-width:1140px;
 		border-top:1px solid $color-light-gray;
 		background-color:$color-white-gray;
 		text-align:center;
@@ -389,9 +389,71 @@
 	}
 }
 
+.sidebar {
+	position:absolute;
+	top:377px;
+	left:50%;
+	margin-left:536px;
+
+	&.fixed {
+		position:fixed;
+		top:50px;
+	}
+
+	&-hrdb {
+		@include size(82, 94);
+		position:relative;
+		display:block;
+		box-sizing:border-box;
+		padding-top:59px;
+		border:1px solid $color-light-gray;
+		border-bottom:0;
+		border-radius:4px 4px 0 0;
+		font-size:11px;
+		font-weight:bold;
+		text-align:center;
+		background:$color-white url(../images/sprite_sidebar.png) no-repeat 50% 22px;
+		overflow:hidden;
+
+		&:after {
+			@include size(46, 1);
+			content:"";
+			position:absolute;
+			bottom:0;
+			left:16px;
+			display:block;
+			background-color:$color-light-gray;
+		}
+	}
+
+	&-status {
+		@include size(82, 91);
+		display:block;
+		box-sizing:border-box;
+		padding-top:60px;
+		border-left:1px solid $color-light-gray;
+		border-right:1px solid $color-light-gray;
+		font-size:11px;
+		font-weight:bold;
+		text-align:center;
+		background:$color-white url(../images/sprite_sidebar.png) no-repeat 50% -71px;
+		overflow:hidden;
+	}
+
+	&-top {
+		@include size(82, 19);
+		display:block;
+		box-sizing:borer-box;
+		background:#4b4b4b url(../images/sprite_sidebar.png) no-repeat 50% -162px;
+		text-indent:-9999px;
+		border-radius:0 0 4px 4px;
+		overflow:hidden;
+	}
+}
+
 .footer {
 	padding-top:30px;
-	min-width:980px;
+	min-width:1140px;
 	height:66px;
 	background-color:$color-dark;
 
