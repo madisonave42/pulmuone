@@ -1650,9 +1650,83 @@ input, textarea {
   text-align: center;
 }
 
+.hrdb-process-bg {
+  width: 901px;
+  height: 378px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background: url(../images/bg_hrdb.png) no-repeat;
+}
+.hrdb-process-title, .hrdb-process-item01, .hrdb-process-item02, .hrdb-process-item03, .hrdb-process-item04 {
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.hrdb-process-title {
+  top: 87px;
+  left: 406px;
+  color: #008038;
+  font-size: 18px;
+}
+.hrdb-process-item01 {
+  top: 334px;
+  left: 249px;
+  color: #fff;
+}
+.hrdb-process-item02 {
+  top: 246px;
+  left: 53px;
+  color: #222;
+}
+.hrdb-process-item03 {
+  top: 334px;
+  left: 512px;
+  color: #fff;
+}
+.hrdb-process-item04 {
+  top: 246px;
+  left: 785px;
+  color: #222;
+}
+
 .hrdb-list {
   margin-top: 22px;
   margin-left: 275px;
+}
+
+.order-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.order-list-item01, .order-list-item02, .order-list-item03, .order-list-item04, .order-list-item05 {
+  width: 171px;
+  height: 57px;
+  float: left;
+  padding-top: 114px;
+  padding-left: 31px;
+  background: url(../images/sprite_process.png) no-repeat;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.order-list-item01 {
+  padding-left: 0;
+}
+.order-list-item02 {
+  background-position: -171px 0;
+}
+.order-list-item03 {
+  background-position: -373px 0;
+}
+.order-list-item04 {
+  background-position: -576px 0;
+}
+.order-list-item05 {
+  background-position: -778px 0;
 }
 
 .process {
@@ -1709,6 +1783,95 @@ input, textarea {
   line-height: 1.6;
   font-size: 16px;
   text-align: center;
+}
+
+.policy-vision {
+  width: 854px;
+  height: 234px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 30px;
+  background: url(../images/bg_policy_vision.png) no-repeat;
+}
+.policy-vision-item {
+  float: left;
+  margin-top: 97px;
+  width: 207px;
+  text-align: center;
+  color: #008038;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.policy-th,
+.policy-td {
+  border-left: 1px solid #d8d8d8;
+}
+.policy-th:first-child,
+.policy-td:first-child {
+  border-left: 0;
+}
+
+.policy-th {
+  font-size: 16px;
+}
+
+.policy-td-em {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b07e44;
+  line-height: 1;
+}
+
+.policy-td-job {
+  padding-top: 20px;
+  vertical-align: top;
+}
+
+.policy-job-title01 {
+  margin-bottom: 45px;
+}
+
+.policy-job-title02 {
+  margin-bottom: 10px;
+}
+
+.policy-job-title04 {
+  margin-bottom: 20px;
+}
+
+.policy-job-title05 {
+  margin-bottom: 20px;
+}
+
+.policy-td-list {
+  display: inline-block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.policy-benefit {
+  margin-top: 40px;
+  border-top: 2px solid #222;
+}
+.policy-benefit:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.policy-benefit-item {
+  width: 50%;
+  height: 132px;
+  float: left;
+  border-bottom: 1px solid #d8d8d8;
+}
+.policy-benefit-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.policy-benefit-item.wide {
+  width: 100%;
 }
 
 .slidesjs-navigation {

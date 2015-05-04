@@ -45,7 +45,7 @@ if( navigator.userAgent.indexOf('Safari') > 0 ){
 
 $(function(){
 
-/* gnb */
+	/* gnb */
 	(function () {
 		var gnb = $('.gnb'),
 			menus = $('.js-gnb'),

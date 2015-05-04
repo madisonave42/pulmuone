@@ -33,12 +33,104 @@
 }
 
 // hrDB
+.hrdb-process {
+	&-bg {
+		@include size(901, 378);
+		@include center();
+		position:relative;
+		background:url(../images/bg_hrdb.png) no-repeat;
+	}
+
+	&-title,
+	&-item01,
+	&-item02,
+	&-item03,
+	&-item04 {
+		position:absolute;
+		font-size:17px;
+		font-weight:bold;
+		line-height:1.4;
+		text-align:center;
+	}
+
+	&-title {
+		top:87px;
+		left:406px;
+		color:$color-accent;
+		font-size:18px;
+	}
+
+	&-item01 {
+		top:334px;
+		left:249px;
+		color:$color-white;
+	}
+
+	&-item02 {
+		top:246px;
+		left:53px;
+		color:$color-base;
+	}
+
+	&-item03 {
+		top:334px;
+		left:512px;
+		color:$color-white;
+	}
+
+	&-item04 {
+		top:246px;
+		left:785px;
+		color:$color-base;
+	}
+}
+
 .hrdb-list {
 	margin-top:22px;
 	margin-left:275px;
 }
 
 // hr Process
+.order-list {
+	@include clear();
+
+	&-item01,
+	&-item02,
+	&-item03,
+	&-item04,
+	&-item05 {
+		@include size(171, 57);
+		float:left;
+		padding-top:114px;
+		padding-left:31px;
+		background:url(../images/sprite_process.png) no-repeat;
+		font-size:15px;
+		font-weight:bold;
+		text-align:center;
+	}
+
+	&-item01 {
+		padding-left:0;
+	}
+
+	&-item02 {
+		background-position:-171px 0;
+	}
+
+	&-item03 {
+		background-position:-373px 0;
+	}
+
+	&-item04 {
+		background-position:-576px 0;
+	}
+
+	&-item05 {
+		background-position:-778px 0;
+	}
+
+}
+
 .process {
 	margin-top:60px;
 	border-top:2px solid $color-base;
@@ -113,3 +205,83 @@
 	}
 }
 
+.policy-vision {
+	@include size(854, 234);
+	@include center();
+	padding-left:30px;
+	background:url(../images/bg_policy_vision.png) no-repeat;
+
+	&-item {
+		float:left;
+		margin-top:97px;
+		width:207px;
+		text-align:center;
+		color:$color-accent;
+		font-size:16px;
+		font-weight:bold;
+	}
+}
+
+.policy-th,
+.policy-td {
+	border-left:1px solid $color-light-gray;
+
+	&:first-child {
+		border-left:0;
+	}
+}
+
+.policy-th {
+	font-size:16px;
+}
+
+.policy-td-em {
+	font-size:16px;
+	font-weight:bold;
+	color:$color-point;
+	line-height:1;
+}
+
+.policy-td-job {
+	padding-top:20px;
+	vertical-align:top;
+}
+
+.policy-job-title01 {
+	margin-bottom:45px;
+}
+
+.policy-job-title02 {
+	margin-bottom:10px;
+}
+
+.policy-job-title04 {
+	margin-bottom:20px;
+}
+
+.policy-job-title05 {
+	margin-bottom:20px;
+}
+
+.policy-td-list {
+	display:inline-block;
+	margin:10px 0;
+	text-align:left;
+}
+
+.policy-benefit {
+	@include clear();
+	margin-top:40px;
+	border-top:2px solid $color-base;
+
+	&-item {
+		@include size(50%, 132);
+		@include clear();
+		float:left;
+		border-bottom:1px solid $color-light-gray;
+
+		&.wide {
+			width:100%;
+		}
+	}
+}
