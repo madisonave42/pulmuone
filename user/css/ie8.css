@@ -1,3 +1,7 @@
+body {
+  letter-spacing: -1px;
+}
+
 /* form */
 .input-text,
 .select {
