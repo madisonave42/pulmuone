@@ -2310,7 +2310,7 @@ input, textarea {
   background: url(../images/sprite_jobinfo_tab.png) no-repeat;
 }
 .jobinfo-tab-link01 {
-  background-position: 0px 0;
+  background-position: 0 0;
 }
 .jobinfo-tab-link02 {
   background-position: -164px 0;
@@ -2443,7 +2443,7 @@ input, textarea {
   background: url(../images/sprite_knowhow_tab.png) no-repeat;
 }
 .knowhow-tab-link01 {
-  background-position: 0px 0;
+  background-position: 0 0;
 }
 .knowhow-tab-link02 {
   background-position: -331px 0;
@@ -2817,6 +2817,53 @@ input, textarea {
   margin-top: 12px;
   font-size: 22px;
   line-height: 1.3;
+}
+
+.terms-page {
+  padding: 40px 10px;
+  font-size: 12px;
+  line-height: 1.8;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #d8d8d8;
+}
+.terms-heading {
+  margin: 25px 0 15px;
+}
+.terms-heading.first {
+  margin-top: 0px;
+}
+.terms-list {
+  padding: 0 0 0 16px;
+}
+.terms-num {
+  margin: 0 0 0 -16px;
+}
+
+.privacy-page {
+  padding: 40px 10px;
+  font-size: 12px;
+  line-height: 1.8;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #d8d8d8;
+}
+.privacy-heading-1 {
+  margin: 25px 0 15px;
+}
+.privacy-heading-1.first {
+  margin-top: 0px;
+}
+.privacy-heading-2 {
+  margin: 25px 0 15px 15px;
+}
+.privacy-paragraph {
+  margin: 10px 0 0 30px;
+}
+.privacy-list {
+  margin: 0 0 0 30px;
+  padding: 0 0 0 7px;
+}
+.privacy-num {
+  margin: 0 0 0 -7px;
 }
 
 /*

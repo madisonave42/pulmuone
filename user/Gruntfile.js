@@ -104,7 +104,7 @@ module.exports = function(grunt) {
     	// output
     	html: {
     		expand:true,
-    		src:'html/*.html',
+    		src:'html/**',
     		dest:'_output/'
     	},
     	js: {
