@@ -752,7 +752,7 @@
 	}
 
 	&-tab-link01 {
-		background-position:0px 0;
+		background-position:0 0;
 	}
 
 	&-tab-link02 {
@@ -920,7 +920,7 @@
 	}
 
 	&-tab-link01 {
-		background-position:0px 0;
+		background-position:0 0;
 	}
 
 	&-tab-link02 {
@@ -991,6 +991,80 @@
 			font-weight:bold;
 			color:$color-base;
 		}
+	}
+
+}
+
+// pr8.1
+.terms{
+
+	&-page{
+
+		padding:40px 10px;
+		font-size:12px;
+		line-height:1.8;
+		border-top:2px solid $color-base;
+		border-bottom:1px solid $color-light-gray;
+	}
+
+	&-heading{
+		margin:25px 0 15px;
+
+		&.first{
+			margin-top:0px;
+		}
+	}
+
+	&-list{
+		padding:0 0 0 16px;
+	}
+
+	&-num{
+		margin:0 0 0 -16px;
+	}
+
+}
+
+// pr8.2
+.privacy{
+
+	&-page{
+
+		padding:40px 10px;
+		font-size:12px;
+		line-height:1.8;
+		border-top:2px solid $color-base;
+		border-bottom:1px solid $color-light-gray;
+	}
+
+	&-heading{
+
+		&-1{
+
+			margin:25px 0 15px;
+
+			&.first{
+				margin-top:0px;
+			}
+		}
+
+		&-2{
+			margin:25px 0 15px 15px;
+		}
+
+	}
+
+	&-paragraph{
+		margin:10px 0 0 30px;
+	}
+
+	&-list{
+		margin:0 0 0 30px;
+		padding:0 0 0 7px;
+	}
+
+	&-num{
+		margin:0 0 0 -7px;
 	}
 
 }
