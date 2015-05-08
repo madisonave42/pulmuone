@@ -190,4 +190,12 @@ $(function(){
 
 })();
 
+// 한눈에보는 풀무원
+(function() {
+	$('.js-intro-brand').slidesjs({
+		width: 1140,
+		height: 195
+	});
+})();
+
 });
