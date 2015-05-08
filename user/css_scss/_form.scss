@@ -1,3 +1,4 @@
+/* wrapper for form elements */
 .form-wrap {
 	@include size(100%, a);
 	display:block;
@@ -16,6 +17,7 @@
 	}
 }
 
+/* input type text or selectbox common */
 .input-text,
 .select {
 	padding:0;
@@ -24,6 +26,7 @@
 	color:$color-dark-gray;
 }
 
+/* inputbox width search button */
 .input-search {
 	@extend .input-text;
 	@include size(80%, a);
@@ -53,6 +56,7 @@
 	}
 }
 
+/* textarea */
 .textarea {
 	padding:0;
 	border:0;
@@ -71,6 +75,7 @@
 	}
 }
 
+/* widths of form elements */
 .width {
 	&-small {
 		@include size(77, a);
@@ -97,6 +102,7 @@
 	}
 }
 
+/* radio button wrapper */
 .radio {
 	&-wrap {
 		position:relative;
@@ -104,11 +110,13 @@
 		margin-right:10px;
 	}
 
+  /* radio button elements */
 	&-input {
 		position:absolute;
 		top:4px;
 		left:3px;
 
+		/* checked radio button's custom style */
 		&:checked + .radio-label:before {
 			content:"";
 			position:absolute;
@@ -122,6 +130,7 @@
 		}
 	}
 
+	/* label with radio button */
 	&-label {
 		display:inline-block;
 		margin-right:25px;
@@ -144,6 +153,7 @@
 	}
 }
 
+/* checkbox wrapper */
 .check {
 	&-wrap {
 		float:left;
@@ -151,11 +161,13 @@
 		position:relative;
 	}
 
+	/* checkbox button elements */
 	&-input {
 		position:absolute;
 		top:4px;
 		left:3px;
 
+		/* label form chechbox */
 		&:checked + .check-label:before {
 			content:"";
 			position:absolute;
@@ -167,6 +179,8 @@
 			background:url(../images/icon_checked.png) no-repeat 50% 50%;
 		}
 	}
+
+	/* label with custom radio button */
 	&-label {
 		display:inline-block;
 		margin-right:25px;
@@ -189,6 +203,7 @@
 	}
 }
 
+/* specific form contents */
 .form {
 	&-div {
 		float:left;
@@ -216,10 +231,12 @@
 	}
 }
 
+/* no margin for floated element */
 .no-gap {
 	margin-right:0;
 }
 
+/* remove float */
 .no-float {
 	float:none;
 }

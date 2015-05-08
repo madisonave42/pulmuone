@@ -1,3 +1,4 @@
+/* skip navigation */
 .skip-nav-link {
 	position:absolute;
 	top:-9999px;
@@ -13,6 +14,7 @@
 	}
 }
 
+/* pagination */
 .pagination {
 	margin-top:40px;
 	text-align:center;
@@ -58,6 +60,7 @@
 	}
 }
 
+/* calendar open btn */
 .show-calendar {
 	margin:0;
 	padding:0;
@@ -69,6 +72,7 @@
 	cursor:pointer;
 }
 
+/* toggle box common */
 .toggle-box {
 
 	&.first,
@@ -114,6 +118,7 @@
 	}
 }
 
+/* terms common*/
 .terms {
 	padding:25px 15px;
 
@@ -125,6 +130,7 @@
 	}
 }
 
+/* list common */
 .list {
 	&-item {
 		position:relative;

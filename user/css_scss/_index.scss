@@ -1,3 +1,4 @@
+/* list slide */
 .slidesjs-navigation {
 	position:absolute;
 	width:20px;
@@ -36,6 +37,7 @@
 	}
 }
 
+/* main visual */
 .index-header {
 	padding-top:0;
 	height:650px;
@@ -58,6 +60,7 @@
 
 }
 
+/* notice list */
 .index-notice {
 	height:52px;
 	background-color:$color-dark;
@@ -84,6 +87,7 @@
 	}
 }
 
+/* section divison common */
 .index-section {
 	&-job {
 		padding:70px 0 50px;
@@ -126,6 +130,7 @@
 	}
 }
 
+/* job list */
 .index-job {
 	&-wrap {
 		position:relative;
@@ -216,6 +221,7 @@
 
 }
 
+/* human resource assist */
 .index-assist {
 	&-list {
 		@include clear();
@@ -279,12 +285,14 @@
 
 }
 
+/* human resource DB */
 .index-hrdb {
 	&-apply {
 		margin:48px auto 0;
 	}
 }
 
+/* corporation introduce */
 .index-corp {
 	&-wrap {
 		margin-top:80px;
@@ -334,6 +342,7 @@
 	}
 }
 
+/* bottom navigation */
 .index-bottom {
 	@include clear();
 	padding:60px 0 80px;
@@ -379,6 +388,7 @@
 	}
 }
 
+/* quick link sidebar in index */
 .index-sidebar {
 	top:836px;
 }

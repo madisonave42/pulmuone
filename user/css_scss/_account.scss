@@ -1,3 +1,4 @@
+/* account common */
 .account {
 	@include center();
 	@include size(560, 250);
@@ -80,7 +81,7 @@
 	}
 }
 
-// login
+/* login */
 .account-login {
 	position:relative;
 	margin-top:83px;
@@ -122,7 +123,7 @@
 	background-position:66px -135px;
 }
 
-// find
+/* find email or password */
 .account-find {
 	margin-top:83px;
 }

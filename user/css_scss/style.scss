@@ -1,20 +1,69 @@
 @import "variables";
 @import "mixins";
+
 @import "reset";
 
+/*
+ * common components
+ */
 @import "component";
+
+/*
+ * common button
+ */
 @import "button";
+
+/*
+ * common form
+ */
 @import "form";
+
+/*
+ * common table
+ */
 @import "table";
 
+/*
+ * layout
+ */
 @import "layout";
+
+/*
+ * popup
+ */
 @import "popup";
 
+/*
+ * account (login, signup...)
+ */
 @import "account";
+
+/*
+ * job application
+ */
 @import "apply";
+
+/*
+ * application assist
+ */
 @import "assist";
+
+/*
+ * mypage
+ */
 @import "mypage";
+
+/*
+ * static contents pages
+ */
 @import "static";
+
+/*
+ * index page
+ */
 @import "index";
 
+/*
+ * specific style
+ */
 @import "specific";
