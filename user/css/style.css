@@ -1085,7 +1085,7 @@ input, textarea {
  * popup
  */
 .popup {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 50%;
   padding-bottom: 20px;
@@ -3135,29 +3135,63 @@ input, textarea {
 }
 .index-corp-item {
   float: left;
-  margin: 0 10px;
-  width: 120px;
+  width: 122px;
   height: 76px;
+}
+.index-corp-link {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/sprite_corp.png) no-repeat;
   text-indent: -9999px;
 }
-.index-corp-item.exofresh {
-  background-position: 0 0;
+.index-corp-link.puluone {
+  background-position: 12px 0;
 }
-.index-corp-item.on.exofresh {
-  background-position: 0 -76px;
+.index-corp-link.puluone:focus, .index-corp-link.puluone:hover, .index-corp-link.on.puluone {
+  background-position: 12px -76px;
 }
-.index-corp-item.greenche {
-  background-position: -120px 0;
+.index-corp-link.foodmerce {
+  background-position: -137px 0;
 }
-.index-corp-item.on.greenche {
-  background-position: -120px -76px;
+.index-corp-link.foodmerce:focus, .index-corp-link.foodmerce:hover, .index-corp-link.on.foodmerce {
+  background-position: -137px -76px;
 }
-.index-corp-item.nokjeup {
-  background-position: -240px 0;
+.index-corp-link.health {
+  background-position: -280px 0;
 }
-.index-corp-item.on.nokjeup {
-  background-position: -240px -76px;
+.index-corp-link.health:focus, .index-corp-link.health:hover, .index-corp-link.on.health {
+  background-position: -280px -76px;
+}
+.index-corp-link.duskin {
+  background-position: -428px 0;
+}
+.index-corp-link.duskin:focus, .index-corp-link.duskin:hover, .index-corp-link.on.duskin {
+  background-position: -428px -76px;
+}
+.index-corp-link.orga {
+  background-position: -565px 0;
+}
+.index-corp-link.orga:focus, .index-corp-link.orga:hover, .index-corp-link.on.orga {
+  background-position: -565px -76px;
+}
+.index-corp-link.ecmd {
+  background-position: -688px 0;
+}
+.index-corp-link.ecmd:focus, .index-corp-link.ecmd:hover, .index-corp-link.on.ecmd {
+  background-position: -688px -76px;
+}
+.index-corp-link.exofresh {
+  background-position: -805px 0;
+}
+.index-corp-link.exofresh:focus, .index-corp-link.exofresh:hover, .index-corp-link.on.exofresh {
+  background-position: -805px -76px;
+}
+.index-corp-link.water {
+  background-position: -904px 0;
+}
+.index-corp-link.water:focus, .index-corp-link.water:hover, .index-corp-link.on.water {
+  background-position: -904px -76px;
 }
 
 /* bottom navigation */

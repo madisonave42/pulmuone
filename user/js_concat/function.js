@@ -107,6 +107,11 @@ $(function(){
 		}
 		e.preventDefault();
 	});
+
+	if (tgTitles.length == 1 && tgConts.length == 1) {
+		tgTitles.eq(0).click();
+		tgTitles.eq(0).remove();
+	}
 })();
 
 // index visual slide
@@ -116,34 +121,38 @@ $(function(){
 
 // index job slide
 (function() {
-	$('.js-index-job').slidesjs({
-		width: 980,
-		height: 265
-	});
+	if ($('.js-index-job').children().length > 1) {
+		$('.js-index-job').slidesjs({
+			width: 980,
+			height: 265
+		});
+	}
 })();
 
 // index corporation slide
 (function() {
-	$('.js-index-corp').slidesjs({
-		width: 980,
-		height: 76,
-		pagination: {
-      active: false
-    }
-	});
+	if ($('.js-index-corp').children().length > 1) {
+		$('.js-index-corp').slidesjs({
+			width: 980,
+			height: 76,
+			pagination: {
+	      active: false
+	    }
+		});
+	}
 })();
 
 // index corporation hover
-(function() {
-	$('.index-corp-item').on({
-		mouseenter: function() {
-			$(this).addClass('on');
-		},
-		mouseleave: function() {
-			$(this).removeClass('on');
-		}
-	});
-})();
+// (function() {
+// 	$('.index-corp-item').on({
+// 		mouseenter: function() {
+// 			$(this).addClass('on');
+// 		},
+// 		mouseleave: function() {
+// 			$(this).removeClass('on');
+// 		}
+// 	});
+// })();
 
 // sidebar
 (function() {
@@ -192,10 +201,12 @@ $(function(){
 
 // 한눈에보는 풀무원
 (function() {
-	$('.js-intro-brand').slidesjs({
-		width: 1140,
-		height: 195
-	});
+	if ($('.js-intro-brand').children().length > 1) {
+		$('.js-intro-brand').slidesjs({
+			width: 1140,
+			height: 195
+		});
+	}
 })();
 
 });

@@ -310,34 +310,95 @@
 
 	&-item {
 		float:left;
-		margin:0 10px;
-		width:120px;
+		width:122px;
 		height:76px;
+	}
+
+	&-link {
+		display:block;
+		width:100%;
+		height:100%;
 		background:url(../images/sprite_corp.png) no-repeat;
 		text-indent:-9999px;
 
+		&.puluone {
+			background-position:12px 0;
+		}
+
+		&.puluone:focus,
+		&.puluone:hover,
+		&.on.puluone {
+			background-position:12px -76px;
+		}
+
+		&.foodmerce {
+			background-position:-137px 0;
+		}
+
+		&.foodmerce:focus,
+		&.foodmerce:hover,
+		&.on.foodmerce {
+			background-position:-137px -76px;
+		}
+
+		&.health {
+			background-position:-280px 0;
+		}
+
+		&.health:focus,
+		&.health:hover,
+		&.on.health {
+			background-position:-280px -76px;
+		}
+
+		&.duskin {
+			background-position:-428px 0;
+		}
+
+		&.duskin:focus,
+		&.duskin:hover,
+		&.on.duskin {
+			background-position:-428px -76px;
+		}
+
+		&.orga {
+			background-position:-565px 0;
+		}
+
+		&.orga:focus,
+		&.orga:hover,
+		&.on.orga {
+			background-position:-565px -76px;
+		}
+
+		&.ecmd {
+			background-position:-688px 0;
+		}
+
+		&.ecmd:focus,
+		&.ecmd:hover,
+		&.on.ecmd {
+			background-position:-688px -76px;
+		}
+
 		&.exofresh {
-			background-position:0 0;
+			background-position:-805px 0;
 		}
 
+		&.exofresh:focus,
+		&.exofresh:hover,
 		&.on.exofresh {
-			background-position:0 -76px;
+			background-position:-805px -76px;
 		}
 
-		&.greenche {
-			background-position:-120px 0;
+		&.water {
+			background-position:-904px 0;
 		}
 
-		&.on.greenche {
-			background-position:-120px -76px;
-		}
-
-		&.nokjeup {
-			background-position:-240px 0;
-		}
-
-		&.on.nokjeup {
-			background-position:-240px -76px;
+		&.water:focus,
+		&.water:hover,
+		&.on.water {
+			background-position:-904px -76px;
 		}
 	}
 }
