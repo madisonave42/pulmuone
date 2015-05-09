@@ -1,0 +1,17 @@
+.blind {
+	position:absolute;
+	width:0;
+	height:0;
+	top:-9999px;
+}
+
+.em {
+	font-style:normal;
+	font-weight:bold;
+	color:$color-point;
+}
+
+.strong {
+	color:$color-accent;
+	font-weight:bold;
+}

@@ -1,0 +1,53 @@
+.applied {
+
+	&-item {
+
+		&-bottom {
+			@include clear();
+			margin-top:14px;
+			height:25px;
+		}
+
+		&-state {
+			float:left;
+			margin-top:10px;
+			font-size:11px;
+
+			&-current {
+				position:relative;
+				float:left;
+				margin-right:5px;
+				padding-right:5px;
+				color:$color-point;
+				font-weight:bold;
+
+				&:after {
+					content:"";
+					display:block;
+					position:absolute;
+					top:3px;
+					right:0;
+					width:1px;
+					height:7px;
+					background-color:$color-med-gray;
+				}
+			}
+
+			&-date {
+				float:left;
+			}
+		}
+
+		&-actions {
+			float:right;
+			font-size:0;
+		}
+
+	}
+
+}
+
+.no-applied-list {
+	margin:150px 0;
+	text-align:center;
+}

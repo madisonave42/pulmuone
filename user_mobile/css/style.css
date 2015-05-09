@@ -1,0 +1,456 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Nanum Gothic", dotum, sans-serif;
+  font-size: 12px;
+  color: #222;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+select, input, button, textarea {
+  font-family: "Nanum Gothic", dotum, sans-serif;
+  font-size: 12px;
+  color: #222;
+  vertical-align: middle;
+}
+
+input, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * common components
+ */
+/*
+ * common button
+ */
+.btn, .btn-green, .btn-gray {
+  display: inline-block;
+  margin: 0 2px;
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  background: #333;
+  border: 0;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.btn-green {
+  color: #222;
+  background-color: #a6ce39;
+}
+.btn-gray {
+  color: #fff;
+  background-color: #666;
+}
+.btn:first-child, .btn-green:first-child, .btn-gray:first-child {
+  margin-left: 0;
+}
+.btn:last-child, .btn-green:last-child, .btn-gray:last-child {
+  margin-right: 0;
+}
+
+/*
+ * common form
+ */
+/*
+ * layout
+ */
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header {
+  height: 44px;
+  position: relative;
+}
+.header .logo {
+  float: left;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+.header .logo-img {
+  width: 54px;
+}
+.header-util {
+  float: right;
+}
+.header-util-login {
+  width: 30px;
+  height: 44px;
+  float: left;
+  text-indent: -9999px;
+  background: url(../images/icon_lock.png) no-repeat 50% 50%;
+  background-size: 13px;
+}
+.header-util-tg-gnb {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  float: left;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.header-util-tg-gnb-text {
+  width: 17px;
+  height: 3px;
+  position: absolute;
+  top: 21px;
+  left: 13px;
+  text-indent: -9999px;
+  background-color: #333;
+}
+.header-util-tg-gnb:before, .header-util-tg-gnb:after {
+  width: 17px;
+  height: 3px;
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  display: block;
+  background-color: #333;
+}
+.header-util-tg-gnb:after {
+  top: 27px;
+}
+.header-util-tg-gnb.on {
+  background-color: #a6ce39;
+}
+
+.gnb {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 44px);
+}
+.gnb.on {
+  display: block;
+}
+.gnb-item {
+  float: left;
+  width: 25%;
+  height: 44px;
+}
+.gnb-item:first-child .gnb-main-link {
+  border-left: 0;
+}
+.gnb-main-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border-left: 1px solid #444;
+  background-color: #333;
+}
+
+.main-header {
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #333;
+}
+.main-content {
+  padding: 10px;
+  background-color: #eee;
+  min-height: 300px;
+}
+.main-actions {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.footer {
+  height: 68px;
+  background-color: #222;
+}
+.footer-util {
+  padding-top: 20px;
+  font-size: 0;
+  text-align: center;
+}
+.footer-util-item {
+  display: inline-block;
+  height: 13px;
+}
+.footer-util-item:first-child .footer-link {
+  margin-left: 0;
+  padding-left: 0;
+}
+.footer-util-item:first-child .footer-link:after {
+  display: none;
+}
+.footer-link {
+  position: relative;
+  display: block;
+  margin-left: 10px;
+  padding-left: 10px;
+  height: 13px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-link:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  height: 7px;
+  background-color: #666;
+}
+.footer-copy {
+  margin-top: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.round-box {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.round-box:first-child {
+  margin-top: 0;
+}
+
+/*
+ * popup
+ */
+/*
+ * job list
+ */
+.job-item-part {
+  font-size: 11px;
+}
+.job-item-title {
+  margin-top: 7px;
+  font-weight: bold;
+  color: #008038;
+}
+.job-item-date {
+  margin-top: 7px;
+}
+.job-item-bottom {
+  margin-top: 14px;
+  height: 25px;
+}
+.job-item-bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.job-item-state-dday {
+  float: left;
+  margin-top: 2px;
+  margin-right: 10px;
+  color: #b07e44;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1;
+}
+.job-item-state-dday-unit {
+  float: left;
+  width: 24px;
+  height: 20px;
+  text-indent: -9999px;
+  background: url(../images/bg_dday.png) no-repeat;
+  background-size: 100%;
+}
+.job-item-state-current {
+  float: left;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.job-item-actions {
+  float: right;
+  font-size: 0;
+}
+
+/*
+ * applied job
+ */
+.applied-item-bottom {
+  margin-top: 14px;
+  height: 25px;
+}
+.applied-item-bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.applied-item-state {
+  float: left;
+  margin-top: 10px;
+  font-size: 11px;
+}
+.applied-item-state-current {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  padding-right: 5px;
+  color: #b07e44;
+  font-weight: bold;
+}
+.applied-item-state-current:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 1px;
+  height: 7px;
+  background-color: #cbcbcb;
+}
+.applied-item-state-date {
+  float: left;
+}
+.applied-item-actions {
+  float: right;
+  font-size: 0;
+}
+
+.no-applied-list {
+  margin: 150px 0;
+  text-align: center;
+}
+
+/*
+ * notice
+ */
+.notice-list-link {
+  display: block;
+  padding: 0 12px;
+}
+.notice-list-title {
+  font-weight: bold;
+}
+.notice-list-date {
+  display: block;
+  margin-top: 3px;
+  color: #acacac;
+}
+
+/*
+ * faq
+ */
+.faq-list-link {
+  display: block;
+  padding-left: 38px;
+  line-height: 1.4;
+  font-weight: bold;
+  background: #fff url(../images/bg_faq_q.png) no-repeat 16px 9px;
+  background-size: 13px;
+}
+.faq-list-answer {
+  display: none;
+  padding-left: 30px;
+  line-height: 1.4;
+  background: #fff url(../images/bg_faq_a.png) no-repeat 17px 11px;
+  background-size: 7px;
+}
+.faq-list-answer.on {
+  display: block;
+}
+.faq-item {
+  margin-top: 5px;
+}
+
+/*
+ * index page
+ */
+/*
+ * specific style
+ */
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -9999px;
+}
+
+.em {
+  font-style: normal;
+  font-weight: bold;
+  color: #b07e44;
+}
+
+.strong {
+  color: #008038;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

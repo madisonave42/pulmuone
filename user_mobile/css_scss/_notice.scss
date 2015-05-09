@@ -1,0 +1,21 @@
+.notice {
+
+	&-list {
+
+		&-link {
+			display:block;
+			padding:0 12px;
+		}
+
+		&-title {
+			font-weight:bold;
+		}
+
+		&-date {
+			display:block;
+			margin-top:3px;
+			color:$color-gray;
+		}
+	}
+
+}

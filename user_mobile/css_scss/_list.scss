@@ -1,0 +1,63 @@
+.job {
+
+	&-item {
+
+		&-part {
+			font-size:11px;
+		}
+
+		&-title {
+			margin-top:7px;
+			font-weight:bold;
+			color:$color-accent;
+		}
+
+		&-date {
+			margin-top:7px;
+		}
+
+		&-bottom {
+			@include clear();
+			margin-top:14px;
+			height:25px;
+		}
+
+		&-state {
+
+			&-dday {
+				float:left;
+				margin-top:2px;
+				margin-right:10px;
+				color:$color-point;
+				font-size:20px;
+				font-weight:bold;
+				font-style:italic;
+				line-height:1;
+
+				&-unit {
+					float:left;
+					width:24px;
+					height:20px;
+					text-indent:-9999px;
+					background:url(../images/bg_dday.png) no-repeat;
+					background-size:100%;
+				}
+			}
+
+			&-current {
+				float:left;
+				line-height:25px;
+				font-size:12px;
+				font-weight:bold;
+			}
+
+		}
+
+		&-actions {
+			float:right;
+			font-size:0;
+		}
+
+	}
+
+}

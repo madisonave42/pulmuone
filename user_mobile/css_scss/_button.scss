@@ -1,0 +1,30 @@
+.btn {
+	display:inline-block;
+	margin:0 2px;
+	@include size-mid(75, 25);
+	@include btn-frame($color-white, $color-dark, 0, 3px);
+	font-size:$font-size-base;
+	font-weight:bold;
+	vertical-align:middle;
+
+	&-green {
+		@extend .btn;
+		color:$color-base;
+		background-color:$color-brand;
+	}
+
+	&-gray {
+		@extend .btn;
+		color:$color-white;
+		background-color:$color-dark-gray;
+	}
+
+	&:first-child {
+		margin-left:0;
+	}
+
+	&:last-child {
+		margin-right:0;
+	}
+
+}
