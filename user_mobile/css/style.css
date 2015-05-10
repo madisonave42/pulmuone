@@ -288,6 +288,78 @@ input, textarea {
 /*
  * popup
  */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.popup-title {
+  height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #a6ce39;
+}
+.popup-content {
+  box-sizing: border-box;
+  height: calc(100% - 44px);
+  padding: 10px;
+  overflow: auto;
+  background-color: #eee;
+}
+.popup-content-box {
+  padding: 20px;
+}
+.popup-close {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/icon_close.png) no-repeat 50% 50%;
+  background-size: 15px;
+  text-indent: -9999px;
+  border: 0;
+}
+.popup-infomsg {
+  margin-top: 30px;
+  line-height: 1.6;
+  text-align: center;
+}
+.popup-infomsg-name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.popup-detail {
+  margin-top: 45px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+.popup-detail-item {
+  padding: 25px 10px;
+  border-top: 1px solid #cbcbcb;
+}
+.popup-detail-item:first-child {
+  border-top: 0;
+}
+.popup-detail-msg {
+  margin-top: 5px;
+  padding-left: 30px;
+  text-indent: -30px;
+  line-height: 1.2;
+}
+.popup-detail-msg:first-child {
+  margin-top: 0;
+}
+.popup-detail-msg .black {
+  margin-right: 5px;
+}
+
 /*
  * job list
  */
