@@ -16,6 +16,7 @@
 
 	.logo-img {
 		@include size(54, a);
+		display:block;
 	}
 
 	&-util {
@@ -196,6 +197,17 @@
 
 	&:first-child {
 		margin-top:0;
+	}
+
+}
+
+.row {
+	position:relative;
+	padding-bottom:15px;
+
+	&-header {
+		margin-bottom:5px;
+		font-size:12px;
 	}
 
 }

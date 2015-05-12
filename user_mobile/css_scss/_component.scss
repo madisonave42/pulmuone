@@ -1,0 +1,69 @@
+/* toggle box common */
+.toggle-box {
+
+	&.first,
+	&:first-child {
+		border-top:2px solid $color-dark;
+	}
+
+	&-title {
+		@include size-mid(a, 39);
+		position:relative;
+		display:block;
+		padding-left:10px;
+		font-size:12px;
+		font-weight:bold;
+		border-bottom:1px solid $color-light-gray;
+		background-color:$color-white-gray;
+	}
+
+	&-action {
+		@include size(100%, 100%);
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+		padding:0;
+		text-indent:-9999px;
+		border:0;
+		background:transparent url(../images/sprite_arrow.png) no-repeat 100% 17px;
+		cursor:pointer;
+
+		&.on {
+			background-position:100% -77px;
+		}
+	}
+
+	&-content {
+		display:none;
+		border-bottom:1px solid $color-light-gray;
+
+		&.on {
+			display:block;
+		}
+	}
+}
+
+/* list common */
+.list {
+	&-item {
+		position:relative;
+		margin-top:5px;
+		padding-left:6px;
+		line-height:1.2;
+
+		&:first-child {
+			margin-top:0;
+		}
+
+		&:after {
+			content:"";
+			display:block;
+			position:absolute;
+			top:6px;
+			left:0;
+			@include size(3);
+			background-color:$color-brand;
+		}
+	}
+}

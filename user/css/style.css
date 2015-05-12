@@ -2826,8 +2826,14 @@ input, textarea {
   border-top: 2px solid #222;
   border-bottom: 1px solid #d8d8d8;
 }
+.terms-page.no-border {
+  padding: 0;
+  padding-bottom: 20px;
+  border: 0;
+}
 .terms-heading {
   margin: 25px 0 15px;
+  font-size: 14px;
 }
 .terms-heading.first {
   margin-top: 0px;
@@ -2848,6 +2854,7 @@ input, textarea {
 }
 .privacy-heading-1 {
   margin: 25px 0 15px;
+  font-size: 14px;
 }
 .privacy-heading-1.first {
   margin-top: 0px;
@@ -2858,12 +2865,19 @@ input, textarea {
 .privacy-paragraph {
   margin: 10px 0 0 30px;
 }
+.privacy-paragraph.first {
+  margin-left: 0;
+}
 .privacy-list {
-  margin: 0 0 0 30px;
+  margin: 5px 0 0 30px;
   padding: 0 0 0 7px;
 }
 .privacy-num {
   margin: 0 0 0 -7px;
+}
+.privacy-table {
+  margin: 10px auto 0;
+  width: 900px;
 }
 
 /*

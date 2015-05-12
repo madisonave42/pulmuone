@@ -19,3 +19,34 @@
 	}
 
 }
+
+.notice-view {
+	position:relative;
+	padding-bottom:30px;
+
+	&-title {
+		padding:15px 10px;
+		line-height:1.4;
+		font-size:12px;
+		border-top:2px solid $color-dark;
+		border-bottom:1px solid $color-med-gray;
+		background-color:$color-white-gray;
+	}
+
+	&-date {
+		position:absolute;
+		bottom:10px;
+		left:8px;
+		box-sizing:border-box;
+		width:calc(100% - 16px);
+		padding-bottom:10px;
+		padding-left:10px;
+		border-bottom:1px solid $color-med-gray;
+	}
+
+	&-cont {
+		padding:10px;
+		min-height:200px;
+		line-height:1.4;
+	}
+}

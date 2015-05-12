@@ -1403,10 +1403,18 @@
 		line-height:1.8;
 		border-top:2px solid $color-base;
 		border-bottom:1px solid $color-light-gray;
+
+		&.no-border {
+			padding:0;
+			padding-bottom:20px;
+			border:0;
+		}
+
 	}
 
 	&-heading{
 		margin:25px 0 15px;
+		font-size:14px;
 
 		&.first{
 			margin-top:0px;
@@ -1440,6 +1448,7 @@
 		&-1{
 
 			margin:25px 0 15px;
+			font-size:14px;
 
 			&.first{
 				margin-top:0px;
@@ -1454,15 +1463,24 @@
 
 	&-paragraph{
 		margin:10px 0 0 30px;
+
+		&.first {
+			margin-left:0;
+		}
 	}
 
 	&-list{
-		margin:0 0 0 30px;
+		margin:5px 0 0 30px;
 		padding:0 0 0 7px;
 	}
 
 	&-num{
 		margin:0 0 0 -7px;
+	}
+
+	&-table {
+		margin:10px auto 0;
+		width:900px;
 	}
 
 }
