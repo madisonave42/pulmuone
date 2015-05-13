@@ -6,7 +6,7 @@ $(function(){
 	var main = $('.main');
 	$(window).on('load resize', function() {
 		var th = $(window).height() - 112;
-		th = th < 368 ? 368 : th;
+		th = th < 410 ? 410 : th;
 
 		main.css({minHeight: th});
 	});

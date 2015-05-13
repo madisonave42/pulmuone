@@ -7,6 +7,7 @@
 .header {
 	@include size(a, 44);
 	position:relative;
+	border-bottom:1px solid $color-med-gray;
 
 	.logo {
 		float:left;
@@ -196,9 +197,14 @@
 	border:1px solid $color-med-gray;
 	border-radius:5px;
 	background-color:$color-white;
+	overflow:hidden;
 
 	&:first-child {
 		margin-top:0;
+	}
+
+	&.no-padding {
+		padding:0;
 	}
 
 }

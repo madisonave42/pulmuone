@@ -6,33 +6,26 @@
 	background-color:$color-light-gray;
 
 	&-visual {
-		position:relative;
 		box-sizing:border-box;
 		height:calc(100% - 158px);
-		border-top:1px solid $color-med-gray;
 		background:url(../images/bg_visual.jpg) no-repeat 50% 0;
 		background-size:cover;
 
 		&-copy {
-			position:absolute;
-			bottom:25px;
-			left:0;
-			box-sizing:border-box;
-			padding-left:8%;
-			width:100%;
+			margin-left:25px;
+			padding-top:25px;
 		}
 
 		&-heading {
-			padding-top:50px;
-			font-size:34px;
-			font-weight:bold;
+			font-size:15px;
 			color:#fff;
-			background:url(../images/bg_lohas.png) no-repeat;
-			background-size:68px;
 		}
 
 		&-text {
-			line-height:1.2;
+			margin-top:5px;
+			font-size:21px;
+			font-weight:bold;
+			line-height:1.3;
 			color:#fff;
 		}
 

@@ -5,12 +5,14 @@
 		&-bottom {
 			@include clear();
 			margin-top:14px;
+			padding:8px;
 			height:25px;
+			background:$color-white-gray;
 		}
 
 		&-state {
 			float:left;
-			margin-top:10px;
+			margin-top:6px;
 			font-size:11px;
 
 			&-current {

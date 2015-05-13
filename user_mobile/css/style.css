@@ -187,6 +187,7 @@ input, textarea {
 .header {
   height: 44px;
   position: relative;
+  border-bottom: 1px solid #cbcbcb;
 }
 .header .logo {
   float: left;
@@ -350,9 +351,13 @@ input, textarea {
   border: 1px solid #cbcbcb;
   border-radius: 5px;
   background-color: #fff;
+  overflow: hidden;
 }
 .round-box:first-child {
   margin-top: 0;
+}
+.round-box.no-padding {
+  padding: 0;
 }
 
 .row {
@@ -498,19 +503,41 @@ input, textarea {
  * job list
  */
 .job-item-part {
+  margin: 8px 8px 0;
   font-size: 11px;
 }
+.job-item-part-corp {
+  position: relative;
+  margin-right: 5px;
+  padding-right: 6px;
+}
+.job-item-part-corp:after {
+  width: 1px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  display: block;
+  background: #cbcbcb;
+}
 .job-item-title {
-  margin-top: 7px;
+  margin: 7px 8px 0;
   font-weight: bold;
   color: #008038;
 }
+.job-item-subtitle {
+  margin: 7px 8px 0;
+  font-weight: bold;
+}
 .job-item-date {
-  margin-top: 7px;
+  margin: 7px 8px 0;
 }
 .job-item-bottom {
   margin-top: 14px;
+  padding: 8px;
   height: 25px;
+  background: #f9f9f9;
 }
 .job-item-bottom:after {
   content: "";
@@ -594,7 +621,9 @@ input, textarea {
  */
 .applied-item-bottom {
   margin-top: 14px;
+  padding: 8px;
   height: 25px;
+  background: #f9f9f9;
 }
 .applied-item-bottom:after {
   content: "";
@@ -603,7 +632,7 @@ input, textarea {
 }
 .applied-item-state {
   float: left;
-  margin-top: 10px;
+  margin-top: 6px;
   font-size: 11px;
 }
 .applied-item-state-current {
@@ -720,31 +749,24 @@ input, textarea {
   background-color: #eee;
 }
 .index-visual {
-  position: relative;
   box-sizing: border-box;
   height: calc(100% - 158px);
-  border-top: 1px solid #cbcbcb;
   background: url(../images/bg_visual.jpg) no-repeat 50% 0;
   background-size: cover;
 }
 .index-visual-copy {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  box-sizing: border-box;
-  padding-left: 8%;
-  width: 100%;
+  margin-left: 25px;
+  padding-top: 25px;
 }
 .index-visual-heading {
-  padding-top: 50px;
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 15px;
   color: #fff;
-  background: url(../images/bg_lohas.png) no-repeat;
-  background-size: 68px;
 }
 .index-visual-text {
-  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3;
   color: #fff;
 }
 .index-menu {
