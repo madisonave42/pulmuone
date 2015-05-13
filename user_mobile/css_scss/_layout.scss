@@ -106,6 +106,9 @@
 }
 
 .main {
+	position:relative;
+	background-color:$color-light-gray;
+	//min-height:calc(100% - 112px);
 
 	&-header {
 		height:50px;
@@ -118,9 +121,8 @@
 	}
 
 	&-content {
+		box-sizing: border-box;
 		padding:10px;
-		background-color:$color-light-gray;
-		min-height:300px;
 	}
 
 	&-actions {

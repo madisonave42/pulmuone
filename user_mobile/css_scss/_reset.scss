@@ -27,7 +27,12 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html {
+  height:100%;
+}
+
 body {
+  height:100%;
   font-family:$font-stack;
   font-size:$font-size-base;
   color:$color-base;

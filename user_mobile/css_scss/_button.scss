@@ -1,8 +1,9 @@
 .btn {
-	display:inline-block;
-	margin:0 2px;
 	@include size-mid(75, 25);
 	@include btn-frame($color-white, $color-dark, 0, 3px);
+	display:inline-block;
+	margin:0 2px;
+	padding:0;
 	font-size:$font-size-base;
 	font-weight:bold;
 	vertical-align:middle;

@@ -1,6 +1,17 @@
 // main
 
 $(function(){
+// set main height
+(function() {
+	var main = $('.main');
+	$(window).on('load resize', function() {
+		var th = $(window).height() - 112;
+		th = th < 368 ? 368 : th;
+
+		main.css({minHeight: th});
+	});
+})();
+
 
 //toggle gnb
 (function() {
