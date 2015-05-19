@@ -1,7 +1,7 @@
 /* account common */
 .account {
 	@include center();
-	@include size(560, 250);
+	@include size(570, 250);
 	margin-top:70px;
 	padding:0 100px;
 	border-top:2px solid $color-dark;
@@ -24,7 +24,7 @@
 	&-label {
 		float:left;
 		margin-top:13px;
-		@include size(66, a);
+		@include size(76, a);
 		font-weight:bold;
 
 		&-pw {
@@ -64,7 +64,7 @@
 
 	&-form-msg {
 		clear:both;
-		margin-left:66px;
+		margin-left:76px;
 		padding-top:9px;
 	}
 

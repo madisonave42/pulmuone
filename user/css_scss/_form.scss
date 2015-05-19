@@ -60,11 +60,11 @@
 .textarea {
 	padding:0;
 	border:0;
-	@include size(100%, 176);
+	@include size(100%, 100);
 	color:$color-dark-gray;
 
 	&-view {
-		@include size(100%, 176);
+		@include size(100%, 100);
 		color:$color-dark-gray;
 		overflow-x:hidden;
 		overflow-y:auto;
@@ -98,7 +98,7 @@
 	}
 
 	&-pop-search {
-		width:289px;
+		width:449px;
 	}
 }
 
@@ -201,6 +201,64 @@
 			background-color:#fff;
 		}
 	}
+}
+
+/* input file type */
+.file {
+
+	&-wrap {
+		@include clear();
+		position:relative;
+		width:755px;
+	}
+
+	&-label {
+		position:relative;
+		display:block;
+		padding-left:640px;
+		z-index:1;
+
+		&:after {
+			@include size(630, 37);
+			content:"";
+			position:absolute;
+			top:0;
+			left:0;
+			display:block;
+			box-sizing:border-box;
+			background-color:#fff;
+			border:1px solid $color-med-gray;
+			border-radius:5px;
+		}
+
+		.btn-form {
+			float:none;
+			margin:0;
+		}
+
+	}
+
+	&-input {
+		position:absolute;
+		top:10px;
+		left:0;
+		opacity:0;
+
+		&:focus + .file-label .btn-form {
+			outline:1px dashed $color-dark-gray;
+			outline-offset:2px;
+		}
+
+		&-value {
+			position:absolute;
+			top:10px;
+			left:10px;
+			width:610px;
+			color:$color-dark-gray;
+			z-index:2;
+		}
+	}
+
 }
 
 /* specific form contents */

@@ -151,5 +151,11 @@
 			@include size(3);
 			background-color:$color-brand;
 		}
+
+		.btn-send-email {
+			position:absolute;
+		  right:-100px;
+		  top:-6px;
+		}
 	}
 }

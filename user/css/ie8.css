@@ -23,4 +23,8 @@ body {
   display: none;
 }
 
+.file-input {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
 /*# sourceMappingURL=ie8.css.map */

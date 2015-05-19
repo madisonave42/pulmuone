@@ -448,11 +448,19 @@ include "header_bottom.html"
 						<th scope="row" class="table-hr-th">
 							<label for="attach-file">첨부파일</label>
 						</th>
+						<!--
 						<td class="table-hr-td">
 							<div class="form-wrap width-half">
 								<input type="text" id="attach-file" class="input-text" placeholder="10MB 미만의 파일을 올려주세요." />
 							</div>
 							<button type="button" class="btn-form" title="첨부파일 찾기창 열림">찾아보기</button>
+						</td>
+						-->
+						<td class="table-hr-td">
+							<div class="file-wrap">
+								<input type="file" id="file-portfolio" class="file-input" placeholder="2MB 미만의 파일을 올려주세요.">
+								<label for="file-portfolio" class="file-label"><span class="btn-form">찾아보기</span></label>
+							</div>
 						</td>
 					</tr>
 				</tbody>

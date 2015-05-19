@@ -12,7 +12,10 @@
 
 .header {
 	@include size(a, 81);
+	position:relative;
 	min-width:1140px;
+	background-color:#fff;
+	z-index:30;
 
 	.wrapper {
 		position:static;
@@ -41,8 +44,8 @@
 		}
 
 		&-login {
-			margin-right:24px;
-			@include size(30, a);
+			margin-right:14px;
+			@include size(40, a);
 			background:url(../images/icon_lock.png) no-repeat 50% 0;
 		}
 
@@ -101,7 +104,6 @@
 		border-top:1px solid $color-light-gray;
 		border-bottom:5px solid $color-brand;
 		background-color:#fff;
-		z-index:10;
 	}
 
 	&-main-link:focus + .gnb-sub-wrap,
@@ -250,11 +252,11 @@
 	min-width:1140px;
 
 	&-header {
+		@include size(a, 160);
 		position:relative;
 		padding-top:56px;
 		min-width:1140px;
-		@include size(a, 160);
-		background-color:$color-dark-gray;
+		background:url(../images/bg_sub_header.jpg) no-repeat 50% 0;
 
 		&-title {
 			float:left;
@@ -295,24 +297,39 @@
 		}
 	}
 
-	.account-header {
-		background:url(../images/bg_main_header01.jpg) no-repeat 50% 0;
-		background-size:cover;
+	.account-header,
+	.mypage-header {
+		background-position:0 -1650px;
+	}
+
+	.intro-header {
+		background-position:0 -1414px;
+	}
+
+	.notice-header,
+	.faq-header,
+	.assist-header {
+		background-position:0 -1178px;
+	}
+
+	.support-header {
+		background-position:0 -944px;
+	}
+
+	.process-header {
+		background-position:0 -708px;
+	}
+
+	.hrdb-header {
+		background-position:0 -472px;
 	}
 
 	.apply-header {
-		//background:url(../images/bg_main_header02.jpg) no-repeat 50% 0;
-		background-size:cover;
+		background-position:0 -236px;
 	}
 
-	.notice-header {
-		//background:url(../images/bg_main_header02.jpg) no-repeat 50% 0;
-		background-size:cover;
-	}
-
-	.mypage-header {
-		//background:url(../images/bg_main_header03.jpg) no-repeat 50% 0;
-		background-size:cover;
+	.apply-list-header {
+		background-position:0 0;
 	}
 
 	&-content {
@@ -363,6 +380,11 @@
 			left:0;
 			background-color:$color-brand;
 		}
+	}
+
+	&-low-bottom {
+		@extend .row;
+		padding-bottom:50px;
 	}
 
 	&-no-bottom {
@@ -500,10 +522,15 @@
 		}
 	}
 
-	&-wamark {
+	&-mark {
 		float:right;
-		margin-top:-7px;
+		margin-top:-4px;
 		margin-right:14px;
+
+		&-item {
+			float:left;
+			margin-left:10px;
+		}
 	}
 
 	&-copy {

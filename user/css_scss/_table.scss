@@ -82,8 +82,21 @@
 	}
 
 	&-btn {
-		float:none;
 		margin:10px auto 0;
+		width:116px;
+
+		.file-input-value {
+			display:none;
+		}
+
+		.file-label {
+			padding-left:0;
+
+			&:after {
+				display:none;
+			}
+
+		}
 	}
 }
 

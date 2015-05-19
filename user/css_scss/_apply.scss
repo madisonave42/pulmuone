@@ -132,6 +132,7 @@
 
 	&-state {
 		@include size(171);
+		position:relative;
 		background:url(../images/sprite_step.png) no-repeat;
 		font-size:16px;
 		font-weight:bold;
@@ -160,10 +161,12 @@
 	}
 
 	&-current {
+		@include size(28);
 		display:none;
-		margin:15px auto 0;
-		@include size(17, 1);
-		background-color:$color-base;
+		position:absolute;
+		top:21px;
+		left:143px;
+		background:url(../images/icon_step_chk.png) no-repeat;
 		text-indent:-9999px;
 	}
 }

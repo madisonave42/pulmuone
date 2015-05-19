@@ -41,9 +41,12 @@
 .index-header {
 	padding-top:0;
 	height:650px;
+	background:none;
+	overflow:hidden;
 
 	&-decor {
 		height:170px;
+		z-index:10;
 
 		&-outer {
 			fill:$color-white;
@@ -60,6 +63,110 @@
 
 }
 
+.main-visual {
+
+	&-slide {
+		position:absolute;
+		top:0;
+		left:50%;
+		margin-left:-960px;
+		width:1920px;
+		height:940px;
+
+		&.fixed {
+			background-attachment:fixed;
+		}
+
+		&01,
+		&02,
+		&03 {
+			height:940px;
+		}
+
+		&01 {
+			background:url(../images/bg_main_visual01.jpg) no-repeat fixed 50% 0;
+		}
+
+		&02 {
+			background:url(../images/bg_main_visual02.jpg) no-repeat fixed 50% 0;
+		}
+
+		&03 {
+			background:url(../images/bg_main_visual03.jpg) no-repeat fixed 50% 0;
+		}
+
+	}
+
+	&-title {
+		margin-top:100px;
+		font-size:22px;
+		color:#fff;
+	}
+
+	&-copy {
+		font-size:60px;
+		font-weight:bold;
+		color:#fff;
+	}
+
+	&-link {
+		margin-top:20px;
+		padding-left:15px;
+		text-align:left;
+		background:url(../images/icon_arrow_right.png) no-repeat 140px 50%;
+	}
+
+	.slidesjs-pagination {
+		position:absolute;
+		top:62px;
+		left:50%;
+		margin:0;
+		margin-left:-488px;
+		z-index:20;
+		font-size:0;
+
+		&-item {
+			margin:0;
+			margin-right:4px;
+			vertical-align:top;
+
+			a {
+				@include size(10);
+				display:block;
+				background:url(../images/sprite_visual_slide_nav.png) no-repeat;
+
+				&.active {
+					background-position:-10px 0;
+				}
+			}
+		}
+	}
+
+	.slidesjs-navigation.slidesjs-play {
+		@include size(10);
+		top:62px;
+		left:50%;
+		margin-left:-445px;
+		background:url(../images/sprite_visual_slide_nav.png) no-repeat -20px 0;
+		z-index:20;
+	}
+	.slidesjs-navigation.slidesjs-stop {
+		@include size(10);
+		top:62px;
+		left:50%;
+		margin-left:-445px;
+		background:url(../images/sprite_visual_slide_nav.png) no-repeat -30px 0;
+		z-index:20;
+	}
+
+}
+
+.index-content {
+	position:relative;
+	background-color:#fff;
+	z-index:10;
+}
+
 /* notice list */
 .index-notice {
 	height:52px;
@@ -73,11 +180,25 @@
 
 	&-title {
 		position:relative;
+		float:left;
+		display:block;
 		margin-right:6px;
 		padding-right:11px;
+		width:240px;
+		height:52px;
 		color:$color-white;
 		font-weight:bold;
-		border-right:1px solid $color-dark-gray;
+		overflow:hidden;
+
+		&:after {
+			@include size(1, 13);
+			content:"";
+			position:absolute;
+			top:20px;
+			right:0;
+			display:block;
+			background-color:$color-dark-gray;
+		}
 	}
 
 	&-date {
@@ -91,6 +212,7 @@
 .index-section {
 	&-job {
 		padding:70px 0 50px;
+		background-color:#fff;
 	}
 
 	&-assist {
@@ -180,17 +302,19 @@
 				background-color:#cf4830;
 			}
 
-			&.orange {
-				background-color:#f47726;
+			&.green {
+				background-color:$color-accent;
 			}
 		}
 	}
 
 	&-corp {
 		margin-top:17px;
+		height:15px;
 		font-size:12px;
 		font-weight:bold;
 		color:$color-dark-gray;
+		overflow:hidden;
 	}
 
 	&-part {
@@ -212,6 +336,7 @@
 	&-dday {
 		margin-top:7px;
 		margin-bottom:31px;
+		height:46px;
 		color:$color-point;
 		font-family:Georgia, serif;
 		font-size:40px;
@@ -310,7 +435,6 @@
 
 	&-item {
 		float:left;
-		width:122px;
 		height:76px;
 	}
 
@@ -322,6 +446,7 @@
 		text-indent:-9999px;
 
 		&.puluone {
+			width:120px;
 			background-position:12px 0;
 		}
 
@@ -332,36 +457,40 @@
 		}
 
 		&.foodmerce {
-			background-position:-137px 0;
+			width:140px;
+			background-position:-126px 0;
 		}
 
 		&.foodmerce:focus,
 		&.foodmerce:hover,
 		&.on.foodmerce {
-			background-position:-137px -76px;
+			background-position:-126px -76px;
 		}
 
 		&.health {
-			background-position:-280px 0;
+			width:140px;
+			background-position:-273px 0;
 		}
 
 		&.health:focus,
 		&.health:hover,
 		&.on.health {
-			background-position:-280px -76px;
+			background-position:-273px -76px;
 		}
 
 		&.duskin {
-			background-position:-428px 0;
+			width:150px;
+			background-position:-414px 0;
 		}
 
 		&.duskin:focus,
 		&.duskin:hover,
 		&.on.duskin {
-			background-position:-428px -76px;
+			background-position:-414px -76px;
 		}
 
 		&.orga {
+			width:120px;
 			background-position:-565px 0;
 		}
 
@@ -372,6 +501,7 @@
 		}
 
 		&.ecmd {
+			width:120px;
 			background-position:-688px 0;
 		}
 
@@ -382,23 +512,25 @@
 		}
 
 		&.exofresh {
-			background-position:-805px 0;
+			width:90px;
+			background-position:-822px 0;
 		}
 
 		&.exofresh:focus,
 		&.exofresh:hover,
 		&.on.exofresh {
-			background-position:-805px -76px;
+			background-position:-822px -76px;
 		}
 
 		&.water {
-			background-position:-904px 0;
+			width:100px;
+			background-position:-906px 0;
 		}
 
 		&.water:focus,
 		&.water:hover,
 		&.on.water {
-			background-position:-904px -76px;
+			background-position:-906px -76px;
 		}
 	}
 }
