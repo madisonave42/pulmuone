@@ -72,6 +72,7 @@
 		margin-left:-960px;
 		width:1920px;
 		height:940px;
+		display:none;
 
 		&.fixed {
 			background-attachment:fixed;
@@ -162,9 +163,7 @@
 }
 
 .index-content {
-	position:relative;
 	background-color:#fff;
-	z-index:10;
 }
 
 /* notice list */
@@ -342,6 +341,26 @@
 		font-size:40px;
 		font-weight:bold;
 		font-style:italic;
+	}
+
+	&-pre {
+		margin-top:7px;
+		margin-bottom:31px;
+		padding-top:3px;
+		height:43px;
+		color:$color-brand;
+		font-size:30px;
+		font-weight:bold;
+	}
+
+	&-end {
+		margin-top:7px;
+		margin-bottom:31px;
+		padding-top:3px;
+		height:43px;
+		color:$color-gray;
+		font-size:30px;
+		font-weight:bold;
 	}
 
 }

@@ -217,6 +217,7 @@ input, textarea {
   padding: 0;
   border: 0;
   background: none;
+  z-index: 10;
 }
 .header-util-tg-gnb-text {
   width: 17px;
@@ -245,13 +246,19 @@ input, textarea {
 }
 
 .gnb {
+  width: 100%;
+}
+.gnb-wrap {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 44px);
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 44px;
 }
-.gnb.on {
+.gnb-wrap.on {
   display: block;
 }
 .gnb-item {
@@ -750,6 +757,7 @@ input, textarea {
 }
 .index-visual {
   box-sizing: border-box;
+  height: 252px;
   height: calc(100% - 158px);
   background: url(../images/bg_visual.jpg) no-repeat 50% 0;
   background-size: cover;

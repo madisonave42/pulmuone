@@ -256,7 +256,6 @@
 		position:relative;
 		padding-top:56px;
 		min-width:1140px;
-		background:url(../images/bg_sub_header.jpg) no-repeat 50% 0;
 
 		&-title {
 			float:left;
@@ -299,37 +298,45 @@
 
 	.account-header,
 	.mypage-header {
-		background-position:0 -1650px;
+		background:url(../images/bg_sub_account.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.intro-header {
-		background-position:0 -1414px;
+		background:url(../images/bg_sub_intro.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.notice-header,
 	.faq-header,
 	.assist-header {
-		background-position:0 -1178px;
+		background:url(../images/bg_sub_assist.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.support-header {
-		background-position:0 -944px;
+		background:url(../images/bg_sub_support.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.process-header {
-		background-position:0 -708px;
+		background:url(../images/bg_sub_process.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.hrdb-header {
-		background-position:0 -472px;
+		background:url(../images/bg_sub_hrdb.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.apply-header {
-		background-position:0 -236px;
+		background:url(../images/bg_sub_apply.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	.apply-list-header {
-		background-position:0 0;
+		background:url(../images/bg_sub_apply_list.jpg) no-repeat 50% 0;
+		background-size:cover;
 	}
 
 	&-content {

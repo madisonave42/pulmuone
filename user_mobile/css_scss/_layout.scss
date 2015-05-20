@@ -38,6 +38,7 @@
 			padding:0;
 			border:0;
 			background:none;
+			z-index:10;
 
 			&-text {
 				@include size(17, 3);
@@ -72,15 +73,23 @@
 }
 
 .gnb {
-	display:none;
-	position:absolute;
-	top:0;
-	left:0;
-	width:calc(100% - 44px);
+	width:100%;
 
-	&.on {
-		display:block;
+	&-wrap {
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		box-sizing:border-box;
+		width:100%;
+		padding-right:44px;
+
+		&.on {
+			display:block;
+		}
 	}
+
 
 	&-item {
 		float:left;

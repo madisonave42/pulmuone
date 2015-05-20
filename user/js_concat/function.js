@@ -155,7 +155,7 @@ $(function(){
 	    },
 	    effect: {
 	      fade: {
-	        speed: 1000,
+	        speed: 500,
 	        crossfade: true
 	      }
 	    },
