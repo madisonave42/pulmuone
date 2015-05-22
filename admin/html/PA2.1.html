@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>풀무원 관리자</title>
+
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<!--[if lte IE 8]>
+	<script src="../js/lib/html5shiv.min.js"></script>
+	<script src="../js/lib/IE9.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="../css/style.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/ie8.css" />
+	<![endif]-->
+
+	<script src="../js/lib/jquery.library.min.js"></script>
+	<script src="../js/function.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="wrapper">
+		<h1 class="logo">
+			<a href="#" class="logo-img"><img src="../images/logo.png" alt="Pulumone" /></a>
+		</h1>
+
+		<a href="" class="header-login">로그인</a>
+
+		<ul class="gnb clear">
+			<li class="gnb-item">
+				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
+				<a href="#" class="gnb-main-link on">채용관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link on">공고관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">모집관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">지원자 통계</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">게시판관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">공지사항</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">회원관리</a>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">운영관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">부문/법인/직무관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">운영자관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">로그분석</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</header>
+
+
+<div class="content wrapper">
+
+	<div class="content-header clear">
+		<h2 class="content-title">공고관리</h2>
+		<p class="breadcrumb">채용관리 > 공고관리</p>
+	</div>
+
+	<ul class="tab">
+		<li class="tab-item">지원자 (2000)</li>
+		<li class="tab-item">사전심사 합격자 (50)</li>
+		<li class="tab-item">서류전형 합격자 (20)</li>
+		<li class="tab-item">1차면접 합격자 (10)</li>
+		<li class="tab-item">2차면접 합격자 (20)</li>
+		<li class="tab-item">최종면접 합격자 (10)</li>
+	</ul>
+
+	<div class="content-section">
+		<table class="table table-horizontal table-columns">
+			<tbody>
+				<tr>
+					<th class="th">지원번호</th>
+					<td class="td">
+						<div class="form-wrap">
+							<input type="text" class="input-text input-half-width" />
+						</div>
+					</td>
+					<th class="th">이름</th>
+					<td class="td">
+						<div class="form-wrap">
+							<input type="text" class="input-text input-half-width">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="th">지원구분</th>
+					<td class="td">
+						<span class="radio-wrap">
+							<input type="radio" id="type-y" name="type" class="radio"><label for="type-y" class="label">Y</label>
+						</span>
+						<span class="radio-wrap">
+							<input type="radio" id="type-n" name="type" class="radio"><label for="type-n" class="label">N</label>
+						</span>
+					</td>
+					<th class="th">부문</th>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>부문</option>
+								<option>부문</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="th">전화번호</th>
+					<td class="td">
+						<div class="form-wrap">
+							<input type="text" class="input-text" />
+						</div>
+						-
+						<div class="form-wrap">
+							<input type="text" class="input-text" />
+						</div>
+						-
+						<div class="form-wrap">
+							<input type="text" class="input-text" />
+						</div>
+					</td>
+					<th class="th">이메일</th>
+					<td class="td">
+						<div class="form-wrap">
+							<input type="text" class="input-text" />
+						</div>
+						@
+						<div class="form-wrap">
+							<input type="text" class="input-text" />
+						</div>
+						<div class="form-wrap">
+							<select class="select">
+								<option>daum.net</option>
+								<option>google.com</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="submit-btns">
+			<input type="submit" value="검색" class="btn" />
+		</div>
+	</div>
+
+	<div class="content-section">
+		<div class="content-option">
+			<div class="content-option-left">
+				<span>검색결과 100건</span>
+				<div class="form-wrap">
+					<select class="select">
+						<option>전형단계</option>
+						<option>전형단계</option>
+					</select>
+				</div>
+				<button type="button" class="btn btn-grey">지원자 변경</button>
+			</div>
+			<div class="content-option-right">
+				<button type="button" class="btn">이메일/SMS발송</button>
+				<button type="button" class="btn btn-grey">엑셀저장</button>
+				<div class="form-wrap">
+					<select class="select">
+						<option>지원번호순</option>
+						<option>이름순</option>
+					</select>
+				</div>
+				<div class="form-wrap">
+					<select class="select">
+						<option>항목</option>
+						<option>항목</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="th">
+						<input type="checkbox">
+					</th>
+					<th class="th">지원번호</th>
+					<th class="th">이름</th>
+					<th class="th">지원구분</th>
+					<th class="th">부문</th>
+					<th class="th">법인</th>
+					<th class="th">직무</th>
+					<th class="th">근무지</th>
+					<th class="th">성별</th>
+					<th class="th">나이</th>
+					<th class="th">학력</th>
+					<th class="th">학점</th>
+					<th class="th">외국어</th>
+					<th class="th">이전지원</th>
+					<th class="th">상태</th>
+					<th class="th">면접조</th>
+					<th class="th">합격안내</th>
+					<th class="th">면접안내</th>
+					<th class="th">HWP</th>
+					<th class="th">인쇄</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="td">
+						<input type="checkbox">
+					</td>
+					<td class="td">NFB</td>
+					<td class="td">NFB</td>
+					<td class="td">식품</td>
+					<td class="td">식품</td>
+					<td class="td">푸드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">푸드머스</td>
+					<td class="td">드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">식품머스</td>
+					<td class="td">식머스</td>
+					<td class="td">식스</td>
+					<td class="td title">연구원 경력사원 모집</td>
+					<td class="td">신입</td>
+					<td class="td"><span class="em">채용중</span></td>
+					<td class="td">2015.03.10~2015.03.10</td>
+					<td class="td">Y</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">HWP</a>
+					</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">인쇄</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">
+						<input type="checkbox">
+					</td>
+					<td class="td">NFB</td>
+					<td class="td">NFB</td>
+					<td class="td">식품</td>
+					<td class="td">식품</td>
+					<td class="td">푸드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">푸드머스</td>
+					<td class="td">드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">식품머스</td>
+					<td class="td">식머스</td>
+					<td class="td">식스</td>
+					<td class="td title">연구원 경력사원 모집</td>
+					<td class="td">신입</td>
+					<td class="td"><span class="em">채용중</span></td>
+					<td class="td">2015.03.10~2015.03.10</td>
+					<td class="td">Y</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">HWP</a>
+					</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">인쇄</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">
+						<input type="checkbox">
+					</td>
+					<td class="td">NFB</td>
+					<td class="td">NFB</td>
+					<td class="td">식품</td>
+					<td class="td">식품</td>
+					<td class="td">푸드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">푸드머스</td>
+					<td class="td">드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">식품머스</td>
+					<td class="td">식머스</td>
+					<td class="td">식스</td>
+					<td class="td title">연구원 경력사원 모집</td>
+					<td class="td">신입</td>
+					<td class="td"><span class="em">채용중</span></td>
+					<td class="td">2015.03.10~2015.03.10</td>
+					<td class="td">Y</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">HWP</a>
+					</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">인쇄</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="td">
+						<input type="checkbox">
+					</td>
+					<td class="td">NFB</td>
+					<td class="td">NFB</td>
+					<td class="td">식품</td>
+					<td class="td">식품</td>
+					<td class="td">푸드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">푸드머스</td>
+					<td class="td">드머스</td>
+					<td class="td">식품/푸드머스</td>
+					<td class="td">식품머스</td>
+					<td class="td">식머스</td>
+					<td class="td">식스</td>
+					<td class="td title">연구원 경력사원 모집</td>
+					<td class="td">신입</td>
+					<td class="td"><span class="em">채용중</span></td>
+					<td class="td">2015.03.10~2015.03.10</td>
+					<td class="td">Y</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">HWP</a>
+					</td>
+					<td class="td">
+						<a href="#" class="btn btn-small">인쇄</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- [D] 현재페이지에 클래스 current추가 -->
+		<div class="pagination">
+			<a href="#" class="page-item page-first">처음페이지</a>
+			<a href="#" class="page-item page-prev">이전페이지</a>
+			<a href="#" class="page-item current">1</a>
+			<a href="#" class="page-item">2</a>
+			<a href="#" class="page-item">3</a>
+			<a href="#" class="page-item">4</a>
+			<a href="#" class="page-item">5</a>
+			<a href="#" class="page-item page-next">다음페이지</a>
+			<a href="#" class="page-item page-last">마지막페이지</a>
+		</div>
+	</div>
+</div>
+
+<div class="action-btns">
+	<a href="#" class="btn btn-wide btn-green">등록</a>
+</div>
+
+
+<footer class="footer">
+	<div class="wrapper">
+		<p class="footer-copy">Copyright © 2015 PULMUONE Co., Ltd. All rights reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>
