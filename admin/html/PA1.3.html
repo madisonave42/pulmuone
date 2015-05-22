@@ -1,4 +1,97 @@
-include "header.html"
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>풀무원 관리자</title>
+
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<!--[if lte IE 8]>
+	<script src="../js/lib/html5shiv.min.js"></script>
+	<script src="../js/lib/IE9.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="../css/style.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/ie8.css" />
+	<![endif]-->
+
+	<script src="../js/lib/jquery.library.min.js"></script>
+	<script src="../js/function.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="wrapper">
+		<h1 class="logo">
+			<a href="#" class="logo-img"><img src="../images/logo.png" alt="Pulumone" /></a>
+		</h1>
+
+		<a href="" class="header-login">로그인</a>
+
+		<ul class="gnb clear">
+			<li class="gnb-item">
+				<!-- [D] 활성화된 메뉴에 on 클래스 추가 -->
+				<a href="#" class="gnb-main-link on">채용관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link on">공고관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">모집관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">지원자 통계</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">게시판관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">공지사항</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">회원관리</a>
+			</li>
+
+			<li class="gnb-item">
+				<a href="#" class="gnb-main-link">운영관리</a>
+
+				<div class="gnb-sub-wrap">
+					<ul class="gnb-sub clear">
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">부문/법인/직무관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">운영자관리</a>
+						</li>
+						<li class="gnb-sub-item">
+							<a href="#" class="gnb-sub-link">로그분석</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</header>
+
 
 <div class="content wrapper">
 
@@ -7,7 +100,8 @@ include "header.html"
 		<p class="breadcrumb">채용관리 > 지원자통계</p>
 	</div>
 
-	<table class="table table-horizontal">
+	<div>
+		<table class="table table-horizontal">
 		<tbody>
 			<tr>
 				<th class="th">공고제목<span class="req">*</span></th>
@@ -89,6 +183,9 @@ include "header.html"
 			</tr>
 		</tbody>
 	</table>
+	</div>
+
+
 
 </div>
 
@@ -97,5 +194,13 @@ include "header.html"
 	<a href="#" class="btn btn-wide">목록</a>
 </div>
 
-include "footer.html"
+
+<footer class="footer">
+	<div class="wrapper">
+		<p class="footer-copy">Copyright © 2015 PULMUONE Co., Ltd. All rights reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>
 
