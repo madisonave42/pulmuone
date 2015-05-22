@@ -27,8 +27,12 @@
 			@include size(30, 44);
 			float:left;
 			text-indent:-9999px;
-			background:url(../images/icon_lock.png) no-repeat 50% 50%;
-			background-size:13px;
+			background:url(../images/icon_lock.png) no-repeat 8px 14px;
+			background-size:18px;
+
+			&.logout {
+				background-position:8px -42px;
+			}
 		}
 
 		&-tg-gnb {
@@ -202,7 +206,7 @@
 	display:block;
 	box-sizing:border-box;
 	margin-top:5px;
-	padding:8px;
+	padding:10px;
 	border:1px solid $color-med-gray;
 	border-radius:5px;
 	background-color:$color-white;

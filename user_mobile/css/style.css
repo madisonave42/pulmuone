@@ -32,6 +32,7 @@ html {
 }
 
 body {
+  position: relative;
   height: 100%;
   font-family: "Nanum Gothic", dotum, sans-serif;
   font-size: 12px;
@@ -102,7 +103,7 @@ input, textarea {
   padding: 0;
   text-indent: -9999px;
   border: 0;
-  background: transparent url(../images/sprite_arrow.png) no-repeat 100% 17px;
+  background: transparent url(../../images/sprite_arrow.png) no-repeat 100% 17px;
   cursor: pointer;
 }
 .toggle-box-action.on {
@@ -206,8 +207,11 @@ input, textarea {
   height: 44px;
   float: left;
   text-indent: -9999px;
-  background: url(../images/icon_lock.png) no-repeat 50% 50%;
-  background-size: 13px;
+  background: url(../../images/icon_lock.png) no-repeat 8px 14px;
+  background-size: 18px;
+}
+.header-util-login.logout {
+  background-position: 8px -42px;
 }
 .header-util-tg-gnb {
   width: 44px;
@@ -354,7 +358,7 @@ input, textarea {
   display: block;
   box-sizing: border-box;
   margin-top: 5px;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #cbcbcb;
   border-radius: 5px;
   background-color: #fff;
@@ -415,16 +419,16 @@ input, textarea {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../images/icon_close.png) no-repeat 50% 50%;
+  background: url(../../images/icon_close.png) no-repeat 50% 50%;
   background-size: 15px;
   text-indent: -9999px;
   border: 0;
 }
 .popup-close.white {
-  background-image: url(../images/icon_close_white.png);
+  background-image: url(../../images/icon_close_white.png);
 }
 .popup-infomsg {
-  margin-top: 30px;
+  margin-top: 15px;
   line-height: 1.6;
   text-align: center;
 }
@@ -435,12 +439,12 @@ input, textarea {
   font-weight: bold;
 }
 .popup-detail {
-  margin-top: 45px;
+  margin-top: 30px;
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
 }
 .popup-detail-item {
-  padding: 25px 10px;
+  padding: 15px 10px;
   border-top: 1px solid #cbcbcb;
 }
 .popup-detail-item:first-child {
@@ -510,7 +514,7 @@ input, textarea {
  * job list
  */
 .job-item-part {
-  margin: 8px 8px 0;
+  margin: 10px 10px 0;
   font-size: 11px;
 }
 .job-item-part-corp {
@@ -529,16 +533,16 @@ input, textarea {
   background: #cbcbcb;
 }
 .job-item-title {
-  margin: 7px 8px 0;
+  margin: 7px 10px 0;
   font-weight: bold;
   color: #008038;
 }
 .job-item-subtitle {
-  margin: 7px 8px 0;
+  margin: 7px 10px 0;
   font-weight: bold;
 }
 .job-item-date {
-  margin: 7px 8px 0;
+  margin: 7px 10px 0;
 }
 .job-item-bottom {
   margin-top: 14px;
@@ -566,7 +570,7 @@ input, textarea {
   width: 24px;
   height: 20px;
   text-indent: -9999px;
-  background: url(../images/bg_dday.png) no-repeat;
+  background: url(../../images/bg_dday.png) no-repeat;
   background-size: 100%;
 }
 .job-item-state-current {
@@ -582,7 +586,7 @@ input, textarea {
 
 /* job detail */
 .apply-view-header {
-  margin: 10px 0 20px;
+  margin-bottom: 20px;
 }
 
 .apply-view-title {
@@ -678,7 +682,6 @@ input, textarea {
  */
 .notice-list-link {
   display: block;
-  padding: 0 12px;
 }
 .notice-list-title {
   font-weight: bold;
@@ -722,17 +725,17 @@ input, textarea {
  */
 .faq-list-link {
   display: block;
-  padding-left: 38px;
+  padding-left: 30px;
   line-height: 1.4;
   font-weight: bold;
-  background: #fff url(../images/bg_faq_q.png) no-repeat 16px 9px;
+  background: #fff url(../../images/bg_faq_q.png) no-repeat 10px 12px;
   background-size: 13px;
 }
 .faq-list-answer {
   display: none;
   padding-left: 30px;
   line-height: 1.4;
-  background: #fff url(../images/bg_faq_a.png) no-repeat 17px 11px;
+  background: #fff url(../../images/bg_faq_a.png) no-repeat 17px 11px;
   background-size: 7px;
 }
 .faq-list-answer.on {
@@ -757,9 +760,9 @@ input, textarea {
 }
 .index-visual {
   box-sizing: border-box;
-  height: 252px;
+  height: 370px;
   height: calc(100% - 158px);
-  background: url(../images/bg_visual.jpg) no-repeat 50% 0;
+  background: url(../../images/bg_visual.jpg) no-repeat 50% 0;
   background-size: cover;
 }
 .index-visual-copy {
@@ -829,7 +832,7 @@ input, textarea {
   font-size: 18px;
   font-weight: 900;
   border: 1px solid #9bc527;
-  background: #a7d231 url(../images/icon_list.png) no-repeat 50% 30px;
+  background: #a7d231 url(../../images/icon_list.png) no-repeat 50% 30px;
   background-size: 47px;
 }
 .index-menu-link02 {
@@ -838,7 +841,7 @@ input, textarea {
   font-size: 13px;
   font-weight: 900;
   border: 1px solid #0c8832;
-  background: #0f9237 url(../images/icon_my_apply.png) no-repeat 50% 10px;
+  background: #0f9237 url(../../images/icon_my_apply.png) no-repeat 50% 10px;
   background-size: 44px;
 }
 .index-menu-link03 {
@@ -846,7 +849,7 @@ input, textarea {
   font-size: 12px;
   font-weight: 900;
   border: 1px solid #d5d5d5;
-  background: #fff url(../images/icon_notice.png) no-repeat 50% 12px;
+  background: #fff url(../../images/icon_notice.png) no-repeat 50% 12px;
   background-size: 19px;
 }
 .index-menu-link04 {
@@ -854,7 +857,7 @@ input, textarea {
   font-size: 12px;
   font-weight: 900;
   border: 1px solid #d5d5d5;
-  background: #fff url(../images/icon_faq.png) no-repeat 50% 16px;
+  background: #fff url(../../images/icon_faq.png) no-repeat 50% 16px;
   background-size: 23px;
 }
 
@@ -873,6 +876,7 @@ input, textarea {
   border: 1px solid #cbcbcb;
   border-radius: 5px;
   font-weight: bold;
+  -webkit-appearance: none;
 }
 .login-input:first-child {
   margin-bottom: 5px;
@@ -887,6 +891,7 @@ input, textarea {
   background-color: #a6ce39;
   border: 0;
   font-weight: bold;
+  -webkit-appearance: none;
 }
 .login-info {
   margin-top: 20px;

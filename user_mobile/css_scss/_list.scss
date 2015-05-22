@@ -3,7 +3,7 @@
 	&-item {
 
 		&-part {
-			margin:8px 8px 0;
+			margin:10px 10px 0;
 			font-size:11px;
 
 			&-corp {
@@ -25,18 +25,18 @@
 		}
 
 		&-title {
-			margin:7px 8px 0;
+			margin:7px 10px 0;
 			font-weight:bold;
 			color:$color-accent;
 		}
 
 		&-subtitle {
-			margin:7px 8px 0;
+			margin:7px 10px 0;
 			font-weight:bold;
 		}
 
 		&-date {
-			margin:7px 8px 0;
+			margin:7px 10px 0;
 		}
 
 		&-bottom {
@@ -89,7 +89,7 @@
 
 /* job detail */
 .apply-view-header {
-	margin:10px 0 20px;
+	margin-bottom:20px;
 }
 .apply-view-title {
 	margin-bottom:10px;
