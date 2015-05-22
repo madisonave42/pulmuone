@@ -470,6 +470,9 @@ input, textarea {
 .content-section {
   margin-top: 50px;
 }
+.content-section-bp {
+  padding-bottom: 40px;
+}
 
 .content-header {
   margin-bottom: 50px;
