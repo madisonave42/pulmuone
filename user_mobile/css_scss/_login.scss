@@ -10,6 +10,7 @@
 		border:1px solid $color-med-gray;
 		border-radius:5px;
 		font-weight:bold;
+		-webkit-appearance:none;
 
 		&:first-child {
 			margin-bottom:5px;
@@ -27,6 +28,7 @@
 		background-color:$color-brand;
 		border:0;
 		font-weight:bold;
+		-webkit-appearance:none;
 	}
 
 	&-info {

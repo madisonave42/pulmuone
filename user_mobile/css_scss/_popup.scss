@@ -49,7 +49,7 @@
 	}
 
 	&-infomsg {
-		margin-top:30px;
+		margin-top:15px;
 		line-height:1.6;
 		text-align:center;
 
@@ -62,12 +62,12 @@
 	}
 
 	&-detail {
-		margin-top:45px;
+		margin-top:30px;
 		border-top:1px solid $color-base;
 		border-bottom:1px solid $color-base;
 
 		&-item {
-			padding:25px 10px;
+			padding:15px 10px;
 			border-top:1px solid $color-med-gray;
 
 			&:first-child {

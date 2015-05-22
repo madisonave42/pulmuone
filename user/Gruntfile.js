@@ -94,7 +94,8 @@ module.exports = function(grunt) {
                 'jquery-1.11.0.min.js',
                 'jquery-ui-1.11.2.min.js',
                 'jquery-1.11.0.min.map',
-                'jquery.slides.min.js'
+                'jquery.slides.min.js',
+                'jquery.slides.main.js'
                 ],
     			dest: 'js/lib/'
     		}]

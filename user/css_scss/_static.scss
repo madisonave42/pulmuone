@@ -93,7 +93,7 @@
 
 .hrdb-list {
 	margin-top:22px;
-	margin-left:275px;
+	margin-left:195px;
 }
 
 // pr4.4
@@ -190,7 +190,7 @@
 	}
 
 	&-list05 {
-		margin-top:38px;
+		margin-top:54px;
 	}
 
 }
@@ -382,6 +382,10 @@
 	&:first-child {
 		border-left:0;
 	}
+
+	&.th-border {
+		border-left:1px solid $color-light-gray;
+	}
 }
 
 .policy-th {
@@ -389,38 +393,38 @@
 }
 
 .policy-td-em {
-	font-size:16px;
+	font-size:15px;
 	font-weight:bold;
 	color:$color-point;
 	line-height:1;
 }
 
-.policy-td-job {
-	padding-top:20px;
-	vertical-align:top;
-}
+// .policy-td-job {
+// 	padding-top:20px;
+// 	vertical-align:top;
+// }
 
-.policy-job-title01 {
-	margin-bottom:45px;
-}
+// .policy-job-title01 {
+// 	margin-bottom:45px;
+// }
 
-.policy-job-title02 {
-	margin-bottom:10px;
-}
+// .policy-job-title02 {
+// 	margin-bottom:10px;
+// }
 
-.policy-job-title04 {
-	margin-bottom:20px;
-}
+// .policy-job-title04 {
+// 	margin-bottom:20px;
+// }
 
-.policy-job-title05 {
-	margin-bottom:20px;
-}
+// .policy-job-title05 {
+// 	margin-bottom:20px;
+// }
 
-.policy-td-list {
-	display:inline-block;
-	margin:10px 0;
-	text-align:left;
-}
+ .policy-td-list {
+ 	display:inline-block;
+ 	margin:10px 0;
+ 	text-align:left;
+ }
 
 .policy-benefit {
 	@include clear();
@@ -677,7 +681,7 @@
 
 		&-item {
 			float:left;
-			margin-left:40px;
+			margin-left:30px;
 
 			&:first-child {
 				margin-left:0;
@@ -1399,7 +1403,7 @@
 	&-page{
 
 		padding:40px 10px;
-		font-size:12px;
+		font-size:14px;
 		line-height:1.8;
 		border-top:2px solid $color-base;
 		border-bottom:1px solid $color-light-gray;
@@ -1437,7 +1441,7 @@
 	&-page{
 
 		padding:40px 10px;
-		font-size:12px;
+		font-size:14px;
 		line-height:1.8;
 		border-top:2px solid $color-base;
 		border-bottom:1px solid $color-light-gray;

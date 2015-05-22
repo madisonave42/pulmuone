@@ -1,3 +1,12 @@
+// check calc
+var hasCalc = true;
+(function() {
+  var el = document.createElement('div');
+  el.style.cssText = 'width:calc(10px);';
+
+  hasCalc = !!el.style.length;
+})();
+
 // main
 
 $(function(){
@@ -9,9 +18,16 @@ $(function(){
 		th = th < 410 ? 410 : th;
 
 		main.css({minHeight: th});
-	});
-})();
 
+
+		if (!hasCalc) {
+			$('.index-visual').css({height: th - 158});
+			$('.popup-content').css({height: $(window).height() - 44});
+		}
+
+	});
+
+})();
 
 //toggle gnb
 (function() {
@@ -51,4 +67,14 @@ $(function(){
 	}
 })();
 
+// scroll top
+(function() {
+	$('.js-btn-top').on('click', function(e){
+		$('html').stop().animate({scrollTop: 0}, 300); // for IE, FF
+		$('body').stop().animate({scrollTop: 0}, 300); // for Chrome
+		e.preventDefault();
+	});
+})();
+
 });
+
