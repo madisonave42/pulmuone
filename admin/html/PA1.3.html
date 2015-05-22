@@ -100,98 +100,74 @@
 		<p class="breadcrumb">채용관리 > 지원자통계</p>
 	</div>
 
-	<div>
+	<div class="content-section">
 		<table class="table table-horizontal">
-		<tbody>
-			<tr>
-				<th class="th">공고제목<span class="req">*</span></th>
-				<td class="td">
-					<div class="form-wrap">
-						<input type="text" class="input-text input-full-width" />
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<th class="th">지원기간<span class="req">*</span></th>
-				<td class="td">
-					<div class="form-wrap">
-						<input type="text" class="input-text">
-					</div>
-					<button type="button" class="show-calendar">달력보기</button>
-					-
-					<div class="form-wrap">
-						<input type="text" class="input-text">
-					</div>
-					<button type="button" class="show-calendar">달력보기</button>
-				</td>
-			</tr>
-			<tr>
-				<th class="th">게시여부<span class="req">*</span></th>
-				<td class="td">
-					<span class="radio-wrap">
-						<input type="radio" id="type-y" name="type" class="radio"><label for="type-y" class="label">Y</label>
-					</span>
-					<span class="radio-wrap">
-						<input type="radio" id="type-n" name="type" class="radio"><label for="type-n" class="label">N</label>
-					</span>
-				</td>
-			</tr>
-			<tr>
-				<th class="th">기타</th>
-				<td class="td">
-					<div class="form-wrap">
-						<textarea cols="30" rows="10" class="textarea input-full-width"></textarea>
-					</div>
-					<p class="table-gapbox">하위 내용은 앞에 (-)을 붙여주세요.</p>
-				</td>
-			</tr>
-			<tr>
-				<th class="th">모집항목</th>
-				<td class="td">
-					<div>
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-01" class="checkbox"><label for="chk-01" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-					<div class="table-gapbox">
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-02" class="checkbox"><label for="chk-02" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-					<div class="table-gapbox">
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-03" class="checkbox"><label for="chk-03" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-					<div class="table-gapbox">
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-04" class="checkbox"><label for="chk-04" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-					<div class="table-gapbox">
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-05" class="checkbox"><label for="chk-05" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-					<div class="table-gapbox">
-						<span class="check-wrap">
-							<input type="checkbox" id="chk-06" class="checkbox"><label for="chk-06" class="label">201501 종균개발 연구원 </label>
-						</span>
-					</div>
-
-				</td>
-			</tr>
-		</tbody>
-	</table>
+			<tbody>
+				<tr>
+					<th class="th">공고/모집</th>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>선택</option>
+								<option>선택</option>
+							</select>
+						</div>
+						<div class="form-wrap">
+							<select class="select">
+								<option>선택</option>
+								<option>선택</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="th">부문</th>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>선택</option>
+								<option>선택</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="th">법인</th>
+					<td class="td">
+						<div class="form-wrap">
+							<select class="select">
+								<option>선택</option>
+								<option>선택</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="th">기간</th>
+					<td class="td">
+						<div class="form-wrap">
+							<input type="text" class="input-text">
+						</div>
+						<button type="button" class="show-calendar">달력보기</button>
+						-
+						<div class="form-wrap">
+							<input type="text" class="input-text">
+						</div>
+						<button type="button" class="show-calendar">달력보기</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row-msg">
+			* 기간은 최대 1년 입니다. 모든 전형이 끝난 채용만 통계에 제공됩니다.
+		</div>
+		<div class="submit-btns">
+			<button type="button" class="btn">확인</button>
+		</div>
 	</div>
 
 
 
-</div>
-
-<div class="action-btns">
-	<a href="#" class="btn btn-wide btn-green">등록</a>
-	<a href="#" class="btn btn-wide">목록</a>
 </div>
 
 
