@@ -576,6 +576,10 @@ input, textarea {
   color: #b07e44;
 }
 
+.left-float {
+  float: left;
+}
+
 .login {
   margin: 270px auto;
   width: 682px;
