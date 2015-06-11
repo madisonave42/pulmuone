@@ -25,7 +25,8 @@ $(function(){
 		var gnb = $('.gnb'),
 			menus = $('.js-gnb'),
 			menuOut = $('.js-gnb-out'),
-			current = -1;
+			current = -1,
+			menuSub = $('.gnb-sub-wrap');
 
 		function enterAction() {
 			var num = menus.index(menus.filter('.on'));
@@ -57,6 +58,8 @@ $(function(){
 				enterAction();
 				menus.removeClass('over');
 				$(this).addClass('over');
+				menuSub.removeClass('on');
+				$(this).next('.gnb-sub-wrap').addClass('on');
 			}
 		});
 
@@ -118,7 +121,7 @@ $(function(){
 	      auto: true,
 	      swap: true,
 	      pauseOnHover: true,
-	      restartDelay: 3000
+	      restartDelay: 1000
 	    },
 			callback: {
 				start: function(number) {
@@ -220,6 +223,131 @@ $(function(){
 			height: 195
 		});
 	}
+})();
+
+// 레이어팝업 포커스이동
+(function() {
+  $('.js-focus-popup').click(function(){
+    var self = $(this),
+    	target = $('#' + $(this).attr('data-href'));
+
+    target.attr('tabindex', '0').focus();
+
+    target.find('input:not(:hidden), textarea, select').eq(0).on('keydown', function(e) {
+    	if(e.shiftKey && e.which == 9) {
+				target.find('.popup-close').focus();
+				e.preventDefault();
+			}
+    });
+
+    target.find('.popup-close').on({
+    	'click': function() {
+      	self.focus();
+    	},
+    	'keydown': function(e) {
+			  if(e.which == 9 && !e.shiftKey) {
+			    $(this).parents('.popup').focus();
+			    e.preventDefault();
+			  }
+			}
+		});
+
+  });
+})();
+
+// 페이지 로딩시 열려있는 레이어팝업 포커스이동
+(function() {
+	var isOpenPopup = $('.popup:visible');
+
+	if (isOpenPopup.length > 0) {
+
+    isOpenPopup.attr('tabindex', '0').focus();
+
+    isOpenPopup.on('keydown', function(e) {
+    	if(e.shiftKey && e.which == 9) {
+				isOpenPopup.find('.popup-close').focus();
+				e.preventDefault();
+			}
+    });
+
+    isOpenPopup.find('.popup-close').on('keydown', function(e) {
+		  if(e.which == 9 && !e.shiftKey) {
+		    $(this).parents('.popup').focus();
+		    e.preventDefault();
+		  }
+		});
+
+	}
+
+})();
+
+// 입력내용 추가시 추가된 테이블로 포커스 이동
+(function() {
+	$('.js-btn-add-data').on('click', function() {
+		var self = $(this);
+		setTimeout(function() {
+			var addedTable = self.parents('.row').find('table:visible').last();
+			addedTable.find('input:not(:hidden), textarea, select').eq(0).focus();
+		}, 500);
+	});
+})();
+
+// Focus in password input
+(function() {
+	$('.placeholder-ln-ko, .placeholder-fn-ko, .placeholder-ln-en, .placeholder-fn-en').data('focus', 'false').on({
+		focusin: function() {
+			$(this).data('focus', 'true').addClass('focus');
+		},
+
+		focusout: function() {
+			if( $(this).val().length > 0 ) {
+				return false;
+			} else {
+				$(this).data('focus', 'false').removeClass('focus');
+			}
+		}
+	}).trigger('focusin').trigger('focusout'); // 페이지 로딩시 값이 있을경우를 대비
+})();
+
+// 푸터 가족사이트 리스트 토글
+(function() {
+	var fList = $('.footer-family-list'),
+		fBtn = $('.js-family-open');
+
+	var openFamily = function() {
+		fList.addClass('on');
+		fBtn.addClass('on');
+	};
+
+	var closeFamily = function() {
+		fList.removeClass('on');
+		fBtn.removeClass('on');
+	};
+
+	fBtn.on('click', function() {
+		if ($(this).hasClass('on')) {
+			closeFamily();
+		} else {
+			openFamily();
+		}
+	});
+
+	fList.on('mouseleave', function() {
+		closeFamily();
+	});
+
+	fList.find('a').first().on('keydown', function(e) {
+		if(e.shiftKey && e.which == 9) {
+			closeFamily();
+			e.preventDefault();
+		}
+	});
+	fList.find('a').last().on('keydown', function(e) {
+		if(e.which == 9 && !e.shiftKey) {
+			closeFamily();
+	    e.preventDefault();
+	  }
+	});
 })();
 
 });

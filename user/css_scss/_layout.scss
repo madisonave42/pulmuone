@@ -32,25 +32,25 @@
 
 	&-util {
 		float:right;
-		margin-top:25px;
+		margin-top:22px;
 
 		&-login,
 		&-mypage {
 			float:left;
-			padding-top:26px;
-			font-size:10px;
+			padding-top:22px;
+			font-size:11px;
 			font-weight:bold;
 			text-align:center;
 		}
 
 		&-login {
 			margin-right:14px;
-			@include size(40, a);
+			@include size(45, a);
 			background:url(../images/icon_lock.png) no-repeat 50% 0;
 		}
 
 		&-mypage {
-			@include size(50, a);
+			@include size(55, a);
 			background:url(../images/icon_mypage.png) no-repeat 50% 0;
 		}
 	}
@@ -59,7 +59,7 @@
 .gnb {
 	float:left;
 	margin-left:120px;
-	padding-top:43px;
+	padding-top:40px;
 
 	&-item {
 		float:left;
@@ -81,7 +81,7 @@
 
 	&-main-text {
 		display:block;
-		@include size(a, 33);
+		@include size(a, 36);
 		border-bottom:5px solid transparent;
 	}
 
@@ -109,23 +109,25 @@
 	&-main-link:focus + .gnb-sub-wrap,
 	&-main-link:hover + .gnb-sub-wrap,
 	&-main-link.over + .gnb-sub-wrap,
-	&-sub-wrap:hover {
+	&-sub-wrap:hover,
+	&-sub-wrap.on {
 		display:block;
 	}
 
 	&-sub-copy {
 		position:absolute;
-		top:30px;
+		top:32px;
 		left:50%;
 		margin-left:-495px;
 		font-size:22px;
 		color:$color-dark;
+		line-height:1.3;
 	}
 
 	&-sub {
 		margin:0 auto;
 		padding-left:225px;
-		padding-top:38px;
+		padding-top:37px;
 		@include size(755, a);
 
 		&-item {
@@ -142,7 +144,7 @@
 		&-link {
 			display:block;
 			width:90px;
-			padding-top:65px;
+			padding-top:62px;
 			padding-bottom:3px;
 			text-align:center;
 			background:url(../images/sprite_gnb.png) no-repeat;
@@ -410,6 +412,10 @@
 	&-header {
 		margin-bottom:10px;
 		font-size:18px;
+
+		&.small {
+			font-size:14px;
+		}
 	}
 
 	&-actions {
@@ -511,12 +517,78 @@
 		float:right;
 
 		&-select {
+			@include size(170, 26);
+			position:relative;
 			float:left;
-			margin-right:5px;
-			@include size(143, 26);
+			//margin-right:5px;
+			box-sizing:border-box;
 			color:$color-gray;
 			border:1px solid $color-dark-gray;
 			background-color:transparent;
+
+			&-open {
+				position:relative;
+				display:block;
+				padding:0;
+				padding-left:5px;
+				width:100%;
+				height:24px;
+				color:$color-gray;
+				cursor:pointer;
+				text-align:left;
+				border:0;
+				background:none;
+
+				&:focus {
+					color:#fff;
+					background-color:$color-dark-gray;
+				}
+
+				&:after {
+					content:"";
+					position:absolute;
+					top:10px;
+					right:10px;
+					width:0;
+					height:0;
+					border:4px solid transparent;
+				  border-top-color:$color-gray;
+				  border-bottom:none;
+				}
+
+				&.on:after {
+					border:4px solid transparent;
+				  border-bottom-color:$color-gray;
+				  border-top:none;
+				}
+			}
+		}
+
+		&-list {
+			display:none;
+			position:absolute;
+			bottom:24px;
+			left:-1px;
+			width:100%;
+			color:$color-gray;
+			border:1px solid $color-dark-gray;
+			background-color:$color-dark;
+
+			&.on {
+				display:block;
+			}
+
+			&-link {
+				display:block;
+				padding:5px 10px;
+				color:$color-gray;
+
+				&:hover,
+				&:focus {
+					background-color:$color-dark-gray;
+				}
+			}
+
 		}
 
 		&-btn {

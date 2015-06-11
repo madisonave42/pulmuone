@@ -64,10 +64,14 @@
 	color:$color-dark-gray;
 
 	&-view {
-		@include size(100%, 100);
+		width:100%;
 		color:$color-dark-gray;
-		overflow-x:hidden;
-		overflow-y:auto;
+		// overflow-x:hidden;
+		// overflow-y:auto;
+	}
+
+	&.high {
+		height:150px;
 	}
 
 	&.inquiry {
@@ -83,6 +87,10 @@
 
 	&-normal {
 		@include size(116, a);
+	}
+
+	&-wide {
+		@include size(150, a);
 	}
 
 	&-half {
@@ -299,3 +307,47 @@
 	float:none;
 }
 
+/* placeholder */
+.placeholder {
+
+	&-ln {
+
+		&-ko {
+			background:url(../images/bg_form_msg.jpg) no-repeat 0 3px;
+
+			&.focus {
+				background:none;
+			}
+		}
+
+		&-en {
+			background:url(../images/bg_form_msg.jpg) no-repeat 0 -108px;
+
+			&.focus {
+				background:none;
+			}
+		}
+
+	}
+
+	&-fn {
+
+		&-ko {
+			background:url(../images/bg_form_msg.jpg) no-repeat 0 -52px;
+
+			&.focus {
+				background:none;
+			}
+		}
+
+		&-en {
+			background:url(../images/bg_form_msg.jpg) no-repeat 0 -165px;
+
+			&.focus {
+				background:none;
+			}
+		}
+
+	}
+
+}

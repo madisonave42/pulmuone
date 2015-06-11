@@ -10,6 +10,7 @@
 	text-align:center;
 	background-color:$color-accent;
 	&:focus {
+		z-index:100;
 		top:0;
 	}
 }
@@ -154,7 +155,7 @@
 
 		.btn-send-email {
 			position:absolute;
-		  right:-100px;
+		  left:200px;
 		  top:-6px;
 		}
 	}

@@ -815,13 +815,11 @@
 	&-cont04,
 	&-cont05,
 	&-cont06 {
-		position:absolute;
-		top:-9999px;
+		display:none;
 		padding-top:525px;
 
 		&.on {
-			position:static;
-			top:0;
+			display:block;
 		}
 	}
 
@@ -1058,6 +1056,11 @@
 
 		}
 
+		&-logo {
+			margin:100px 0;
+			text-align:center;
+		}
+
 	}
 
 	&-history {
@@ -1280,7 +1283,8 @@
 		&-list07,
 		&-list08,
 		&-list09,
-		&-list10 {
+		&-list10,
+		&-list11 {
 			@include center();
 			margin-top:30px;
 			width:980px;
@@ -1327,6 +1331,10 @@
 			background:url(../images/bg_intro_brand10.jpg) no-repeat 50% 0;
 		}
 
+		&-list11 {
+			background:url(../images/bg_intro_brand11.jpg) no-repeat 50% 0;
+		}
+
 		&-item {
 			position:absolute;
 			top:-9999px;
@@ -1334,12 +1342,12 @@
 
 		.slidesjs-previous {
 			top:118px;
-			left:0;
+			left:35px;
 			z-index:10;
 		}
 		.slidesjs-next {
 			top:118px;
-			right:0;
+			right:35px;
 			z-index:10;
 		}
 	}

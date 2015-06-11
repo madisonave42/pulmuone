@@ -21,4 +21,3 @@ var initSidebar = function(el, gap) {
 	};
 
 };
-

@@ -73,6 +73,14 @@
 		background-color:$color-dark-gray;
 	}
 
+	&-link-ecmd {
+		@extend .btn;
+		@include size-mid(170, 27);
+		display:inline-block;
+		margin-left:10px;
+		background-color:$color-dark-gray;
+	}
+
 	&-login-action {
 		@extend .btn;
 		@include size-mid(75, 19);

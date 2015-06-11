@@ -33,6 +33,7 @@
 	}
 
 	&-content {
+		@include clear();
 		margin:20px;
 
 		&-msg {
@@ -129,6 +130,11 @@
 		.black {
 			margin-right:13px;
 		}
+
+		&.etc .black {
+			float:left;
+			margin-right:0;
+		}
 	}
 
 	&-div {
@@ -153,6 +159,10 @@
 		float:right;
 		margin:40px 0;
 		width:375px;
+
+		.list-item {
+			text-indent:0;
+		}
 	}
 
 	&-msg {
@@ -175,6 +185,7 @@
 			background-color:#000;
 		}
 	}
+
 }
 
 .change-phone {

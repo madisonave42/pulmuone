@@ -9,10 +9,10 @@
 }
 
 .slidesjs-previous {
-	left:-80px;
+	left:-65px;
 }
 .slidesjs-next {
-	right:-80px;
+	right:-45px;
 	background-position:-20px 0;
 }
 .slidesjs-pagination {
@@ -64,6 +64,8 @@
 }
 
 .main-visual {
+	height:650px;
+	overflow:hidden;
 
 	&-slide {
 		position:absolute;
@@ -73,6 +75,10 @@
 		width:1920px;
 		height:940px;
 		display:none;
+
+		.slidesjs-container {
+			height:640px!important;
+		}
 
 		&.fixed {
 			background-attachment:fixed;
@@ -173,8 +179,11 @@
 
 	&-item {
 		float:left;
+		display:block;
+		width:860px;
 		line-height:52px;
 		color:$color-med-gray;
+		white-space:nowrap;
 	}
 
 	&-title {
@@ -202,6 +211,8 @@
 
 	&-date {
 		float:right;
+		width:80px;
+		text-align:right;
 		line-height:52px;
 		color:$color-med-gray;
 	}
