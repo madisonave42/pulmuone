@@ -101,7 +101,7 @@ $(function(){
 
 	$('<span tabindex="-1" class="file-input-value">'+ defaultText +'</span>').insertBefore(input);
 
-	input.on('change', function() {
+	$('body').on('change', '.file-input', function() {
 		var val = $(this).val();
 		$(this).parents('.file-wrap').find('.file-input-value').text(val);
 	});
@@ -186,6 +186,7 @@ $(function(){
 	btnTop.on('click',function (e) {
 		sidebarAction.scrollPageTop();
 		e.preventDefault();
+		$('.skip-nav-link').eq(0).focus();
 	});
 
 })();
@@ -242,7 +243,7 @@ $(function(){
 
     target.find('.popup-close').on({
     	'click': function() {
-      	self.focus();
+      	//self.focus();
     	},
     	'keydown': function(e) {
 			  if(e.which == 9 && !e.shiftKey) {
@@ -324,11 +325,18 @@ $(function(){
 		fBtn.removeClass('on');
 	};
 
-	fBtn.on('click', function() {
-		if ($(this).hasClass('on')) {
-			closeFamily();
-		} else {
-			openFamily();
+	fBtn.on({
+		'click': function() {
+			if ($(this).hasClass('on')) {
+				closeFamily();
+			} else {
+				openFamily();
+			}
+		},
+		'keydown': function(e) {
+			if(e.shiftKey && e.which == 9) {
+				closeFamily();
+			}
 		}
 	});
 
@@ -336,17 +344,35 @@ $(function(){
 		closeFamily();
 	});
 
+	fList.find('a').on('click', function() {
+		closeFamily();
+	});
+
 	fList.find('a').first().on('keydown', function(e) {
 		if(e.shiftKey && e.which == 9) {
 			closeFamily();
 			e.preventDefault();
+			fBtn.focus();
 		}
 	});
 	fList.find('a').last().on('keydown', function(e) {
 		if(e.which == 9 && !e.shiftKey) {
 			closeFamily();
 	    e.preventDefault();
+	    fBtn.focus();
 	  }
+	});
+})();
+
+/* input type file focus */
+(function() {
+	$('.file-input').on({
+		'focus': function() {
+			$(this).next('.file-label').find('.btn-form').addClass('focus');
+		},
+		'blur': function() {
+			$(this).next('.file-label').find('.btn-form').removeClass('focus');
+		}
 	});
 })();
 

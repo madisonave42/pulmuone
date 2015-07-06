@@ -27,4 +27,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
+.footer-family-select-open:after {
+  top: 7px;
+}
+
 /*# sourceMappingURL=ie8.css.map */

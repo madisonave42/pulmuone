@@ -242,6 +242,11 @@
 		.btn-form {
 			float:none;
 			margin:0;
+
+			&.focus {
+				outline:1px dashed $color-dark-gray;
+				outline-offset:2px;
+			}
 		}
 
 	}
